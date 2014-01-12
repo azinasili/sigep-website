@@ -1,0 +1,36 @@
+// ============================================================================
+//
+// ALIGNMENT, SPACING, AND OVERRIDES
+// Override default alignment, spacing, grid, and text.
+//
+// ============================================================================
+
+// Text alignment
+.text-center                  { text-align: center; }
+.text-right                   { text-align: right; }
+.text-left                    { text-align: left; }
+
+
+// Floats
+.float-left                   { float: left; }
+.float-center                 { float: none; margin-left: auto !important;  margin-right: auto !important; }
+.float-right                  { float: right; }
+
+
+// Spacing
+.no-space                     { margin: 0; padding: 0; }
+.no-space-side                { padding-right: 0; padding-left: 0; }
+.no-space-bottom              { margin-bottom: 0; padding-bottom: 0; }
+.no-space-top                 { margin-top: 0; padding-top: 0; }
+.space-bottom                 { @include em(margin-bottom, 32px); }
+.space-bottom-small           { @include em(margin-bottom, 8px); padding-bottom: 0; }
+.space-top                    { @include em(padding-top, 13px); }
+
+
+// Text manipulation
+.text-replace                 { text-indent: 100%; overflow: hidden; white-space: nowrap; }
+.truncate                     { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+
+// Reverses order of grid for content choreography
+.grid-flip                    { float: right; margin-left: $grid-gutter; margin-right: 0; }

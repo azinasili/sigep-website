@@ -1,0 +1,13 @@
+.main-nav-container {
+  @include em(padding, 5px 0);
+}
+
+.main-nav {
+  margin-bottom: 0;
+  @include em(font-size, 16px);
+
+  li {
+    @include em(padding-left, 30px);
+  }
+}
+

@@ -1,0 +1,21 @@
+.sub-nav-container {
+  background: #272727;
+}
+
+.sub-nav {
+  margin-bottom: 0;
+  @include em(font-size, 12px);
+  @include em(padding, 5px 0);
+
+  li {
+    position: relative;
+    @include em(padding-left, 20px);
+
+    &:after {
+      content: "/";
+      position: absolute;
+      top: 0; left: 0;
+    }
+  }
+}
+

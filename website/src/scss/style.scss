@@ -1,0 +1,21 @@
+// ============================================================================
+//
+// EASY GRID
+// Simple grid to kick start any project
+// Grid can easily be configured to suit your project
+//
+// ============================================================================
+
+// Compass includes
+// @import "compass/css3";
+
+// Settings for grid
+@import "config";
+@import "mixins";
+
+// Grid classes and overrides
+@import "structure/easygrid";
+
+@import "modules/page-structure";
+@import "modules/sub-nav";
+@import "modules/main-nav"
