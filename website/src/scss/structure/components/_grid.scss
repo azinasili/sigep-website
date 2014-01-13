@@ -113,9 +113,22 @@ $grid-gutter: ($gutter/$container-max) * 100%;
 
 // Small breakpoint ===========================================================
 @media (min-width: $bp-small) and (max-width: $bp-medium) {
+  .grid-fifth-small,
+  .grid-fourth-small,
+  .grid-three-fourths-small,
+  .grid-third-small,
+  .grid-two-thirds-small,
+  .grid-half-small {
+    margin-right: $grid-gutter;
+    transition: all, 0.4s, ease-in-out;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
   // Grid fifths
   .grid-fifth-small {
-    margin-right: $grid-gutter;
     width: responsove-width(4, 5);
 
     // remove gutter on every 4th instance
@@ -126,7 +139,6 @@ $grid-gutter: ($gutter/$container-max) * 100%;
 
   // Grid fourths
   .grid-fourth-small {
-    margin-right: $grid-gutter;
     width: responsove-width(3, 4);
 
     // remove gutter on every 4th instance
@@ -135,9 +147,12 @@ $grid-gutter: ($gutter/$container-max) * 100%;
     }
   }
 
+  .grid-three-fourths-small {
+    width: responsove-width(3, 4) * 3 + ($grid-gutter * 2); // magic equation
+  }
+
   // Grid thirds
   .grid-third-small {
-    margin-right: $grid-gutter;
     width: responsove-width(2, 3);
 
     // remove gutter on every 3rd instance
@@ -146,9 +161,12 @@ $grid-gutter: ($gutter/$container-max) * 100%;
     }
   }
 
+  .grid-two-thirds-small {
+    width: responsove-width(2, 3) * 2 + $grid-gutter; // magic equation
+  }
+
   // Grid halves
   .grid-half-small {
-    margin-right: $grid-gutter;
     width: responsove-width(1, 2);
 
     // remove margin on every 2nd instance

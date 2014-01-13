@@ -21,7 +21,7 @@
 body {
   background: $color-white;
   color: $color-black;
-  font-family: $font-primary;
+  font-family: $font-secondary;
   font-size: $font-base;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -124,10 +124,10 @@ a:hover img {
 ul,
 ol,
 dl {
-  margin-bottom: 0;
+  margin-bottom: $spacing;
   @include em(margin-top, 0);
   @include em(margin-left, 0);
-  @include em(padding-left, 17px);
+  // @include em(padding-left, 17px);
 }
 
 ul {
@@ -169,6 +169,7 @@ dt {
 // Heading class lets you use one heading type for semantics
 // but style it as another heading type.
 h1, h2, h3, h4, h5, h6 {
+  font-family: $font-primary;
   line-height: 1.2;
   font-weight: normal;
 }

@@ -302,7 +302,7 @@ table {
   .grid-two-fifths,
   .adaptive-fifth,
   .adaptive-fourth {
-    margin-right: 1.875%;
+    margin-right: 3.90625%;
   }
 
   .grid-full:last-child,
@@ -322,9 +322,28 @@ table {
 }
 
 @media (min-width: 30em) and (max-width: 40em) {
+  .grid-fifth-small,
+  .grid-fourth-small,
+  .grid-three-fourths-small,
+  .grid-third-small,
+  .grid-two-thirds-small,
+  .grid-half-small {
+    margin-right: 3.90625%;
+    -webkit-transition: all, 0.4s, ease-in-out;
+    transition: all, 0.4s, ease-in-out;
+  }
+
+  .grid-fifth-small:last-child,
+  .grid-fourth-small:last-child,
+  .grid-three-fourths-small:last-child,
+  .grid-third-small:last-child,
+  .grid-two-thirds-small:last-child,
+  .grid-half-small:last-child {
+    margin-right: 0;
+  }
+
   .grid-fifth-small {
-    margin-right: 1.875%;
-    width: 18.5%;
+    width: 16.875%;
   }
 
   .grid-fifth-small:nth-child(5n) {
@@ -332,26 +351,31 @@ table {
   }
 
   .grid-fourth-small {
-    margin-right: 1.875%;
-    width: 23.59375%;
+    width: 22.07031%;
   }
 
   .grid-fourth-small:nth-child(4n) {
     margin-right: 0;
   }
 
+  .grid-three-fourths-small {
+    width: 74.02344%;
+  }
+
   .grid-third-small {
-    margin-right: 1.875%;
-    width: 32.08333%;
+    width: 30.72917%;
   }
 
   .grid-third-small:nth-child(3n) {
     margin-right: 0;
   }
 
+  .grid-two-thirds-small {
+    width: 65.36458%;
+  }
+
   .grid-half-small {
-    margin-right: 1.875%;
-    width: 49.0625%;
+    width: 48.04688%;
   }
 
   .grid-half-small:nth-child(2n) {
@@ -361,7 +385,7 @@ table {
 
 @media (min-width: 40em) {
   .grid-fifth {
-    width: 18.5%;
+    width: 16.875%;
   }
 
   .grid-fifth:nth-child(5n) {
@@ -369,19 +393,19 @@ table {
   }
 
   .grid-two-fifths {
-    width: 38.875%;
+    width: 37.65625%;
   }
 
   .grid-three-fifths {
-    width: 59.25%;
+    width: 58.4375%;
   }
 
   .grid-four-fifths {
-    width: 79.625%;
+    width: 79.21875%;
   }
 
   .grid-fourth {
-    width: 23.59375%;
+    width: 22.07031%;
   }
 
   .grid-fourth:nth-child(4n) {
@@ -389,11 +413,11 @@ table {
   }
 
   .grid-three-fourths {
-    width: 74.53125%;
+    width: 74.02344%;
   }
 
   .grid-third {
-    width: 32.08333%;
+    width: 30.72917%;
   }
 
   .grid-third:nth-child(3n) {
@@ -401,11 +425,11 @@ table {
   }
 
   .grid-two-thirds {
-    width: 66.04167%;
+    width: 65.36458%;
   }
 
   .grid-half {
-    width: 49.0625%;
+    width: 48.04688%;
   }
 
   .grid-half:nth-child(2n) {
@@ -413,42 +437,42 @@ table {
   }
 
   .offset-fifth {
-    margin-left: 20.375%;
+    margin-left: 20.78125%;
   }
 
   .offset-two-fifths {
-    margin-left: 40.75%;
+    margin-left: 41.5625%;
   }
 
   .offset-three-fifths {
-    margin-left: 61.125%;
+    margin-left: 62.34375%;
   }
 
   .offset-fourth {
-    margin-left: 25.46875%;
+    margin-left: 25.97656%;
   }
 
   .offset-three-fourths {
-    margin-left: 76.40625%;
+    margin-left: 77.92969%;
   }
 
   .offset-third {
-    margin-left: 33.95833%;
+    margin-left: 34.63542%;
   }
 
   .offset-two-thirds {
-    margin-left: 67.91667%;
+    margin-left: 69.27083%;
   }
 
   .offset-half {
-    margin-left: 50.9375%;
+    margin-left: 51.95313%;
   }
 }
 
 @media (min-width: 30em) and (max-width: 60em) {
   .adaptive-fourth {
-    margin-right: 1.875%;
-    width: 49.0625%;
+    margin-right: 3.90625%;
+    width: 48.04688%;
   }
 
   .adaptive-fourth:nth-child(2n) {
@@ -458,7 +482,7 @@ table {
 
 @media (min-width: 60em) {
   .adaptive-fourth {
-    width: 23.59375%;
+    width: 22.07031%;
   }
 
   .adaptive-fourth:nth-child(4n) {
@@ -468,8 +492,8 @@ table {
 
 @media (min-width: 30em) and (max-width: 40em) {
   .adaptive-fifth {
-    margin-right: 1.875%;
-    width: 49.0625%;
+    margin-right: 3.90625%;
+    width: 48.04688%;
   }
 
   .adaptive-fifth:nth-child(2n) {
@@ -479,7 +503,7 @@ table {
 
 @media (min-width: 40em) and (max-width: 60em) {
   .adaptive-fifth {
-    width: 32.08333%;
+    width: 30.72917%;
   }
 
   .adaptive-fifth:nth-child(3n) {
@@ -489,7 +513,7 @@ table {
 
 @media (min-width: 60em) {
   .adaptive-fifth {
-    width: 18.5%;
+    width: 16.875%;
   }
 
   .adaptive-fifth:nth-child(5n) {
@@ -500,7 +524,7 @@ table {
 body {
   background: white;
   color: #272727;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: "Sintony", sans-serif;
   font-size: 100%;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -582,12 +606,6 @@ dl {
   margin-left: 0;
 }
 
-ul:last-of-type,
-ol:last-of-type,
-dl:last-of-type {
-  margin-bottom: 0;
-}
-
 ul {
   list-style: disc;
 }
@@ -620,6 +638,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: "Libre Baskerville" serif;
   line-height: 1.2;
   font-weight: normal;
 }
@@ -771,7 +790,7 @@ q:after {
 
 .grid-flip {
   float: right;
-  margin-left: 1.875%;
+  margin-left: 3.90625%;
   margin-right: 0;
 }
 

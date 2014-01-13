@@ -10,15 +10,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/ico" href="">
+    <link rel="shortcut icon" type="assests/img/ico" href="">
 
     <!-- Apple Touch Icons -->
-    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon-152.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-144.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-touch-icon-120.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72.png">
-    <link rel="apple-touch-icon" href="img/apple-touch-icon-57.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assests/img/apple-touch-icon-152.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assests/img/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assests/img/apple-touch-icon-120.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assests/img/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assests/img/apple-touch-icon-72.png">
+    <link rel="apple-touch-icon" href="assests/img/apple-touch-icon-57.png">
 
     <!-- MS Homescreen Icons -->
     <meta name="msapplication-TileColor" content="#0088cc">
@@ -26,6 +26,29 @@
 
     <!-- stylesheet -->
     <link href="assets/css/style.min.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
+    <style>
+.responsive-iframe-container {
+    position: relative;
+    padding-bottom: 36.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.responsive-iframe-container iframe,
+.vresponsive-iframe-container object,
+.vresponsive-iframe-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+    </style>
+
+    <!-- google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic|Sintony:400,700' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 Shim for IE 6-8 -->
     <!--[if lt IE 9]>
@@ -45,7 +68,7 @@
       <div class="sub-nav-container">
         <div class="container">
           <nav class="grid-whole float-right">
-            <ul class="sub-nav unstyled">
+            <ul class="sub-nav list-unstyled">
               <li class="inline-item"><a href="#">SigEp Nationals</a></li>
               <li class="inline-item"><a href="#">Sanguine et Purpure</a></li>
               <li class="inline-item"><a href="#">PABB Alumni</a></li>
@@ -64,7 +87,7 @@
           <!-- navigation -->
           <div class="grid-half">
             <nav>
-              <ul class="main-nav unstyled">
+              <ul class="main-nav list-unstyled">
                 <li class="inline-item"><a href="#">about sigep</a></li>
                 <li class="inline-item"><a href="#">brothers</a></li>
                 <li class="inline-item"><a href="#">news</a></li>
@@ -77,21 +100,30 @@
       </div>
     </header>
 
+    <!-- headline -->
+    <div class="banner">
+      <div class="container">
+        <div class="grid-whole text-center">
+          <h1>some headline text</h1>
+          <h4>some sub-headline text</h4>
+        </div>
+      </div>
+    </div>
+
     <!-- body -->
     <main>
-      <div>
-        banner
-      </div>
 
+      <!-- about content -->
       <div class="container">
-        <div class="grid-three-fourths" style="background: yellow;">
+        <div class="grid-three-fourths grid-two-thirds-small">
           <h2>sigep pabb accomplishments</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris urna, vestibulum vel molestie non, condimentum sit amet risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis varius nulla ut faucibus. Suspendisse velit leo, posuere sit amet nisl vitae, condimentum convallis sapien. Vivamus non bibendum risus, ac facilisis sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut ornare dolor erat, eget luctus eros porta non. Cras tellus erat, adipiscing a ipsum at, vehicula porta eros. Nullam porta auctor lectus non vulputate. Sed dignissim imperdiet est tempus ullamcorper. Sed ornare diam ac semper viverra. Aliquam blandit fringilla consectetur.
           </p>
 
+          <!-- accomplishments -->
           <div class="container">
-            <div class="grid-third">
+            <div class="grid-third grid-whole-small">
               <strong>accomplishment</strong>
               <ul>
                 <li>lorem ipsum dolor sit</li>
@@ -101,7 +133,7 @@
                 <li>lorem ipsum dolor sit</li>
               </ul>
             </div>
-            <div class="grid-third">
+            <div class="grid-third grid-whole-small">
               <strong>accomplishment</strong>
               <ul>
                 <li>lorem ipsum dolor sit</li>
@@ -111,7 +143,7 @@
                 <li>lorem ipsum dolor sit</li>
               </ul>
             </div>
-            <div class="grid-third">
+            <div class="grid-third grid-whole-small">
               <strong>accomplishment</strong>
               <ul>
                 <li>lorem ipsum dolor sit</li>
@@ -123,13 +155,85 @@
             </div>
           </div>
         </div>
-        <aside class="grid-fourth" style="background: wheat;">
-          side content
+
+        <!-- brother of the week -->
+        <aside class="grid-fourth grid-third-small">
+          <a href="#" class="brother-of-the-week">
+            <div class="picture">
+              <img src="" />
+            </div>
+            <h3>persons name</h3>
+            <p>
+              Lorem ipsum Sint in ullamco ut sed ut irure fugiat nisi dolor dolor cillum id commodo eiusmod eiusmod fugiat in mollit nisi nulla tempor enim eu elit dolor laborum anim elit adipisicing in.
+            </p>
+          </a>
         </aside>
       </div>
+
+      <div class="container">
+        <h2>recent sigep pabb news</h2>
+        <!-- recent news -->
+        <div class="adaptive-fourth">
+          <p>
+            news block 1
+          </p>
+        </div>
+        <!-- recent news -->
+        <div class="adaptive-fourth">
+          <p>
+            news block 1
+          </p>
+        </div>
+        <!-- recent news -->
+        <div class="adaptive-fourth">
+          <p>
+            news block 1
+          </p>
+        </div>
+        <!-- recent news -->
+        <div class="adaptive-fourth">
+          <p>
+            news block 1
+          </p>
+        </div>
+      </div>
+
+      <!-- twitter section -->
+      <div class="container">
+        <div class="grid-whole">
+          <h1 class="text-center">twitter area</h1>
+        </div>
+      </div>
+
+      <!-- google maps -->
+      <div class="responsive-iframe-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x89c6c6523e563df7%3A0x2c9e3b2089cd7668!2s200+N+34th+St%2C+Philadelphia%2C+PA+19104!5e0!3m2!1sen!2sus!4v1389571341280" width="0" height="0" frameborder="0" style="border:0"></iframe>
+      </div>
+
     </main>
 
+    <!-- footer -->
     <footer>
+      <div class="container">
+        <!-- navigation -->
+        <div class="grid-third">
+          <p>
+            navigation
+          </p>
+        </div>
+        <!-- recent news -->
+        <div class="grid-third">
+          <p>
+            recent news
+          </p>
+        </div>
+        <!-- contact form -->
+        <div class="grid-third">
+          <p>
+            contact form
+          </p>
+        </div>
+      </div>
     </footer>
 
 
