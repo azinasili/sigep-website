@@ -271,7 +271,7 @@ table {
   clear: both;
 }
 
-.grid-full,
+.grid-whole,
 .grid-half,
 .grid-third,
 .grid-fourth,
@@ -290,7 +290,7 @@ table {
 }
 
 @media (min-width: 40em) {
-  .grid-full,
+  .grid-whole,
   .grid-half,
   .grid-third,
   .grid-fourth,
@@ -305,7 +305,7 @@ table {
     margin-right: 3.90625%;
   }
 
-  .grid-full:last-child,
+  .grid-whole:last-child,
   .grid-half:last-child,
   .grid-third:last-child,
   .grid-fourth:last-child,
@@ -482,11 +482,8 @@ table {
 
 @media (min-width: 60em) {
   .adaptive-fourth {
+    margin-right: 3.90625%;
     width: 22.07031%;
-  }
-
-  .adaptive-fourth:nth-child(4n) {
-    margin-right: 0;
   }
 }
 
@@ -564,13 +561,13 @@ p:last-child {
 }
 
 a {
-  color: #0088cc;
+  color: #cd363f;
   text-decoration: none;
   word-wrap: break-word;
 }
 
 a:hover {
-  color: #005580;
+  color: #92242b;
   text-decoration: underline;
 }
 
@@ -641,6 +638,7 @@ h6 {
   font-family: "Libre Baskerville" serif;
   line-height: 1.2;
   font-weight: normal;
+  text-transform: capitalize;
 }
 
 h1,
@@ -670,6 +668,7 @@ h6,
 
 h4,
 .h4 {
+  font-style: initial;
   text-transform: uppercase;
 }
 
@@ -689,12 +688,12 @@ sup {
 
 ::selection {
   color: white;
-  background: #0088cc;
+  background: #cd363f;
 }
 
 ::-moz-selection {
   color: white;
-  background: #0088cc;
+  background: #cd363f;
 }
 
 blockquote {
@@ -794,7 +793,34 @@ q:after {
   margin-right: 0;
 }
 
-.sub-nav-container {
+header {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+}
+
+.banner {
+  background: url("../img/banner.jpg") center center fixed;
+  background-size: cover;
+}
+
+.banner .container {
+  min-height: 700px;
+  position: relative;
+}
+
+.banner .headline {
+  color: white;
+  position: absolute;
+  top: 50%;
+  margin-top: -5em;
+}
+
+main {
+  padding: 4.6875em 0;
+}
+
+.container-sub-nav {
   background: #272727;
 }
 
@@ -816,15 +842,51 @@ q:after {
   left: 0;
 }
 
-.main-nav-container {
+.container-main-nav {
+  background: white;
   padding: 0.3125em 0;
 }
 
 .main-nav {
   margin-bottom: 0;
   font-size: 1em;
+  margin-top: 1.4375em;
 }
 
 .main-nav li {
   padding-left: 1.875em;
+}
+
+.logo img {
+  margin-right: 0.75em;
+}
+
+.logo h1 {
+  margin-top: 0.375em;
+}
+
+.brother-of-the-week {
+  background: #f3f3f3;
+  border: 1px solid #e6e6e6;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  padding: 0.9375em;
+}
+
+.brother-of-the-week p {
+  font-size: 0.8125em;
+}
+
+.brother-of-the-week:hover {
+  background: #f8f8f8;
+  border: 1px solid #e9e9e9;
+}
+
+.picture {
+  border-radius: 50%;
+}
+
+.blog-post {
+  background: wheat;
+  padding: 20px;
 }

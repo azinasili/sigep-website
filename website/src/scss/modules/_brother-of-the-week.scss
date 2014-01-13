@@ -1,0 +1,19 @@
+.brother-of-the-week {
+  background: lighten($color-black, 80);
+  border: em(1px) solid lighten($color-black, 75);
+  transition: all 0.3s ease-in-out;
+  @include em(padding, 15px);
+
+  p {
+    @include em(font-size, 13px);
+  }
+
+  &:hover {
+    background: lighten($color-black, 82);
+    border: em(1px) solid lighten($color-black, 76);
+  }
+}
+
+.picture {
+  border-radius: 50%;
+}

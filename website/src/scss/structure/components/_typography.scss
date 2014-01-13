@@ -172,6 +172,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $font-primary;
   line-height: 1.2;
   font-weight: normal;
+  text-transform: capitalize;
 }
 
 // Font sizes based on "Minor Third" type-scale.com
@@ -198,6 +199,7 @@ h4, h5, h6,
 
 h4,
 .h4 {
+  font-style: initial;
   text-transform: uppercase;
 }
 

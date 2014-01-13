@@ -1,13 +1,24 @@
-.main-nav-container {
+.container-main-nav {
+  background: $color-white;
   @include em(padding, 5px 0);
 }
 
 .main-nav {
   margin-bottom: 0;
   @include em(font-size, 16px);
+  @include em(margin-top, 23px);
 
   li {
     @include em(padding-left, 30px);
   }
 }
 
+.logo {
+  img {
+    @include em(margin-right, 12px);
+  }
+
+  h1 {
+    @include em(margin-top, 6px);
+  }
+}

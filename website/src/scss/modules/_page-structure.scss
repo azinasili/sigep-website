@@ -1,0 +1,31 @@
+// Fixed header styles
+header{
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+}
+
+// Banner styles
+// Need to calculate container min-height and banner background position
+// Both are determined by both navigation heights
+.banner{
+  background: url("../img/banner.jpg") center center fixed;
+  background-size: cover;
+
+  .container {
+    min-height: 700px;
+    position: relative;
+  }
+
+  .headline {
+    color: $color-white;
+    position: absolute;
+    top: 50%;
+    @include em(margin-top, -80px);
+  }
+}
+
+// Body styles
+main {
+  @include em(padding, 75px 0);
+}

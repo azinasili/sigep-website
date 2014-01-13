@@ -10,19 +10,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="assests/img/ico" href="">
+    <link rel="shortcut icon" type="assests/img/favicon/favicon.ico" href="">
 
     <!-- Apple Touch Icons -->
-    <link rel="apple-touch-icon" sizes="152x152" href="assests/img/apple-touch-icon-152.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assests/img/apple-touch-icon-144.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assests/img/apple-touch-icon-120.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assests/img/apple-touch-icon-114.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assests/img/apple-touch-icon-72.png">
-    <link rel="apple-touch-icon" href="assests/img/apple-touch-icon-57.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assests/img/apple-touch-icon/apple-touch-icon-152.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assests/img/apple-touch-icon/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assests/img/apple-touch-icon/apple-touch-icon-120.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assests/img/apple-touch-icon/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assests/img/apple-touch-icon/apple-touch-icon-72.png">
+    <link rel="apple-touch-icon" href="assests/img/apple-touch-icon/apple-touch-icon-57.png">
 
     <!-- MS Homescreen Icons -->
     <meta name="msapplication-TileColor" content="#0088cc">
-    <meta name="msapplication-TileImage" content="img/ms-touch-icon.png">
+    <meta name="msapplication-TileImage" content="assets/img/window-start-tile/ms-touch-icon.png">
 
     <!-- stylesheet -->
     <link href="assets/css/style.min.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -65,10 +65,10 @@
     <!-- fixed header -->
     <header>
       <!-- sub navigation -->
-      <div class="sub-nav-container">
+      <div class="container-sub-nav">
         <div class="container">
-          <nav class="grid-whole float-right">
-            <ul class="sub-nav list-unstyled">
+          <nav class="grid-whole">
+            <ul class="sub-nav list-unstyled float-right">
               <li class="inline-item"><a href="#">SigEp Nationals</a></li>
               <li class="inline-item"><a href="#">Sanguine et Purpure</a></li>
               <li class="inline-item"><a href="#">PABB Alumni</a></li>
@@ -77,17 +77,19 @@
         </div>
       </div>
       <!-- main nav -->
-      <div class="main-nav-container">
+      <div class="container-main-nav">
         <div class="container">
           <!-- logo -->
-          <div class="grid-half">
-            <a href="#">
+          <div class="grid-two-fifths">
+            <a href="#" class="logo group">
+              <img src="assets/img/logo.png" class="float-left" />
+              <h1>sigma phi epsilon</h1>
             </a>
           </div>
           <!-- navigation -->
-          <div class="grid-half">
+          <div class="grid-three-fifths">
             <nav>
-              <ul class="main-nav list-unstyled">
+              <ul class="main-nav list-unstyled text-right">
                 <li class="inline-item"><a href="#">about sigep</a></li>
                 <li class="inline-item"><a href="#">brothers</a></li>
                 <li class="inline-item"><a href="#">news</a></li>
@@ -102,8 +104,8 @@
 
     <!-- headline -->
     <div class="banner">
-      <div class="container">
-        <div class="grid-whole text-center">
+      <div class="container container-headline">
+        <div class="grid-whole text-center headline">
           <h1>some headline text</h1>
           <h4>some sub-headline text</h4>
         </div>
@@ -115,15 +117,15 @@
 
       <!-- about content -->
       <div class="container">
-        <div class="grid-three-fourths grid-two-thirds-small">
-          <h2>sigep pabb accomplishments</h2>
+        <div class="grid-two-thirds">
+          <h2>SigEp PABB accomplishments</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris urna, vestibulum vel molestie non, condimentum sit amet risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis varius nulla ut faucibus. Suspendisse velit leo, posuere sit amet nisl vitae, condimentum convallis sapien. Vivamus non bibendum risus, ac facilisis sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut ornare dolor erat, eget luctus eros porta non. Cras tellus erat, adipiscing a ipsum at, vehicula porta eros. Nullam porta auctor lectus non vulputate. Sed dignissim imperdiet est tempus ullamcorper. Sed ornare diam ac semper viverra. Aliquam blandit fringilla consectetur.
           </p>
 
           <!-- accomplishments -->
           <div class="container">
-            <div class="grid-third grid-whole-small">
+            <div class="grid-third grid-half-small">
               <strong>accomplishment</strong>
               <ul>
                 <li>lorem ipsum dolor sit</li>
@@ -133,7 +135,7 @@
                 <li>lorem ipsum dolor sit</li>
               </ul>
             </div>
-            <div class="grid-third grid-whole-small">
+            <div class="grid-third grid-half-small">
               <strong>accomplishment</strong>
               <ul>
                 <li>lorem ipsum dolor sit</li>
@@ -143,7 +145,7 @@
                 <li>lorem ipsum dolor sit</li>
               </ul>
             </div>
-            <div class="grid-third grid-whole-small">
+            <div class="grid-third grid-half-small">
               <strong>accomplishment</strong>
               <ul>
                 <li>lorem ipsum dolor sit</li>
@@ -157,44 +159,54 @@
         </div>
 
         <!-- brother of the week -->
-        <aside class="grid-fourth grid-third-small">
-          <a href="#" class="brother-of-the-week">
-            <div class="picture">
-              <img src="" />
-            </div>
-            <h3>persons name</h3>
+        <aside class="grid-third">
+          <div class="brother-of-the-week text-center">
+            <h4 class="">brother of the week</h4>
+            <img src="http://placekitten.com/200/200" class="picture" />
+            <h5>john goodman</h5>
             <p>
               Lorem ipsum Sint in ullamco ut sed ut irure fugiat nisi dolor dolor cillum id commodo eiusmod eiusmod fugiat in mollit nisi nulla tempor enim eu elit dolor laborum anim elit adipisicing in.
             </p>
-          </a>
+          </div>
         </aside>
       </div>
 
       <div class="container">
-        <h2>recent sigep pabb news</h2>
+        <h2>recent SigEp PABB news</h2>
         <!-- recent news -->
-        <div class="adaptive-fourth">
+        <a href="#" class="adaptive-fourth blog-post">
+          <img src="http://placekitten.com/200/200" class="picture" />
           <p>
             news block 1
           </p>
-        </div>
+        </a>
         <!-- recent news -->
-        <div class="adaptive-fourth">
+        <a href="#" class="adaptive-fourth blog-post">
+          <img src="http://placekitten.com/200/200" class="picture" />
           <p>
             news block 1
           </p>
-        </div>
+        </a>
         <!-- recent news -->
-        <div class="adaptive-fourth">
+        <a href="#" class="adaptive-fourth blog-post">
+          <img src="http://placekitten.com/200/200" class="picture" />
           <p>
             news block 1
           </p>
-        </div>
+        </a>
         <!-- recent news -->
-        <div class="adaptive-fourth">
+        <a href="#" class="adaptive-fourth blog-post">
+          <img src="http://placekitten.com/200/200" class="picture" />
           <p>
             news block 1
           </p>
+        </a>
+      </div>
+
+      <!-- calendar section -->
+      <div class="container">
+        <div class="grid-whole">
+          <h1 class="text-center">sigep events calendar area</h1>
         </div>
       </div>
 
@@ -205,16 +217,12 @@
         </div>
       </div>
 
-      <!-- google maps -->
-      <div class="responsive-iframe-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x89c6c6523e563df7%3A0x2c9e3b2089cd7668!2s200+N+34th+St%2C+Philadelphia%2C+PA+19104!5e0!3m2!1sen!2sus!4v1389571341280" width="0" height="0" frameborder="0" style="border:0"></iframe>
-      </div>
-
     </main>
 
     <!-- footer -->
     <footer>
       <div class="container">
+        <h1>footer</h1>
         <!-- navigation -->
         <div class="grid-third">
           <p>
@@ -235,6 +243,11 @@
         </div>
       </div>
     </footer>
+
+    <!-- google maps -->
+    <div class="responsive-iframe-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x89c6c6523e563df7%3A0x2c9e3b2089cd7668!2s200+N+34th+St%2C+Philadelphia%2C+PA+19104!5e0!3m2!1sen!2sus!4v1389571341280" width="0" height="0" frameborder="0" style="border:0"></iframe>
+    </div>
 
 
     <!-- Javascript -->

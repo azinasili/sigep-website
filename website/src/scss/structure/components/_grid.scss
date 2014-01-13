@@ -85,7 +85,7 @@ $grid-gutter: ($gutter/$container-max) * 100%;
 
 // Mobile first single-column grid
 // Grid enhances for larger displays
-.grid-full,
+.grid-whole,
 .grid-half,
 .grid-third,
 .grid-fourth,
@@ -289,12 +289,17 @@ $grid-gutter: ($gutter/$container-max) * 100%;
   }
 
   @media (min-width: $bp-large) {
+    margin-right: $grid-gutter;
     width: responsove-width(3, 4);
 
-    // remove margin on every 4rd instance
-    &:nth-child(4n) {
-      margin-right: 0;
-    }
+    // &:nth-child(2n) {
+    //   margin-right: $grid-gutter;
+    // }
+
+    // // remove margin on every 4rd instance
+    // &:nth-child(4n) {
+    //   margin-right: 0;
+    // }
   }
 }
 
