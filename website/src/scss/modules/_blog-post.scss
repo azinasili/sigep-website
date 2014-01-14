@@ -1,8 +1,4 @@
-.container-recent-news {
-  background: darken($color-white, 4%);
-  @include em(margin, 100px 0);
-  @include em(padding, 70px 0);
-}
+.container-recent-news {}
 
 .blog-post {
   background: $color-white;

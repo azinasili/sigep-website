@@ -249,8 +249,7 @@ table {
 
 .container {
   margin: 0 auto;
-  padding: 0 1.25em;
-  max-width: 1280px;
+  max-width: 1200px;
   width: 100%;
 }
 
@@ -302,7 +301,7 @@ table {
   .grid-two-fifths,
   .adaptive-fifth,
   .adaptive-fourth {
-    margin-right: 3.90625%;
+    margin-right: 4.16667%;
   }
 
   .grid-whole:last-child,
@@ -328,7 +327,7 @@ table {
   .grid-third-small,
   .grid-two-thirds-small,
   .grid-half-small {
-    margin-right: 3.90625%;
+    margin-right: 4.16667%;
     -webkit-transition: all, 0.4s, ease-in-out;
     transition: all, 0.4s, ease-in-out;
   }
@@ -343,7 +342,7 @@ table {
   }
 
   .grid-fifth-small {
-    width: 16.875%;
+    width: 16.66667%;
   }
 
   .grid-fifth-small:nth-child(5n) {
@@ -351,7 +350,7 @@ table {
   }
 
   .grid-fourth-small {
-    width: 22.07031%;
+    width: 21.875%;
   }
 
   .grid-fourth-small:nth-child(4n) {
@@ -359,11 +358,11 @@ table {
   }
 
   .grid-three-fourths-small {
-    width: 74.02344%;
+    width: 73.95833%;
   }
 
   .grid-third-small {
-    width: 30.72917%;
+    width: 30.55556%;
   }
 
   .grid-third-small:nth-child(3n) {
@@ -371,11 +370,11 @@ table {
   }
 
   .grid-two-thirds-small {
-    width: 65.36458%;
+    width: 65.27778%;
   }
 
   .grid-half-small {
-    width: 48.04688%;
+    width: 47.91667%;
   }
 
   .grid-half-small:nth-child(2n) {
@@ -385,7 +384,7 @@ table {
 
 @media (min-width: 40em) {
   .grid-fifth {
-    width: 16.875%;
+    width: 16.66667%;
   }
 
   .grid-fifth:nth-child(5n) {
@@ -393,19 +392,19 @@ table {
   }
 
   .grid-two-fifths {
-    width: 37.65625%;
+    width: 37.5%;
   }
 
   .grid-three-fifths {
-    width: 58.4375%;
+    width: 58.33333%;
   }
 
   .grid-four-fifths {
-    width: 79.21875%;
+    width: 79.16667%;
   }
 
   .grid-fourth {
-    width: 22.07031%;
+    width: 21.875%;
   }
 
   .grid-fourth:nth-child(4n) {
@@ -413,11 +412,11 @@ table {
   }
 
   .grid-three-fourths {
-    width: 74.02344%;
+    width: 73.95833%;
   }
 
   .grid-third {
-    width: 30.72917%;
+    width: 30.55556%;
   }
 
   .grid-third:nth-child(3n) {
@@ -425,11 +424,11 @@ table {
   }
 
   .grid-two-thirds {
-    width: 65.36458%;
+    width: 65.27778%;
   }
 
   .grid-half {
-    width: 48.04688%;
+    width: 47.91667%;
   }
 
   .grid-half:nth-child(2n) {
@@ -437,42 +436,42 @@ table {
   }
 
   .offset-fifth {
-    margin-left: 20.78125%;
+    margin-left: 20.83333%;
   }
 
   .offset-two-fifths {
-    margin-left: 41.5625%;
+    margin-left: 41.66667%;
   }
 
   .offset-three-fifths {
-    margin-left: 62.34375%;
+    margin-left: 62.5%;
   }
 
   .offset-fourth {
-    margin-left: 25.97656%;
+    margin-left: 26.04167%;
   }
 
   .offset-three-fourths {
-    margin-left: 77.92969%;
+    margin-left: 78.125%;
   }
 
   .offset-third {
-    margin-left: 34.63542%;
+    margin-left: 34.72222%;
   }
 
   .offset-two-thirds {
-    margin-left: 69.27083%;
+    margin-left: 69.44444%;
   }
 
   .offset-half {
-    margin-left: 51.95313%;
+    margin-left: 52.08333%;
   }
 }
 
 @media (min-width: 30em) and (max-width: 60em) {
   .adaptive-fourth {
-    margin-right: 3.90625%;
-    width: 48.04688%;
+    margin-right: 4.16667%;
+    width: 47.91667%;
   }
 
   .adaptive-fourth:nth-child(3n) {
@@ -482,23 +481,15 @@ table {
 
 @media (min-width: 60em) {
   .adaptive-fourth {
-    margin-right: 3.90625%;
-    width: 22.07031%;
-  }
-
-  .adaptive-fourth:nth-child(3n) {
-    margin-right: 3.90625%;
-  }
-
-  .adaptive-fourth:nth-child(5n) {
-    margin-right: 0;
+    margin-right: 4.16667%;
+    width: 21.875%;
   }
 }
 
 @media (min-width: 30em) and (max-width: 40em) {
   .adaptive-fifth {
-    margin-right: 3.90625%;
-    width: 48.04688%;
+    margin-right: 4.16667%;
+    width: 47.91667%;
   }
 
   .adaptive-fifth:nth-child(3n) {
@@ -508,7 +499,7 @@ table {
 
 @media (min-width: 40em) and (max-width: 60em) {
   .adaptive-fifth {
-    width: 30.72917%;
+    width: 30.55556%;
   }
 
   .adaptive-fifth:nth-child(4n) {
@@ -518,8 +509,8 @@ table {
 
 @media (min-width: 60em) {
   .adaptive-fifth {
-    margin-right: 3.90625%;
-    width: 16.875%;
+    margin-right: 4.16667%;
+    width: 16.66667%;
   }
 
   .adaptive-fifth:nth-child(6n) {
@@ -801,7 +792,7 @@ q:after {
 
 .grid-flip {
   float: right;
-  margin-left: 3.90625%;
+  margin-left: 4.16667%;
   margin-right: 0;
 }
 
@@ -824,7 +815,7 @@ header {
 }
 
 .banner .container {
-  min-height: 700px;
+  min-height: 650px;
   position: relative;
 }
 
@@ -832,11 +823,11 @@ header {
   color: white;
   position: absolute;
   top: 50%;
-  margin-top: -5em;
 }
 
-main {
-  padding: 4.6875em 0;
+.section {
+  padding-top: 6.25em;
+  padding-bottom: 6.25em;
 }
 
 .container-sub-nav {
@@ -878,7 +869,6 @@ main {
 
 .main-nav {
   margin-bottom: 0;
-  font-size: 1em;
   margin-top: 1.4375em;
 }
 
@@ -886,17 +876,23 @@ main {
   padding-left: 1.875em;
 }
 
+.main-nav li:first-child {
+  padding-left: 0;
+}
+
 .main-nav a {
-  border-bottom: 0 solid #cd363f;
+  border-bottom: 0.1875em solid;
+  border-color: rgba(255, 255, 255, 0);
   color: #161708;
   text-transform: capitalize;
-  -webkit-transition: color 0.3s ease-in-out, border-bottom 0.18s ease-in-out;
-  transition: color 0.3s ease-in-out, border-bottom 0.18s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out, border-color 0.2s ease-in-out;
+  transition: color 0.3s ease-in-out, border-color 0.2s ease-in-out;
   padding-bottom: 0.1875em;
 }
 
 .main-nav a:hover {
-  border-bottom: 0.1875em solid #cd363f;
+  border-bottom: 0.1875em solid;
+  border-color: #cd363f;
   color: #cd363f;
   text-decoration: none;
 }
@@ -944,12 +940,6 @@ main {
   to {
     -webkit-transform: translate(0, 0px);
   }
-}
-
-.container-recent-news {
-  background: whitesmoke;
-  margin: 6.25em 0;
-  padding: 4.375em 0;
 }
 
 .blog-post {

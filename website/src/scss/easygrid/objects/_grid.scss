@@ -54,7 +54,6 @@ $grid-gutter: ($gutter/$container-max) * 100%;
 // Container sets the maximum page width. Adjust as needed.
 .container {
   margin: 0 auto;
-  @include em(padding, 0 20px);
   @include responsive($responsive, $fluid);
 
   // Remove margins on child containers
@@ -291,15 +290,6 @@ $grid-gutter: ($gutter/$container-max) * 100%;
   @media (min-width: $bp-large) {
     margin-right: $grid-gutter;
     width: responsove-width(3, 4);
-
-    &:nth-child(3n) {
-      margin-right: $grid-gutter;
-    }
-
-    // // remove margin on every 4th instance
-    &:nth-child(5n) {
-      margin-right: 0;
-    }
   }
 }
 
