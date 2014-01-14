@@ -127,7 +127,7 @@ dl {
   margin-bottom: $spacing;
   @include em(margin-top, 0);
   @include em(margin-left, 0);
-  // @include em(padding-left, 17px);
+  @include em(padding-left, 17px);
 }
 
 ul {
@@ -173,6 +173,8 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   font-weight: normal;
   text-transform: capitalize;
+  @include em(margin, 0);
+  @include em(padding, 0);
 }
 
 // Font sizes based on "Minor Third" type-scale.com

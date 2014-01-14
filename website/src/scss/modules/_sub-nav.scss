@@ -1,5 +1,5 @@
 .container-sub-nav {
-  background: #272727;
+  background: $color-black;
 }
 
 .sub-nav {
@@ -13,8 +13,17 @@
 
     &:after {
       content: "/";
+      color: $color-white;
       position: absolute;
-      top: 0; left: 0;
+      top: 0; left: em(4px);
+    }
+
+    &:first-child:after {
+      content: " ";
+    }
+
+    a {
+      color: $color-white;
     }
   }
 }

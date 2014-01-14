@@ -5,11 +5,11 @@
 // ============================================================================
 
 // Reset and grid
-@import "components/normalize";
-@import "components/grid";
+@import "objects/normalize";
+@import "objects/grid";
 
 // Framework objects
-@import "components/typography";
+@import "objects/typography";
 
 // Grid overrides
-@import "components/overrides";
+@import "objects/overrides";

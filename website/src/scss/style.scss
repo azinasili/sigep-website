@@ -6,16 +6,19 @@
 //
 // ============================================================================
 
-// Compass includes
-// @import "compass/css3";
-
-// Settings for grid
+// Settings for website
 @import "config";
 @import "mixins";
 
-// Grid classes and overrides
-@import "structure/easygrid";
+// Easy Grid CSS framework
+@import "easygrid/easygrid";
 
+// Objects
+@import "objects/typography";
+
+// Components
+
+// Modules
 @import "modules/page-structure";
 @import "modules/sub-nav";
 @import "modules/main-nav";

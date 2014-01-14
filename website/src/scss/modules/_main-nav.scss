@@ -1,5 +1,6 @@
 .container-main-nav {
   background: $color-white;
+  border-bottom: em(3px) solid darken($color-white, 10%);
   @include em(padding, 5px 0);
 }
 
@@ -10,6 +11,20 @@
 
   li {
     @include em(padding-left, 30px);
+  }
+
+  a {
+    border-bottom: 0 solid $color-primary;
+    color: $color-black;
+    text-transform: capitalize;
+    transition: color 0.3s ease-in-out, border-bottom 0.18s ease-in-out;
+    @include em(padding-bottom, 3px);
+
+    &:hover {
+      border-bottom: em(3px) solid $color-primary;
+      color: $color-primary;
+      text-decoration: none;
+    }
   }
 }
 

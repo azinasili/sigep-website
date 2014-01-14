@@ -1,19 +1,27 @@
 .brother-of-the-week {
-  background: lighten($color-black, 80);
-  border: em(1px) solid lighten($color-black, 75);
-  transition: all 0.3s ease-in-out;
-  @include em(padding, 15px);
+  background: darken($color-white, 3%);
+  border: em(1px) solid darken($color-white, 10%);
+  position: relative;
+  @include em(padding, 30px 15px);
+
+  &:hover {
+    animation: float 3s infinite ease-in-out;
+    background: darken($color-white, 5%);
+    border: em(1px) solid darken($color-white, 12%);
+  }
 
   p {
     @include em(font-size, 13px);
-  }
-
-  &:hover {
-    background: lighten($color-black, 82);
-    border: em(1px) solid lighten($color-black, 76);
   }
 }
 
 .picture {
   border-radius: 50%;
+  @include em(margin, 20px 0);
+}
+
+@-webkit-keyframes float{
+  from {-webkit-transform:translate(0, 0px);}
+  65% {-webkit-transform:translate(0, -10px);}
+  to {-webkit-transform: translate(0, 0px);}
 }
