@@ -2524,7 +2524,7 @@ h4 {
 }
 
 header {
-  z-index: 1;
+  z-index: 3;
   position: fixed;
   width: 100%;
 }
@@ -2535,7 +2535,7 @@ header {
 }
 
 .banner .container {
-  min-height: 650px;
+  min-height: 575px;
   position: relative;
 }
 
@@ -2548,6 +2548,29 @@ header {
 .section {
   padding-top: 6.25em;
   padding-bottom: 6.25em;
+}
+
+.responsive-iframe-container {
+  position: relative;
+  padding-bottom: 36.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.responsive-iframe-container iframe,
+.vresponsive-iframe-container object,
+.vresponsive-iframe-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .container-sub-nav {
@@ -2700,12 +2723,38 @@ header {
   }
 }
 
-.blog-post {
-  background: white;
-  border-right: 1px solid #b3b3b3;
-  padding-right: 40px;
+@media (min-width: 30em) and (max-width: 60em) {
+  .blog-post {
+    margin-bottom: 50px;
+  }
 }
 
 .blog-post p {
-  font-size: 0.8125em;
+  font-size: 0.875em;
+}
+
+.dp-cur,
+.chip dt,
+.te,
+.te-t,
+.te-rev-s,
+.rb-n,
+.rb-i,
+.agenda,
+.event-title {
+  white-space: normal !important;
+}
+
+.st-bg {
+  background: black;
+}
+
+.st-bg-today {
+  background: yellow;
+  border-left: 1px solid yellow;
+  border-right: 1px solid yellow;
+}
+
+.st-dtitle {
+  background: white;
 }

@@ -1,11 +1,11 @@
 .container-recent-news {}
 
 .blog-post {
-  background: $color-white;
-  border-right: em(1px) solid darken($color-white, 30%);
-  padding-right: 40px;
+  @media (min-width: $bp-small) and (max-width: $bp-large) {
+    margin-bottom: $gutter;
+  }
 
   p {
-    @include em(font-size, 13px);
+    @include em(font-size, 14px);
   }
 }
