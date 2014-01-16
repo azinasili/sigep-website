@@ -1,5 +1,8 @@
 /*!
- * FireShell Gruntfile
+ * Azin Asili Gruntfile
+ * http://azinasili.com
+ *
+ * Based off of Fireshell
  * http://getfireshell.com
  * @author Todd Motto
  */

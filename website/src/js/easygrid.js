@@ -1,11 +1,3 @@
-/*!
- * sigep website
- * SigEp PABB Website
- * http://www.sigep-drexel.org
- * @author Azin Asili
- * @version 1.1.0
- * Copyright 2014. MIT licensed.
- */
 (function($) {
 
   $.fn.easyNav = function() {
@@ -43,12 +35,3 @@
   };
 
 }(jQuery));
-(function ($, window, document, undefined) {
-
-  'use strict';
-
-  $(function () {
-    // FireShell
-  });
-
-})(jQuery, window, document);

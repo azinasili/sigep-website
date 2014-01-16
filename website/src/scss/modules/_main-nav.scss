@@ -42,3 +42,42 @@
     @include em(margin-top, 6px);
   }
 }
+
+    .fa-bars {
+        color: #ebebeb;
+        cursor: pointer;
+        font-size: 0;
+        float: right;
+        position: relative;
+        top: 2.25rem;
+    }
+
+
+    @media screen and (max-width: 44rem) {
+        .fa-bars {
+            font-size: 1.5rem;
+        }
+
+        .main-nav {
+            background: #333333;
+            display: none;
+            position: absolute;
+            top: 6rem;
+            left: 0rem;
+            width: 100%;
+        }
+
+        .main-nav li {
+            display: block;
+            border-bottom: 1px solid black;
+            line-height: 5rem;
+            margin-left: 25px;
+        }
+
+        .main-nav li a {
+            color: #ebebeb;
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
+    }

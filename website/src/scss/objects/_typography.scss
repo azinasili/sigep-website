@@ -4,3 +4,7 @@ h2,
   margin-bottom: $spacing;
   @include em(padding-bottom, 5px);
 }
+
+h4 {
+  font-style: italic;
+}

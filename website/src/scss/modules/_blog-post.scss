@@ -2,9 +2,8 @@
 
 .blog-post {
   background: $color-white;
-  border: em(1px) solid darken($color-white, 30%);
-  border-radius: em(3px);
-  padding: 20px;
+  border-right: em(1px) solid darken($color-white, 30%);
+  padding-right: 40px;
 
   p {
     @include em(font-size, 13px);
