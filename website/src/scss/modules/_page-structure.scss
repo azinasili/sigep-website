@@ -1,15 +1,46 @@
 // Fixed header styles
 header{
-  z-index: 3;
+  z-index: 10;
   position: fixed;
   width: 100%;
+}
+
+main {
+  background: $color-white;
+  position: relative;
+  z-index: 4;
+}
+
+footer {
+  position: fixed;
+  bottom: 368px;
+  z-index: 1;
+  width: 100%;
+  background: $color-black;
+  color: $color-white;
+}
+
+.fixed-footer-space {
+  display: block;
+  min-height: 635px;
+  background: rgba(0, 0, 0, 0);
+}
+
+.map {
+  bottom: 0px;
+  left: 0px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
 // Banner styles
 // Need to calculate container min-height and banner background position
 // Both are determined by both navigation heights
 .banner{
-  background: url("../img/banner.jpg") center center fixed;
+  background: url("../img/banner.jpg") no-repeat center center fixed;
+  position: relative;
+  z-index: 2;
   background-size: cover;
 
   .container {
@@ -32,9 +63,7 @@ header{
 
 .responsive-iframe-container {
     position: relative;
-    padding-bottom: 36.25%;
-    padding-top: 30px;
-    height: 0;
+    padding-bottom: 25%;
     overflow: hidden;
 }
 
