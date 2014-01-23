@@ -16,8 +16,8 @@
 // Convert gutter from pixels to percents
 $grid-gutter: ($gutter/$container-max) * 100%;
 
-// Set width based on if grid is responsive or fluid
-@mixin responsive($responsive, $fluid) {
+// Set width based on if grid is responsive or full screen
+@mixin responsive($responsive, $full-screen) {
   // Check if grid will be responsive or fixed
   @if $responsive == on {
     max-width: $container-max;
@@ -28,7 +28,7 @@ $grid-gutter: ($gutter/$container-max) * 100%;
   }
 
   // Check if grid will be full screen
-  @if $fluid == on and $responsive == on {
+  @if $full-screen == on and $responsive == on {
     min-width: 100%;
   }
 }
@@ -38,6 +38,7 @@ $grid-gutter: ($gutter/$container-max) * 100%;
   $container-minus-gutter: ($container-max - ($gutter * $gutter-amount));
   @return (($container-minus-gutter / $columns) / $container-max) * 100%;
 }
+
 
 // ============================================================================
 // 2. Universal grid structure
@@ -54,13 +55,12 @@ $grid-gutter: ($gutter/$container-max) * 100%;
 // Container sets the maximum page width. Adjust as needed.
 .container {
   margin: 0 auto;
-  @include responsive($responsive, $fluid);
+  @include responsive($responsive, $full-screen);
 
   // Remove margins on child containers
   // Make sure to recognizes parent container width
   .container {
     margin: 0;
-    padding: 0;
     min-width: 100%;
     width: 100%;
   }
@@ -84,7 +84,7 @@ $grid-gutter: ($gutter/$container-max) * 100%;
 
 // Mobile first single-column grid
 // Grid enhances for larger displays
-.grid-whole,
+.grid-full,
 .grid-half,
 .grid-third,
 .grid-fourth,
@@ -98,7 +98,10 @@ $grid-gutter: ($gutter/$container-max) * 100%;
 .adaptive-fourth {
   float: left;
   width: 100%;
-  transition: all, 0.4s, ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+     -moz-transition: all 0.4s ease-in-out;
+       -o-transition: all 0.4s ease-in-out;
+          transition: all 0.4s ease-in-out;
 
   @media (min-width: $bp-medium) {
     margin-right: $grid-gutter;
@@ -112,22 +115,9 @@ $grid-gutter: ($gutter/$container-max) * 100%;
 
 // Small breakpoint ===========================================================
 @media (min-width: $bp-small) and (max-width: $bp-medium) {
-  .grid-fifth-small,
-  .grid-fourth-small,
-  .grid-three-fourths-small,
-  .grid-third-small,
-  .grid-two-thirds-small,
-  .grid-half-small {
-    margin-right: $grid-gutter;
-    transition: all, 0.4s, ease-in-out;
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-
   // Grid fifths
   .grid-fifth-small {
+    margin-right: $grid-gutter;
     width: responsove-width(4, 5);
 
     // remove gutter on every 4th instance
@@ -138,6 +128,7 @@ $grid-gutter: ($gutter/$container-max) * 100%;
 
   // Grid fourths
   .grid-fourth-small {
+    margin-right: $grid-gutter;
     width: responsove-width(3, 4);
 
     // remove gutter on every 4th instance
@@ -146,12 +137,9 @@ $grid-gutter: ($gutter/$container-max) * 100%;
     }
   }
 
-  .grid-three-fourths-small {
-    width: responsove-width(3, 4) * 3 + ($grid-gutter * 2); // magic equation
-  }
-
   // Grid thirds
   .grid-third-small {
+    margin-right: $grid-gutter;
     width: responsove-width(2, 3);
 
     // remove gutter on every 3rd instance
@@ -160,12 +148,9 @@ $grid-gutter: ($gutter/$container-max) * 100%;
     }
   }
 
-  .grid-two-thirds-small {
-    width: responsove-width(2, 3) * 2 + $grid-gutter; // magic equation
-  }
-
   // Grid halves
   .grid-half-small {
+    margin-right: $grid-gutter;
     width: responsove-width(1, 2);
 
     // remove margin on every 2nd instance
@@ -189,7 +174,7 @@ $grid-gutter: ($gutter/$container-max) * 100%;
   }
 
   .grid-two-fifths {
-    width: responsove-width(4, 5) * 2 + ($grid-gutter); // magic equation
+    width: responsove-width(4, 5) * 2 + $grid-gutter; // magic equation
   }
 
   .grid-three-fifths {
@@ -281,15 +266,19 @@ $grid-gutter: ($gutter/$container-max) * 100%;
     margin-right: $grid-gutter;
     width: responsove-width(1, 2);
 
-    // remove margin on every 2nd instance
-    &:nth-child(3n) {
+    // remove margin on every 2rd instance
+    &:nth-child(2n) {
       margin-right: 0;
     }
   }
 
   @media (min-width: $bp-large) {
-    margin-right: $grid-gutter;
     width: responsove-width(3, 4);
+
+    // remove margin on every 4rd instance
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
   }
 }
 
@@ -300,7 +289,7 @@ $grid-gutter: ($gutter/$container-max) * 100%;
     width: responsove-width(1, 2);
 
     // remove margin on every 2nd instance
-    &:nth-child(3n) {
+    &:nth-child(2n) {
       margin-right: 0;
     }
   }
@@ -309,17 +298,16 @@ $grid-gutter: ($gutter/$container-max) * 100%;
     width: responsove-width(2, 3);
 
     // remove margin on every 3rd instance
-    &:nth-child(4n) {
+    &:nth-child(3n) {
       margin-right: 0;
     }
   }
 
   @media (min-width: $bp-large) {
-    margin-right: $grid-gutter;
     width: responsove-width(4, 5);
 
-    // remove margin on every 5th instance
-    &:nth-child(6n) {
+    // remove margin on every 5rd instance
+    &:nth-child(5n) {
       margin-right: 0;
     }
   }

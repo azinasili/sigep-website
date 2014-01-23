@@ -1,8 +1,10 @@
 // ============================================================================
 //
-// EASY GRID
-// Simple grid to kick start any project
-// Grid can easily be configured to suit your project
+// SIGEP PABB
+// Authored by:
+// Azin Asili | @azinasili | azinasili.com
+//
+// Please make sure to view the README.md file before continuing.
 //
 // ============================================================================
 
@@ -10,14 +12,15 @@
 @import "config";
 @import "mixins";
 
-// Easy Grid CSS framework
-@import "easygrid/easygrid";
-@import "easygrid/font-awesome";
+// Launchpad CSS framework
+@import "launchpad/normalize";
+@import "launchpad/grid";
+@import "launchpad/font-awesome";
+@import "launchpad/typography";
+@import "launchpad/overrides";
 
 // Objects
 @import "objects/typography";
-
-// Components
 
 // Modules
 @import "modules/page-structure";
@@ -26,4 +29,3 @@
 @import "modules/brother-of-the-week";
 @import "modules/blog-post";
 @import "modules/custom_calendar";
-

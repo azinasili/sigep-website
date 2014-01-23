@@ -10,6 +10,34 @@
 .text-right                   { text-align: right; }
 .text-left                    { text-align: left; }
 
+// Inline hyperlink styles
+.inline-link {
+  @include em(margin-right, 15px);
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  // Add slight margin when using text links
+  // and font-awesome icons
+  &.fa {
+    @include em(margin-right, 3px);
+  }
+}
+
+// Removes list styling.
+// For semantic reasons, should only
+// be used on unordered lists.
+.list-unstyled {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+// Inline block list items
+.inline-item {
+  display: inline-block;
+}
 
 // Floats
 .float-left                   { float: left; }
