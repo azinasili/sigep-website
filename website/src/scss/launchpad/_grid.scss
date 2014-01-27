@@ -267,7 +267,7 @@ $grid-gutter: ($gutter/$container-max) * 100%;
     width: responsove-width(1, 2);
 
     // remove margin on every 2rd instance
-    &:nth-child(2n) {
+    &:nth-child(3n) {
       margin-right: 0;
     }
   }
@@ -276,7 +276,7 @@ $grid-gutter: ($gutter/$container-max) * 100%;
     width: responsove-width(3, 4);
 
     // remove margin on every 4rd instance
-    &:nth-child(4n) {
+    &:nth-child(5n) {
       margin-right: 0;
     }
   }

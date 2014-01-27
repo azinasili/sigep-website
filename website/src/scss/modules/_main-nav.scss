@@ -34,7 +34,16 @@
 }
 
 .logo {
+  text-transform: capitalize;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    text-decoration: none;
+    color: lighten($color-primary, 5%);
+  }
+
   img {
+    transition: all .5s ease-in-out;
     @include em(margin-right, 12px);
   }
 
@@ -54,30 +63,30 @@
 
 
     @media screen and (max-width: 44rem) {
-        .fa-bars {
-            font-size: 1.5rem;
-        }
+      .fa-bars {
+          font-size: 1.5rem;
+      }
 
-        .main-nav {
-            background: #333333;
-            display: none;
-            position: absolute;
-            top: 6rem;
-            left: 0rem;
-            width: 100%;
-        }
+      .main-nav {
+          background: #333333;
+          display: none;
+          position: absolute;
+          top: 6rem;
+          left: 0rem;
+          width: 100%;
+      }
 
-        .main-nav li {
-            display: block;
-            border-bottom: 1px solid black;
-            line-height: 5rem;
-            margin-left: 25px;
-        }
+      .main-nav li {
+          display: block;
+          border-bottom: 1px solid black;
+          line-height: 5rem;
+          margin-left: 25px;
+      }
 
-        .main-nav li a {
-            color: #ebebeb;
-            display: block;
-            height: 100%;
-            width: 100%;
-        }
+      .main-nav li a {
+          color: #ebebeb;
+          display: block;
+          height: 100%;
+          width: 100%;
+      }
     }

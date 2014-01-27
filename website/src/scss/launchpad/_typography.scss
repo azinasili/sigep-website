@@ -23,6 +23,7 @@ body {
   color: $color-black;
   font-family: $font-secondary;
   font-size: $font-base;
+  font-weight: 500;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 
@@ -151,7 +152,7 @@ dt {
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-primary;
   line-height: 1.2;
-  font-weight: normal;
+  font-weight: 400;
   @include em(margin, 0 0 10px);
 }
 
@@ -193,7 +194,7 @@ hr {
   border: 0;
   border-top: em(1px) solid $color-gray-light;
   border-bottom: 0 solid $color-white;
-  margin: em(32px) auto;
+  margin: em(16px) auto;
 }
 
 // Subscript & Superscript

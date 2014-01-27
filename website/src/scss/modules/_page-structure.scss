@@ -1,50 +1,50 @@
 // Fixed header styles
-header{
-  z-index: 10;
-  position: fixed;
-  width: 100%;
-}
+// header{
+//   z-index: 10;
+//   position: fixed;
+//   width: 100%;
+// }
 
-main {
-  background: $color-white;
-  position: relative;
-  z-index: 4;
-}
+// main {
+//   background: $color-white;
+//   position: relative;
+//   z-index: 4;
+// }
 
-footer {
-  position: fixed;
-  bottom: 368px;
-  z-index: 1;
-  width: 100%;
-  background: $color-black;
-  color: $color-white;
-}
+// footer {
+//   position: fixed;
+//   bottom: 368px;
+//   z-index: 1;
+//   width: 100%;
+//   background: $color-black;
+//   color: $color-white;
+// }
 
-.fixed-footer-space {
-  display: block;
-  min-height: 635px;
-  background: rgba(0, 0, 0, 0);
-}
+// .fixed-footer-space {
+//   display: block;
+//   min-height: 635px;
+//   background: rgba(0, 0, 0, 0);
+// }
 
-.map {
-  bottom: 0px;
-  left: 0px;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-}
+// .map {
+//   bottom: 0px;
+//   left: 0px;
+//   position: fixed;
+//   width: 100%;
+//   z-index: 1;
+// }
 
 // Banner styles
 // Need to calculate container min-height and banner background position
 // Both are determined by both navigation heights
 .banner{
-  background: url("../img/banner.jpg") no-repeat center center fixed;
+  background: url("../img/banner.jpg") no-repeat center -150px fixed;
   position: relative;
   z-index: 2;
   background-size: cover;
 
   .container {
-    min-height: 575px;
+    min-height: 400px;
     position: relative;
   }
 
@@ -57,25 +57,25 @@ footer {
 
 // Body styles
 .section {
-  @include em(padding-top, 100px);
-  @include em(padding-bottom, 100px);
+  @include em(padding-top, 75px);
+  @include em(padding-bottom, 75px);
 }
 
-.responsive-iframe-container {
-    position: relative;
-    padding-bottom: 25%;
-    overflow: hidden;
-}
+// .responsive-iframe-container {
+//     position: relative;
+//     padding-bottom: 25%;
+//     overflow: hidden;
+// }
 
-.responsive-iframe-container iframe,
-.vresponsive-iframe-container object,
-.vresponsive-iframe-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
+// .responsive-iframe-container iframe,
+// .vresponsive-iframe-container object,
+// .vresponsive-iframe-container embed {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+// }
 
 img {
   max-width: 100%;
