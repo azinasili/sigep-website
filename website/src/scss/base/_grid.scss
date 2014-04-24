@@ -42,7 +42,7 @@ $grid-gutter: percentage($gutter/$container-max);
 // Container sets the maximum page width. Adjust as needed.
 @mixin container($nested: "") {
   @if $nested == "" {
-    @extend %clearfix;
+    @extend .clearfix;
     @include responsive($responsive, $full-screen);
     margin-right: auto;
     margin-left: auto;
@@ -51,7 +51,7 @@ $grid-gutter: percentage($gutter/$container-max);
   @else if $nested == "nested" {
     // Remove margins on child containers
     // Make sure to recognizes parent container width
-    @extend %clearfix;
+    @extend .clearfix;
     margin-left: -($grid-gutter);
   }
 }
