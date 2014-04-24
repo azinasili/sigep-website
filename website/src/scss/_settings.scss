@@ -1,0 +1,48 @@
+// ----------------------------------------------------------------------------
+// Framework and Theme Settings
+// Settings file sets the grid, sizings, font, and colors
+// ----------------------------------------------------------------------------
+
+// Adjust grid system ---------------------------------------------------------
+
+// Set grid to responsive and or full screen
+// Variables accept yes or no
+$responsive                   : yes;
+$full-screen                  : no;
+
+// Grid Sizing
+// Variables accept em, px, or % values
+// Container-max 100% = 1600px
+$font-base                    : 90%;
+$spacing                      : 1.125em;
+$container-max                : 1140px;
+$width-max                    : 98%; // Recommended value
+$gutter                       : 24px;
+
+// Responsive Breakpoints
+// Accepts em or px values
+$bp-xsmall                    : 20em; // 320px
+$bp-small                     : 30em; // 480px
+$bp-medium                    : 40em; // 640px
+$bp-large                     : 60em; // 960px
+$bp-xlarge                    : 80em; // 1280px
+
+
+// Theme Font settings --------------------------------------------------------
+$font-primary                 : "Merriweather Sans", serif;
+$font-secondary               : "Bitter", sans-serif;
+$font-monospace               : monospace, serif;
+
+
+// Theme color swatches -------------------------------------------------------
+$color-primary                : #cd363f;
+$color-black                  : #272727;
+$color-white                  : #ffffff;
+
+$color-success                : #47BA16; // Green
+$color-danger                 : #F54049; // Red
+$color-warning                : #dba909; // Yellow
+$color-code                   : #dd1144;
+
+$color-gray-dark              : #808080;
+$color-gray-light             : #dbdbdb;

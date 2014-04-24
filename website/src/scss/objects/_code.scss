@@ -1,0 +1,37 @@
+// ----------------------------------------------------------------------------
+// Code
+// Styling for code and pre-formatted text.
+// ----------------------------------------------------------------------------
+
+// Basic structure for pre, code elements
+code,
+pre {
+  @include em(border-radius, 1px);
+  @include em(font-size, 14px);
+}
+
+// Style code
+code {
+  @include em(padding, 4px);
+  background: lighten($color-gray-light, 6%);
+  color: $color-code;
+}
+
+// Set default Pre block
+pre {
+  @include em(padding, 13px);
+  background: lighten($color-gray-light, 6%);
+  display: block;
+  line-height: 1.5;
+  margin-bottom: $spacing;
+  word-break: break-all;
+  -moz-tab-size: 2;
+    -o-tab-size: 2;
+       tab-size: 2;
+}
+
+// Adjust code in pre
+pre code {
+  border: 0;
+  font-size: 1em;
+}

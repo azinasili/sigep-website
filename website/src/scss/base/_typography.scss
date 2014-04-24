@@ -1,0 +1,246 @@
+// ----------------------------------------------------------------------------
+// Typography
+// Set all text styles.
+//
+// 1. Basic styling
+// 2. Text modifiers
+// 3. Hyperlinks
+// 4. Lists
+// 5. Headings
+// 6. Misc
+// 7. Selections
+// 8. Quotes
+//
+// ----------------------------------------------------------------------------
+
+// ----------------------------------------------------------------------------
+// 1. Basic styling
+// ----------------------------------------------------------------------------
+body {
+  background: $color-white;
+  color: $color-black;
+  font-family: $font-primary;
+  font-size: $font-base;
+  line-height: 1.5;
+}
+
+p {
+  margin-bottom: $spacing;
+}
+
+@media (min-width: $bp-medium) {
+  body {
+    line-height: 1.5625;
+  }
+}
+
+
+// ----------------------------------------------------------------------------
+// 2. Text modifiers
+// ----------------------------------------------------------------------------
+.text-small {
+  @include em(font-size, 15px);
+}
+
+.text-tall {
+  @include em(font-size, 19px);
+  line-height: 1.4;
+}
+
+@media (min-width: $bp-medium) {
+  .text-tall {
+    @include em(font-size, 21px);
+  }
+}
+
+.text-muted {
+  color: $color-gray-dark;
+}
+
+
+// ----------------------------------------------------------------------------
+// 3. Hyperlinks
+// ----------------------------------------------------------------------------
+
+// Basic hyperlink styles
+a {
+  color: $color-primary;
+  text-decoration: none;
+  word-wrap: break-word;
+
+  &:hover {
+    color: darken($color-primary, 15%);
+    text-decoration: none;
+  }
+}
+
+// Image wrapped in a link
+a img {
+  background: none;
+  border: none;
+}
+
+// Prevents border/background on linked image hover.
+// Adds slight opacity.
+a:hover img {
+  background: none;
+  border: none;
+  filter: alpha(opacity=80);
+  opacity: 0.8;
+}
+
+
+// ----------------------------------------------------------------------------
+// 4. Lists
+// ----------------------------------------------------------------------------
+
+// Basic list structure
+ul,
+ol,
+dl {
+  margin-bottom: $spacing;
+}
+
+// Remove last margin on group
+// of lists
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0;
+}
+
+// Set default list style
+ul { list-style: disc; @include em(padding-left, 16px);}
+ol { list-style: decimal; }
+dl { margin-left: 0; }
+dt { font-weight: bold; }
+
+// Remove definition margin
+dd { margin-left: 0; }
+
+// Removes list styling.
+// For semantic reasons, should only
+// be used on unordered lists.
+.list-unstyled {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+
+// ----------------------------------------------------------------------------
+// 5. Headings
+// ----------------------------------------------------------------------------
+
+// h1 through h6 styling
+// Heading class lets you use one heading type for semantics
+// but style it as another heading type.
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  font-weight: normal;
+  font-family: $font-secondary;
+  margin-top: 0;
+  margin-bottom: 1em;
+  word-wrap: break-word;
+}
+
+h1,
+.h1 {
+  @include em(font-size, 24px);
+}
+
+h2,
+.h2 {
+  @include em(font-size, 21px);
+}
+
+h3,
+.h3 {
+  @include em(font-size, 19px);
+}
+
+h4, h5,
+.h4, .h5 {
+  font-style: italic;
+  @include em(font-size, 15px);
+}
+
+h4,
+.h4 {
+  text-transform: uppercase;
+}
+
+h6,
+.h6 {
+  @include em(font-size, 12px);
+}
+
+@media (min-width: $bp-medium) {
+  h1,
+  .h1 {
+    @include em(font-size, 28px);
+  }
+}
+
+
+// ----------------------------------------------------------------------------
+// 6. Misc
+// ----------------------------------------------------------------------------
+
+// Lines
+hr {
+  border: 0;
+  border-top: em(1px) solid $color-gray-light;
+  margin: 2em auto;
+}
+
+// Italics
+em {
+  font-style: italic;
+}
+
+// Subscript & Superscript
+sub,
+sup {
+  @include em(margin-left, 4px);
+  font-weight: bold;
+}
+
+
+// ----------------------------------------------------------------------------
+// 7. Selections
+// ----------------------------------------------------------------------------
+::selection {
+  background: $color-primary;
+  color: $color-white;
+}
+
+::-moz-selection {
+  background: $color-primary;
+  color: $color-white;
+}
+
+
+// ----------------------------------------------------------------------------
+// 8. Quotes
+// ----------------------------------------------------------------------------
+blockquote {
+  border-left: em(4px) solid $color-gray-light;
+  margin-bottom: $spacing;
+  margin-left: $spacing;
+  padding-right: $spacing;
+  padding-left: $spacing;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+  content: none;
+}

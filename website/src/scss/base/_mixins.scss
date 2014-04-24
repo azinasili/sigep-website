@@ -1,0 +1,172 @@
+// ----------------------------------------------------------------------------
+// Mixins and Functions
+// Simple helpers to write CSS easier.
+//
+// 1. Create px font-size value based on percents
+// 2. Inline px to em conversion
+// 3. Px to em conversion tool
+// 4. CSS triangles
+//
+// ----------------------------------------------------------------------------
+
+// ----------------------------------------------------------------------------
+// 1. Create px font-size value based on percents
+// ----------------------------------------------------------------------------
+
+// Check font-base unit then calculate output to percent
+@if unit($font-base) == '%' {
+  $font-base: $font-base !global;
+}
+@else if unit($font-base) == 'px' {
+  $font-base: (100% * $font-base) / 16px !global;
+}
+@else if unit($font-base) == 'em' {
+  $em-to-px: ($font-base / ($font-base * 0 + 1)) * 1px;
+  $font-base: round((100% * ($em-to-px * 16)) / 16px) !global;
+}
+
+// Check container-max unit then calculate output to pixels
+@if unit($container-max) == '%' {
+  $container-max: round((($container-max * 16px) / 100%) * 100) !global;
+}
+@else if unit($container-max) == 'px' {
+  $container-max: $container-max !global;
+}
+@else if unit($container-max) == 'em' {
+  $em-to-px: ($container-max / ($container-max * 0 + 1)) * 1px;
+  $container-max: $em-to-px * 16 !global;
+}
+
+// Check width-max unit then calculate output to percent
+@if unit($width-max) == '%' {
+  $width-max: $width-max !global;
+}
+@else if unit($width-max) == 'px' {
+  $width-max: round((($width-max * 16px) / 100%) * 100) !global;
+}
+@else if unit($width-max) == 'em' {
+  $em-to-px: ($container-max / ($width-max * 0 + 1)) * 1px;
+  $width-max: $em-to-px * 16 !global;
+}
+
+// Check gutter unit then calculate output to pixels
+@if unit($gutter) == '%' {
+  $gutter: round((($gutter * 16px) / 100%) * 100) !global;
+}
+@else if unit($gutter) == 'px' {
+  $gutter: $gutter !global;
+}
+@else if unit($gutter) == 'em' {
+  $em-to-px: ($gutter / ($gutter * 0 + 1)) * 1px;
+  $gutter: $em-to-px * 16 !global;
+}
+
+
+// ----------------------------------------------------------------------------
+// 2. Inline px to em conversion
+// ----------------------------------------------------------------------------
+
+// Strip units from values
+@function strip-unit($num) {
+  @return $num / ($num * 0 + 1);
+}
+
+// Calculate ems from pixels
+@function em($px, $base: 16) {
+  $px: strip-unit($px);
+  $base: strip-unit($base);
+  @if $px == 1 {
+    @return 1px;
+  }
+  @return ($px / $base) * 1em;
+}
+
+
+// ----------------------------------------------------------------------------
+// 3. Px to em conversion tool
+// ----------------------------------------------------------------------------
+
+// Used as an include
+// Accepts any property with dimension value
+@mixin em($property, $values) {
+  // Create a couple of empty lists as output buffers.
+  $font-size: 16px;
+  $em-values: ();
+
+  // Loop through the $values list
+  @each $value in $values {
+    // For each property value, if it's in rem or px, derive both rem and
+    // px values for it and add those to the end of the appropriate buffer.
+    // Ensure all pixel values are rounded to the nearest pixel.
+    @if $value == 0 or $value == 0px {
+      // 0 -- use it without a unit
+      $em-values: join($em-values, 0);
+    } @else if type-of($value) == number and not unitless($value) and (unit($value) == 'px') {
+      // px value given - calculate em value from font-size
+      $new-em-value: $value / $font-size;
+      $em-values: join($em-values, #{$new-em-value}em);
+    } @else if type-of($value) == number and not unitless($value) and (unit($value) == "%") {
+      // % value given - don't add px or em
+      $em-values: join($em-values, #{$value});
+    } @else if $value == auto {
+      // auto - don't add px or em
+      $em-values: join($em-values, auto);
+    } @else {
+      // unitless value - use those directly as em and calculate the px-fallback
+      $em-values: join($em-values, #{$value}em);
+    }
+  }
+
+  // output the converted rules
+  #{$property}: $em-values;
+}
+
+
+// ----------------------------------------------------------------------------
+// 4. CSS triangles
+// ----------------------------------------------------------------------------
+
+// Mixin to easily create triangles
+// $direction accepts up, down, left, right, top-right, top-left, bottom-right, bottom-left
+// $size accepts px, em, and rem values
+// $color accepts hex, rgb(a), and hsl values
+@mixin triangle($direction, $size, $color) {
+	border: $size solid transparent;
+
+  // displays triangle pointing down
+  @if $direction == bottom {
+    border-top: $size solid $color;
+  }
+  // displays triangle pointing left
+  @else if $direction == left {
+    border-right: $size solid $color;
+  }
+  // displays triangle pointing up
+  @else if $direction == top {
+    border-bottom: $size solid $color;
+  }
+  // displays triangle pointing right
+  @else if $direction == right {
+    border-left: $size solid $color;
+  }
+  // displays triangle pointing top left
+  @else if $direction == top-left {
+    border-top: $size solid $color;
+    border-left: $size solid $color;
+  }
+  // displays triangle pointing top right
+  @else if $direction == top-right {
+    border-top: $size solid $color;
+    border-right: $size solid $color;
+  }
+  // displays triangle pointing bottom right
+  @else if $direction == bottom-right {
+    border-right: $size solid $color;
+    border-bottom: $size solid $color;
+  }
+  // displays triangle pointing bottom left
+  @else if $direction == bottom-left {
+    border-bottom: $size solid $color;
+    border-left: $size solid $color;
+  }
+}

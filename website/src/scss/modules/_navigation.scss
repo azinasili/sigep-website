@@ -1,0 +1,36 @@
+.navigation {
+  @include em(padding-top, 15px);
+}
+
+.navigation-main {
+  @extend %list-unstyled;
+  text-align: center;
+
+  @media (min-width: $bp-medium) {
+    text-align: right;
+  }
+}
+
+.navigation-item {
+  @extend %inline-item;
+  @include em(margin, 10px 15px);
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.logo {
+  @extend %no-margin;
+  text-transform: capitalize;
+
+  &::before {
+    @include em(margin-right, 10px);
+    content: "";
+    background: url("../img/logo.png") no-repeat center center;
+    display: inline-block;
+    height: 65px;
+    width: 65px;
+    vertical-align: middle;
+  }
+}

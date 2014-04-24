@@ -1,0 +1,69 @@
+// ----------------------------------------------------------------------------
+// Alignment, Spacing, and Visibility
+// Override default text, floats and spacing.
+//
+// 1. Text override
+// 2. Floats
+// 3. Spacing
+//
+// ----------------------------------------------------------------------------
+
+// ----------------------------------------------------------------------------
+// 1. Text override
+// ----------------------------------------------------------------------------
+
+// Text alignment
+%text-center               { text-align: center; }
+%text-right                { text-align: right; }
+%text-left                 { text-align: left; }
+
+// Text manipulation
+%text-replace              { text-indent: 100%; overflow: hidden; white-space: nowrap; }
+%truncate                  { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+%text-capitalize           { text-transform: capitalize; }
+
+// Remove list styling.
+%list-unstyled             { list-style: none; margin: 0; padding: 0; }
+
+// Inline block items
+%inline-item               { display: inline-block; }
+
+// Inline hyperlink styles
+%inline-link {
+    @include em(margin-right, 15px);
+
+    // Remove margin on last item
+    &:last-of-type {
+        margin-right: 0;
+    }
+}
+
+
+// ----------------------------------------------------------------------------
+// 2. Floats
+// ----------------------------------------------------------------------------
+%float-left                { float: left; }
+%float-center              { float: none; margin-left: auto !important; margin-right: auto !important; }
+%float-right               { float: right; }
+
+
+// ----------------------------------------------------------------------------
+// 3. Spacing
+// ----------------------------------------------------------------------------
+
+// Padding space --------------------------------------------------------------
+%padding-sm                { @include em(padding, 10px 20px); }
+%padding-md                { @include em(padding, 15px 20px); }
+%padding-lg                { @include em(padding, 30px 20px); }
+%no-padding                { padding: 0; }
+%no-padding-horz           { padding-right: 0; padding-left: 0; }
+%no-padding-vert           { padding-top: 0; padding-bottom: 0; }
+
+
+// Margin spacing -------------------------------------------------------------
+%margin-sm                 { @include em(margin, 10px 20px); }
+%margin-md                 { @include em(margin, 15px 20px); }
+%margin-lg                 { @include em(margin, 30px 20px); }
+%no-margin                 { margin: 0; }
+%no-margin-horz            { margin-right: 0; margin-left: 0; }
+%no-margin-vert            { margin-top: 0; margin-bottom: 0; }

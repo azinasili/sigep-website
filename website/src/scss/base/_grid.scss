@@ -1,0 +1,265 @@
+// ----------------------------------------------------------------------------
+// Grid
+// Structure and layout.
+//
+// 1. Set up
+// 2. Grid mixins
+// 3. Common grid styles
+// 4. Grid classes
+//
+// ----------------------------------------------------------------------------
+
+// ----------------------------------------------------------------------------
+// 1. Set up
+// ----------------------------------------------------------------------------
+
+// Convert gutter from pixels to percents
+$grid-gutter: percentage($gutter/$container-max);
+
+// Set application width based on if grid is responsive or fluid
+@mixin responsive($responsive, $full-screen) {
+  // Check if grid will be responsive or fixed
+  @if $responsive == "yes" {
+    max-width: $container-max;
+  }
+  @else if $responsive == "no"  {
+    min-width: $container-max;
+    width: $container-max;
+  }
+
+  // Check if grid will be full screen
+  @if $responsive == "yes" and $full-screen == "yes" {
+    min-width: 100%;
+  }
+}
+
+
+// ----------------------------------------------------------------------------
+// 2. Grid mixins
+// ----------------------------------------------------------------------------
+
+// Mobile-first. Single-column layout by default
+// Container sets the maximum page width. Adjust as needed.
+@mixin container($nested: "") {
+  @if $nested == "" {
+    @extend %clearfix;
+    @include responsive($responsive, $full-screen);
+    margin-right: auto;
+    margin-left: auto;
+    width: $width-max;
+  }
+  @else if $nested == "nested" {
+    // Remove margins on child containers
+    // Make sure to recognizes parent container width
+    @extend %clearfix;
+    margin-left: -($grid-gutter);
+  }
+}
+
+
+// Mixin to set column widths
+@mixin column($numerator, $denominator, $margin: "") {
+  // Calculate total space gutters accumulate
+  // Set width with gutters
+  $totalgutter: $grid-gutter * $denominator;
+  $width: (100% - $totalgutter) * ($numerator / $denominator);
+
+  @if $denominator - $numerator == 1 {
+    $leftover: $denominator - $numerator;
+    $extragutter: $numerator - $leftover;
+    $egl: $extragutter * $grid-gutter;
+    width: $width + $egl;
+  }
+  @else if $numerator > 1 and $numerator < $denominator {
+    width: percentage($numerator / $denominator) - $grid-gutter;
+  }
+  @else {
+    width: $width;
+  }
+
+  @if $margin == "collapse" {
+    margin-left: 0;
+    width: percentage($numerator / $denominator);
+  }
+}
+
+// Mixin to push/pull columns on grid
+// @mixin offset($numerator, $denominator) {
+//   // Calculate total space gutters accumulate
+//   // Set width with gutters
+//   $totalgutter: $grid-gutter * ($denominator - 1);
+//   $width: (100% - $totalgutter) * ($numerator / $denominator);
+
+//   // Check to see if width is greater
+//   // than one column, calculate width
+//   @if $numerator > 1 and $numerator < $denominator {
+//     $leftover: $denominator - $numerator;
+//     $extragutter: $numerator - $leftover;
+//     $egl: $extragutter * $grid-gutter;
+//     margin-left: $width + $egl + $grid-gutter !important;
+//   }
+//   @else {
+//     margin-left: $width + $grid-gutter !important;
+//   }
+// }
+
+
+// Clear or reset columns
+// Use with media queries
+@mixin clear($column, $reset: "") {
+  @if $reset == "clear" {
+    &:nth-of-type(#{$column}n+1) {
+      margin-left: 0;
+    }
+  }
+  @else if $reset == "reset" {
+    &:nth-of-type(#{$column}n+1) {
+      margin-left: $grid-gutter;
+    }
+  }
+}
+
+
+// ----------------------------------------------------------------------------
+// 3. Common grid styles
+// ----------------------------------------------------------------------------
+
+// Set all elements as border box
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+// Force element into grid
+%grid {
+  float: left;
+  margin-left: $grid-gutter;
+  transition: width 0.25s ease-in-out;
+}
+
+// Clearfix silent class
+%clearfix {
+  &::before, &::after {
+    display: table;
+    content: "";
+  }
+
+  &::after {
+    clear: both;
+  }
+}
+
+
+// Clearfix class
+.group,
+.clearfix {
+  @extend %clearfix;
+}
+
+
+// Set page container
+.container {
+  @include container();
+}
+
+.row {
+  @include container(nested);
+}
+
+
+// Reverses displayed html
+.flip {
+  float: right;
+}
+
+
+// ----------------------------------------------------------------------------
+// 4. Grid classes
+// ----------------------------------------------------------------------------
+
+.grid {
+  @extend %grid;
+}
+
+@media (min-width: $bp-xsmall) {
+  .whole-xs                      { @include column(1, 1); }
+  .half-xs                       { @include column(1, 2); }
+  .third-xs                      { @include column(1, 3); }
+  .two-third-xs                  { @include column(2, 3); }
+  .fourth-xs                     { @include column(1, 4); }
+  .three-fourth-xs               { @include column(3, 4); }
+  .fifth-xs                      { @include column(1, 5); }
+  .two-fifth-xs                  { @include column(2, 5); }
+  .three-fifth-xs                { @include column(3, 5); }
+  .four-fifth-xs                 { @include column(4, 5); }
+  .sixth-xs                      { @include column(1, 6); }
+  .five-sixth-xs                 { @include column(5, 6); }
+}
+
+@media (min-width: $bp-small) {
+  .whole-sm                      { @include column(1, 1); }
+  .half-sm                       { @include column(1, 2); }
+  .third-sm                      { @include column(1, 3); }
+  .two-third-sm                  { @include column(2, 3); }
+  .fourth-sm                     { @include column(1, 4); }
+  .three-fourth-sm               { @include column(3, 4); }
+  .fifth-sm                      { @include column(1, 5); }
+  .two-fifth-sm                  { @include column(2, 5); }
+  .three-fifth-sm                { @include column(3, 5); }
+  .four-fifth-sm                 { @include column(4, 5); }
+  .sixth-sm                      { @include column(1, 6); }
+  .five-sixth-sm                 { @include column(5, 6); }
+}
+
+@media (min-width: $bp-medium) {
+  .whole-md                      { @include column(1, 1); }
+  .half-md                       { @include column(1, 2); }
+  .third-md                      { @include column(1, 3); }
+  .two-third-md                  { @include column(2, 3); }
+  .fourth-md                     { @include column(1, 4); }
+  .three-fourth-md               { @include column(3, 4); }
+  .fifth-md                      { @include column(1, 5); }
+  .two-fifth-md                  { @include column(2, 5); }
+  .three-fifth-md                { @include column(3, 5); }
+  .four-fifth-md                 { @include column(4, 5); }
+  .sixth-md                      { @include column(1, 6); }
+  .five-sixth-md                 { @include column(5, 6); }
+}
+
+@media (min-width: $bp-large) {
+  .whole-lg                      { @include column(1, 1); }
+  .half-lg                       { @include column(1, 2); }
+  .third-lg                      { @include column(1, 3); }
+  .two-third-lg                  { @include column(2, 3); }
+  .fourth-lg                     { @include column(1, 4); }
+  .three-fourth-lg               { @include column(3, 4); }
+  .fifth-lg                      { @include column(1, 5); }
+  .two-fifth-lg                  { @include column(2, 5); }
+  .three-fifth-lg                { @include column(3, 5); }
+  .four-fifth-lg                 { @include column(4, 5); }
+  .sixth-lg                      { @include column(1, 6); }
+  .five-sixth-lg                 { @include column(5, 6); }
+}
+
+
+// Offsets --------------------------------------------------------------------
+
+// Offets let you shift grid elements to the right
+// but stay aligned to the grid.
+// @media (min-width: $bp-medium) {
+//   .offset-third                { @include offset(1, 3); }
+//   .offset-two-third            { @include offset(2, 3); }
+//   .offset-fourth               { @include offset(1, 4); }
+//   .offset-three-fourth         { @include offset(3, 4); }
+//   .offset-half                 { @include offset(1, 2); }
+//   .offset-fifth                { @include offset(1, 5); }
+//   .offset-two-fifth            { @include offset(2, 5); }
+//   .offset-three-fifth          { @include offset(3, 5); }
+//   .offset-four-fifth           { @include offset(4, 5); }
+//   .offset-sixth                { @include offset(1, 6); }
+//   .offset-five-sixth           { @include offset(5, 6); }
+// }
