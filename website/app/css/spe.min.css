@@ -257,62 +257,62 @@ body {
   background: white;
   color: #272727;
   font-family: "Merriweather Sans", serif;
-  font-size: 90%;
   line-height: 1.5;
+  font-size: 100%;
 }
 
-/* line 27, ../../src/scss/base/_typography.scss */
+/* line 29, ../../src/scss/base/_typography.scss */
 p {
   margin-bottom: 1.125em;
 }
 
 @media (min-width: 40em) {
-  /* line 32, ../../src/scss/base/_typography.scss */
+  /* line 34, ../../src/scss/base/_typography.scss */
   body {
     line-height: 1.5625;
   }
 }
-/* line 41, ../../src/scss/base/_typography.scss */
+/* line 43, ../../src/scss/base/_typography.scss */
 .text-small {
   font-size: 0.9375em;
 }
 
-/* line 45, ../../src/scss/base/_typography.scss */
+/* line 47, ../../src/scss/base/_typography.scss */
 .text-tall {
   font-size: 1.1875em;
   line-height: 1.4;
 }
 
 @media (min-width: 40em) {
-  /* line 51, ../../src/scss/base/_typography.scss */
+  /* line 53, ../../src/scss/base/_typography.scss */
   .text-tall {
     font-size: 1.3125em;
   }
 }
-/* line 56, ../../src/scss/base/_typography.scss */
+/* line 58, ../../src/scss/base/_typography.scss */
 .text-muted {
   color: gray;
 }
 
-/* line 66, ../../src/scss/base/_typography.scss */
+/* line 68, ../../src/scss/base/_typography.scss */
 a {
   color: #cd363f;
   text-decoration: none;
   word-wrap: break-word;
 }
-/* line 71, ../../src/scss/base/_typography.scss */
+/* line 73, ../../src/scss/base/_typography.scss */
 a:hover {
   color: #92242b;
   text-decoration: none;
 }
 
-/* line 78, ../../src/scss/base/_typography.scss */
+/* line 80, ../../src/scss/base/_typography.scss */
 a img {
   background: none;
   border: none;
 }
 
-/* line 85, ../../src/scss/base/_typography.scss */
+/* line 87, ../../src/scss/base/_typography.scss */
 a:hover img {
   background: none;
   border: none;
@@ -320,14 +320,14 @@ a:hover img {
   opacity: 0.8;
 }
 
-/* line 98, ../../src/scss/base/_typography.scss */
+/* line 100, ../../src/scss/base/_typography.scss */
 ul,
 ol,
 dl {
   margin-bottom: 1.125em;
 }
 
-/* line 106, ../../src/scss/base/_typography.scss */
+/* line 108, ../../src/scss/base/_typography.scss */
 ul ul,
 ul ol,
 ol ol,
@@ -335,40 +335,40 @@ ol ul {
   margin-bottom: 0;
 }
 
-/* line 114, ../../src/scss/base/_typography.scss */
+/* line 116, ../../src/scss/base/_typography.scss */
 ul {
   list-style: disc;
   padding-left: 1em;
 }
 
-/* line 115, ../../src/scss/base/_typography.scss */
+/* line 117, ../../src/scss/base/_typography.scss */
 ol {
   list-style: decimal;
 }
 
-/* line 116, ../../src/scss/base/_typography.scss */
+/* line 118, ../../src/scss/base/_typography.scss */
 dl {
   margin-left: 0;
 }
 
-/* line 117, ../../src/scss/base/_typography.scss */
+/* line 119, ../../src/scss/base/_typography.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 120, ../../src/scss/base/_typography.scss */
+/* line 122, ../../src/scss/base/_typography.scss */
 dd {
   margin-left: 0;
 }
 
-/* line 125, ../../src/scss/base/_typography.scss */
+/* line 127, ../../src/scss/base/_typography.scss */
 .list-unstyled {
   list-style: none;
   margin-left: 0;
   padding-left: 0;
 }
 
-/* line 139, ../../src/scss/base/_typography.scss */
+/* line 141, ../../src/scss/base/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   font-weight: normal;
@@ -378,70 +378,70 @@ h1, h2, h3, h4, h5, h6 {
   word-wrap: break-word;
 }
 
-/* line 148, ../../src/scss/base/_typography.scss */
+/* line 150, ../../src/scss/base/_typography.scss */
 h1,
 .h1 {
   font-size: 1.5em;
 }
 
-/* line 153, ../../src/scss/base/_typography.scss */
+/* line 155, ../../src/scss/base/_typography.scss */
 h2,
 .h2 {
   font-size: 1.3125em;
 }
 
-/* line 158, ../../src/scss/base/_typography.scss */
+/* line 160, ../../src/scss/base/_typography.scss */
 h3,
 .h3 {
   font-size: 1.1875em;
 }
 
-/* line 163, ../../src/scss/base/_typography.scss */
+/* line 165, ../../src/scss/base/_typography.scss */
 h4, h5,
 .h4, .h5 {
   font-style: italic;
   font-size: 0.9375em;
 }
 
-/* line 169, ../../src/scss/base/_typography.scss */
+/* line 171, ../../src/scss/base/_typography.scss */
 h4,
 .h4 {
   text-transform: uppercase;
 }
 
-/* line 174, ../../src/scss/base/_typography.scss */
+/* line 176, ../../src/scss/base/_typography.scss */
 h6,
 .h6 {
   font-size: 0.75em;
 }
 
 @media (min-width: 40em) {
-  /* line 180, ../../src/scss/base/_typography.scss */
+  /* line 182, ../../src/scss/base/_typography.scss */
   h1,
   .h1 {
     font-size: 1.75em;
   }
 }
-/* line 192, ../../src/scss/base/_typography.scss */
+/* line 194, ../../src/scss/base/_typography.scss */
 hr {
   border: 0;
   border-top: 1px solid #dbdbdb;
   margin: 2em auto;
 }
 
-/* line 199, ../../src/scss/base/_typography.scss */
+/* line 201, ../../src/scss/base/_typography.scss */
 em {
   font-style: italic;
 }
 
-/* line 204, ../../src/scss/base/_typography.scss */
+/* line 206, ../../src/scss/base/_typography.scss */
 sub,
 sup {
   margin-left: 0.25em;
   font-weight: bold;
 }
 
-/* line 214, ../../src/scss/base/_typography.scss */
+/* line 216, ../../src/scss/base/_typography.scss */
 ::-moz-selection {
   background: #cd363f;
   color: white;
@@ -451,13 +451,13 @@ sup {
   color: white;
 }
 
-/* line 219, ../../src/scss/base/_typography.scss */
+/* line 221, ../../src/scss/base/_typography.scss */
 ::-moz-selection {
   background: #cd363f;
   color: white;
 }
 
-/* line 228, ../../src/scss/base/_typography.scss */
+/* line 230, ../../src/scss/base/_typography.scss */
 blockquote {
   border-left: 0.25em solid #dbdbdb;
   margin-bottom: 1.125em;
@@ -466,12 +466,12 @@ blockquote {
   padding-left: 1.125em;
 }
 
-/* line 236, ../../src/scss/base/_typography.scss */
+/* line 238, ../../src/scss/base/_typography.scss */
 blockquote, q {
   quotes: none;
 }
 
-/* line 240, ../../src/scss/base/_typography.scss */
+/* line 242, ../../src/scss/base/_typography.scss */
 blockquote::before,
 blockquote::after,
 q::before,
@@ -498,14 +498,23 @@ q::after {
 
 /* line 146, ../../src/scss/base/_grid.scss */
 .group::before,
-.clearfix::before, .container::before, .row::before, .group::after,
-.clearfix::after, .container::after, .row::after {
+.clearfix::before,
+.container::before,
+.row::before,
+.navbar::before, .group::after,
+.clearfix::after,
+.container::after,
+.row::after,
+.navbar::after {
   display: table;
   content: "";
 }
 /* line 151, ../../src/scss/base/_grid.scss */
 .group::after,
-.clearfix::after, .container::after, .row::after {
+.clearfix::after,
+.container::after,
+.row::after,
+.navbar::after {
   clear: both;
 }
 
@@ -953,36 +962,11 @@ pre code {
   font-size: 1em;
 }
 
-/* line 1, ../../src/scss/modules/_navigation.scss */
-.navigation {
-  padding-top: 0.9375em;
-}
-
-/* line 5, ../../src/scss/modules/_navigation.scss */
-.navigation-main {
-  text-align: center;
-}
-@media (min-width: 40em) {
-  /* line 5, ../../src/scss/modules/_navigation.scss */
-  .navigation-main {
-    text-align: right;
-  }
-}
-
-/* line 14, ../../src/scss/modules/_navigation.scss */
-.navigation-item {
-  margin: 0.625em 0.9375em;
-}
-/* line 18, ../../src/scss/modules/_navigation.scss */
-.navigation-item:last-child {
-  margin-right: 0;
-}
-
-/* line 23, ../../src/scss/modules/_navigation.scss */
+/* line 7, ../../src/scss/objects/_logo.scss */
 .logo {
   text-transform: capitalize;
 }
-/* line 27, ../../src/scss/modules/_navigation.scss */
+/* line 11, ../../src/scss/objects/_logo.scss */
 .logo::before {
   margin-right: 0.625em;
   content: "";
@@ -993,9 +977,33 @@ pre code {
   vertical-align: middle;
 }
 
-/* line 1, ../../src/scss/modules/_hero-content.scss */
-.hero-content {
-  background: silver;
+/* line 7, ../../src/scss/components/_navigation.scss */
+.navigation {
+  padding-top: 0.9375em;
+}
+
+/* line 11, ../../src/scss/components/_navigation.scss */
+.navigation ul {
+  text-align: center;
+}
+@media (min-width: 40em) {
+  /* line 11, ../../src/scss/components/_navigation.scss */
+  .navigation ul {
+    text-align: right;
+  }
+}
+
+/* line 20, ../../src/scss/components/_navigation.scss */
+.navigation ul li {
+  margin: 0.625em;
+}
+
+/* line 1, ../../src/scss/modules/_navbar.scss */
+.navbar {
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 98%;
 }
 
 /* line 1, ../../src/scss/modules/_social-media.scss */
@@ -1003,46 +1011,62 @@ pre code {
   background: silver;
 }
 
+/* line 1, ../../src/scss/layout/_hero.scss */
+.hero {
+  height: 18.75em;
+  background: silver;
+}
+
 /* line 16, ../../src/scss/helpers/_overrides.scss */
-.hero-content {
+.hero {
   text-align: center;
 }
 
 /* line 26, ../../src/scss/helpers/_overrides.scss */
-.navigation-main {
+.navigation ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 /* line 29, ../../src/scss/helpers/_overrides.scss */
-.navigation-item {
+.navigation ul li {
   display: inline-block;
 }
 
+/* line 55, ../../src/scss/helpers/_overrides.scss */
+.navbar {
+  padding: 0.625em 1.25em;
+}
+
 /* line 57, ../../src/scss/helpers/_overrides.scss */
-.hero-content {
+.hero {
   padding: 1.875em 1.25em;
 }
 
-/* line 59, ../../src/scss/helpers/_overrides.scss */
-.hero-content {
+/* line 63, ../../src/scss/helpers/_overrides.scss */
+.hero {
   padding-right: 0;
   padding-left: 0;
 }
 
-/* line 66, ../../src/scss/helpers/_overrides.scss */
-.hero-content, .content, .social-media {
+/* line 70, ../../src/scss/helpers/_overrides.scss */
+.content, .social-media, .hero {
   margin: 1.875em 1.25em;
 }
 
-/* line 67, ../../src/scss/helpers/_overrides.scss */
-.logo, .hero-content h1 {
+/* line 71, ../../src/scss/helpers/_overrides.scss */
+.logo, .hero h1 {
   margin: 0;
 }
 
-/* line 68, ../../src/scss/helpers/_overrides.scss */
-.hero-content, .content, .social-media {
+/* line 72, ../../src/scss/helpers/_overrides.scss */
+.hero {
+  margin-top: 0;
+}
+
+/* line 76, ../../src/scss/helpers/_overrides.scss */
+.content, .social-media, .hero {
   margin-right: 0;
   margin-left: 0;
 }

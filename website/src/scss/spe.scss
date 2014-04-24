@@ -17,27 +17,30 @@
 @import "base/grid";
 
 
-// Theme objects --------------------------------------------------------------
-@import "objects/buttons";
-@import "objects/forms";
-@import "objects/code";
-
-
 // Theme icons ----------------------------------------------------------------
 @import "icons/icons";
 
 
-// Theme layout ---------------------------------------------------------------
-@import "layout/basic";
+// Theme objects --------------------------------------------------------------
+@import "objects/buttons";
+@import "objects/forms";
+@import "objects/code";
+@import "objects/logo";
+
 
 // Theme components -----------------------------------------------------------
+@import "components/navigation";
 
 
 // Theme modules --------------------------------------------------------------
-@import "modules/navigation";
-@import "modules/hero-content";
+@import "modules/navbar";
 @import "modules/content";
 @import "modules/social-media";
+
+
+// Theme layout ---------------------------------------------------------------
+@import "layout/basic";
+@import "layout/hero";
 
 
 // Theme pages ----------------------------------------------------------------
