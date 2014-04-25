@@ -36,6 +36,7 @@
 @import "modules/navbar";
 @import "modules/content";
 @import "modules/social-media";
+@import "modules/blog-post";
 
 
 // Theme layout ---------------------------------------------------------------
@@ -44,6 +45,7 @@
 
 
 // Theme pages ----------------------------------------------------------------
+@import "pages/home";
 
 
 // Theme helpers --------------------------------------------------------------

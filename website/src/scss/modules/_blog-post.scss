@@ -1,0 +1,30 @@
+.blog-post {
+  @extend %padding-lg;
+  @include em(border-radius, 5px);
+  @include em(margin-bottom, 30px);
+  border: em(1px) solid $color-gray-light;
+  box-shadow: 0 em(3px) em(5px) em(-3px) lighten($color-gray-dark, 20%);
+
+  .img {
+    width: 100%;
+  }
+
+  a {
+    @include em(font-size, 14px);
+    text-transform: capitalize;
+  }
+}
+
+.blog-post--header {
+  @include em(margin-bottom, 15px);
+
+  h2 {
+    font-style: italic;
+    margin-bottom: 0;
+    text-transform: uppercase;
+  }
+
+  span {
+    display: inline-block;
+  }
+}
