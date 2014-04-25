@@ -1,0 +1,20 @@
+// ----------------------------------------------------------------------------
+//
+// Logo
+// Logo and variations
+//
+// ----------------------------------------------------------------------------
+.logo {
+  @extend %no-margin;
+  text-transform: capitalize;
+
+  &::before {
+    @include em(margin-right, 10px);
+    content: "";
+    background: url("../img/logo.png") no-repeat center center;
+    display: inline-block;
+    height: 65px;
+    width: 65px;
+    vertical-align: middle;
+  }
+}

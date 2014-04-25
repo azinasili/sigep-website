@@ -1,0 +1,18 @@
+// ----------------------------------------------------------------------------
+//
+// Navigation
+// Navigation and variations
+//
+// ----------------------------------------------------------------------------
+.navigation ul {
+  text-align: center;
+
+  @media (min-width: $bp-medium) {
+    text-align: right;
+  }
+}
+
+.navigation ul li {
+  @extend %inline-item;
+  @include em(margin, 10px);
+}
