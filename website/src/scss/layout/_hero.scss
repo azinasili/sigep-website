@@ -1,0 +1,13 @@
+.hero {
+  @extend %padding-lg;
+  @extend %margin-lg;
+  @extend %no-padding-horz;
+  @extend %no-margin-top;
+  @extend %no-margin-horz;
+  @include em(height, 400px);
+  background: silver;
+
+  h1 {
+    @extend %no-margin;
+  }
+}

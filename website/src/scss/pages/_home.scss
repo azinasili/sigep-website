@@ -1,0 +1,12 @@
+.values {
+  @extend %padding-lg;
+
+  h2 {
+    @include em(margin-top, 10px);
+    text-transform: capitalize;
+  }
+
+  p {
+    @include em(margin-bottom, 35px);
+  }
+}

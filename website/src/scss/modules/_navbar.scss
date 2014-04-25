@@ -1,0 +1,5 @@
+.navbar {
+  @extend %padding-sm;
+  @include container();
+}
+
