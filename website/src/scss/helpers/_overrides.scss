@@ -13,14 +13,14 @@
 // ----------------------------------------------------------------------------
 
 // Text alignment
-%text-center               { text-align: center; }
-%text-right                { text-align: right; }
-%text-left                 { text-align: left; }
+.text-center               { text-align: center; }
+.text-right                { text-align: right; }
+.text-left                 { text-align: left; }
 
 // Text manipulation
-%text-replace              { text-indent: 100%; overflow: hidden; white-space: nowrap; }
-%truncate                  { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-%text-capitalize           { text-transform: capitalize; }
+.text-replace              { text-indent: 100%; overflow: hidden; white-space: nowrap; }
+.truncate                  { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.text-capitalize           { text-transform: capitalize; }
 
 // Remove list styling.
 %list-unstyled             { list-style: none; margin: 0; padding: 0; }
@@ -29,12 +29,12 @@
 %inline-item               { display: inline-block; }
 
 // Inline hyperlink styles
-%inline-link {
-    @include em(margin-right, 15px);
+.inline-link {
+    @include em(margin-left, 15px);
 
     // Remove margin on last item
     &:last-of-type {
-        margin-right: 0;
+        margin-left: 0;
     }
 }
 
@@ -42,9 +42,9 @@
 // ----------------------------------------------------------------------------
 // 2. Floats
 // ----------------------------------------------------------------------------
-%float-left                { float: left; }
-%float-center              { float: none; margin-left: auto !important; margin-right: auto !important; }
-%float-right               { float: right; }
+.float-left                { float: left; }
+.float-center              { float: none; margin-left: auto; margin-right: auto; }
+.float-right               { float: right; }
 
 
 // ----------------------------------------------------------------------------
@@ -56,6 +56,10 @@
 %padding-md                { @include em(padding, 15px 20px); }
 %padding-lg                { @include em(padding, 30px 20px); }
 %no-padding                { padding: 0; }
+%no-padding-top            { padding-top: 0; }
+%no-padding-right          { padding-right: 0; }
+%no-padding-bottom         { padding-bottom: 0; }
+%no-padding-left           { padding-left: 0; }
 %no-padding-horz           { padding-right: 0; padding-left: 0; }
 %no-padding-vert           { padding-top: 0; padding-bottom: 0; }
 
@@ -65,5 +69,9 @@
 %margin-md                 { @include em(margin, 15px 20px); }
 %margin-lg                 { @include em(margin, 30px 20px); }
 %no-margin                 { margin: 0; }
+%no-margin-top             { margin-top: 0; }
+%no-margin-right           { margin-right: 0; }
+%no-margin-bottom          { margin-bottom: 0; }
+%no-margin-left            { margin-left: 0; }
 %no-margin-horz            { margin-right: 0; margin-left: 0; }
 %no-margin-vert            { margin-top: 0; margin-bottom: 0; }
