@@ -1,5 +1,14 @@
 'use strict';
 
+// Livereload and connect variables
+var LIVERELOAD_PORT = 35729;
+var lrSnippet = require('connect-livereload')({
+  port: LIVERELOAD_PORT
+});
+var mountFolder = function (connect, dir) {
+  return connect.static(require('path').resolve(dir));
+};
+
 // Grunt module
 module.exports = function (grunt) {
 
@@ -16,12 +25,12 @@ module.exports = function (grunt) {
     project: {
       src    : 'src',
       app    : 'app',
-      deploy : 'deploy',
+      dist   : 'dist',
       srcjs  : '<%= project.src %>/js/{,*/}*.js',
       srccss : '<%= project.src %>/scss/spe.scss',
       appjs  : '<%= project.app %>/js/spe.min.js',
       appcss : '<%= project.app %>/css/spe.min.css',
-      vendor : '<%= project.app %>/js/vendor/'
+      vendor : '<%= project.app %>/js/vendor'
     },
 
     // Project banner
@@ -38,6 +47,24 @@ module.exports = function (grunt) {
               ' */\n'
     },
 
+    // Connect port/livereload
+    // Starts a local webserver and injects
+    // livereload snippet
+    // https://github.com/gruntjs/grunt-contrib-connect
+    connect: {
+      options: {
+        port: 9000,
+        hostname: '*'
+      },
+      livereload: {
+        options: {
+          middleware: function (connect) {
+            return [lrSnippet, mountFolder(connect, 'app')];
+          }
+        }
+      }
+    },
+
     // Compile Sass/SCSS files
     // https://github.com/gruntjs/grunt-contrib-sass
     sass: {
@@ -46,6 +73,7 @@ module.exports = function (grunt) {
           cacheLocation : '_tmp',
           lineNumbers   : 'true',
           precision     : 10,
+          sourcemap     : 'true',
           style         : 'expanded'
         },
         files: {
@@ -71,12 +99,14 @@ module.exports = function (grunt) {
       options: {
         browsers: [
           'last 2 version',
-          'safari 6',
+          'last 2 Chrome version',
+          'Android 4',
+          'Firefox > 20',
           'ie 8',
           'ie 9',
-          'opera 12.1',
-          'ios 6',
-          'android 4'
+          'iOS 5',
+          'Opera 12.1',
+          'Safari 6'
         ]
       },
       dist: {
@@ -84,14 +114,17 @@ module.exports = function (grunt) {
       }
     },
 
-    // Build bower components
-    // https://github.com/yatskevich/grunt-bower-task
-    bower: {
-      install: {
-        options: {
-          targetDir : '<%= project.vendor %>',
-          cleanup   : true,
-          layout    : 'byType'
+    // Combine like media queries together
+    // CMQ is commented out for now
+    // Doesn't seem to reduce CSS at all
+    // https://github.com/buildingblocks/grunt-combine-media-queries
+    cmq: {
+      options: {
+        log: true
+      },
+      your_target: {
+        files: {
+          '<%= project.appcss %>' : '<%= project.appcss %>'
         }
       }
     },
@@ -115,8 +148,9 @@ module.exports = function (grunt) {
         nonull       : true,
       },
       dev: {
-        src  : '<%= project.srcjs %>',
-        dest : '<%= project.appjs %>'
+        files: {
+          '<%= project.appjs %>' : '<%= project.srcjs %>'
+        }
       }
     },
 
@@ -131,14 +165,37 @@ module.exports = function (grunt) {
       },
       dev: {
         files: {
-          '<%= project.vendor %>/jquery.min.js'    : '<%= project.vendor %>/jquery/jquery.js',
-          '<%= project.vendor %>/modernizr.min.js' : '<%= project.vendor %>/modernizr/modernizr.js'
+          '<%= project.vendor %>/jquery.min.js'    : '<%= project.vendor %>/jquery.js',
+          '<%= project.vendor %>/modernizr.min.js' : '<%= project.vendor %>/modernizr.js'
         }
       },
       dist: {
         files: {
           '<%= project.appjs %>' : '<%= project.appjs %>'
         }
+      }
+    },
+
+    // Build bower components
+    // https://github.com/yatskevich/grunt-bower
+    bower: {
+      dev: {
+        dest     : '<%= project.app %>/lib',
+        js_dest  : '<%= project.app %>/js/vendor',
+        css_dest : '<%= project.app %>/css/vendor'
+      },
+      dist: {
+        dest     : '<%= project.app %>/lib',
+        js_dest  : '<%= project.app %>/js/vendor',
+        css_dest : '<%= project.app %>/css/vendor'
+      }
+    },
+
+    // Opens the web server in the browser
+    // https://github.com/jsoverson/grunt-open
+    open: {
+      server: {
+        path: 'http://localhost:<%= connect.options.port %>'
       }
     },
 
@@ -150,7 +207,7 @@ module.exports = function (grunt) {
           expand : true,
           cwd    : '<%= project.app %>/img',
           src    : ['**/*.{png,jpg,gif}'],
-          dest   : '<%= project.deploy %>/img'
+          dest   : '<%= project.dist %>/img'
         }]
       }
     },
@@ -159,11 +216,12 @@ module.exports = function (grunt) {
     // https://github.com/gruntjs/grunt-contrib-clean
     clean: {
       dev: [
-        '<%= project.vendor %>/jquery',
-        '<%= project.vendor %>/modernizr'
+        '<%= project.vendor %>/jquery.js',
+        '<%= project.vendor %>/modernizr.js'
       ],
       dist: [
-        '_tmp'
+        '_tmp',
+        'node_modules'
       ]
     },
 
@@ -176,7 +234,7 @@ module.exports = function (grunt) {
           expand: true,
           cwd: '<%= project.src %>/img',
           src: '**',
-          dest: '<%= project.app %>/img/'
+          dest: '<%= project.app %>/img'
         }]
       },
       dist: {
@@ -184,7 +242,7 @@ module.exports = function (grunt) {
           expand: true,
           cwd: '<%= project.app %>',
           src: '**',
-          dest: '<%= project.deploy %>/'
+          dest: '<%= project.dist %>'
         }]
       }
     },
@@ -203,7 +261,7 @@ module.exports = function (grunt) {
           expand: true,
           cwd: '<%= project.app %>',
           src: '*.html',
-          dest: '<%= project.deploy %>'
+          dest: '<%= project.dist %>'
         }]
       }
     },
@@ -211,6 +269,7 @@ module.exports = function (grunt) {
     // Runs tasks against changed watched files
     // https://github.com/gruntjs/grunt-contrib-watch
     // Watching development files and run concat/compile tasks
+    // Livereload the browser once complete
     watch: {
       concat: {
         files : '<%= project.srcjs %>',
@@ -220,45 +279,18 @@ module.exports = function (grunt) {
         files : '<%= project.src %>/scss/{,*/}*.{scss,sass}',
         tasks : ['sass:dev', 'autoprefixer']
       },
-      // livereload: {
-      //   options: {
-      //     livereload: '<%= connect.options.livereload %>'
-      //   },
-      //   files: [
-      //     '<%= project.app %>/{,*/}*.html',
-      //     '<%= project.appcss %>',
-      //     '<%= project.appjs %>',
-      //     '<%= project.app %>/img/{,*/}*'
-      //   ]
-      // }
-    },
-
-    // connect: {
-    //   options: {
-    //     port: 9000,
-    //     open: true,
-    //     livereload: 35729,
-    //     // Change this to '0.0.0.0' to access the server from outside
-    //     hostname: 'localhost'
-    //   },
-    //   livereload: {
-    //     options: {
-    //       middleware: function(connect) {
-    //         return [
-    //           connect.static('.tmp'),
-    //           connect().use('/bower_components', connect.static('./bower_components')),
-    //           connect.static(config.app)
-    //         ];
-    //       }
-    //     }
-    //   },
-    //   dist: {
-    //     options: {
-    //       base: '<%= config.dist %>',
-    //       livereload: false
-    //     }
-    //   }
-    // },
+      livereload: {
+        options: {
+          livereload: LIVERELOAD_PORT
+        },
+        files: [
+          '<%= project.app %>/{,*/}*.html',
+          '<%= project.appcss %>',
+          '<%= project.appjs %>',
+          '<%= project.app %>/img/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
+        ]
+      }
+    }
 
   });
 
@@ -267,13 +299,15 @@ module.exports = function (grunt) {
   grunt.registerTask('default', [
     'sass:dev',
     'autoprefixer',
+    // 'cmq',
     'bower',
     'jshint',
     'concat',
-    'uglify:dev',
-    'clean:dev',
+    'uglify',
     'copy:dev',
-    // 'connect',
+    'clean:dev',
+    'connect:livereload',
+    'open',
     'watch'
   ]);
 
@@ -281,6 +315,7 @@ module.exports = function (grunt) {
   // Run `grunt build` on the command line
   grunt.registerTask('deploy', [
     'sass:dist',
+    'autoprefixer',
     'bower',
     'jshint',
     'concat',

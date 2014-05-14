@@ -1,9 +1,9 @@
 {
-  "name": "spe-pabb-website",
-  "title": "SigEp PABB",
-  "description": "New website for SigEp PABB",
-  "url": "http://www.sigep-drexel.org/",
-  "version": "0.1.0",
+  "name": "my-project-name",
+  "title": "title of project",
+  "description": "enter description of project",
+  "url": "http://www.adminovate.com/",
+  "version": "0.0.0",
   "copyright": "2014",
   "devDependencies": {
     "grunt": "latest",
@@ -13,13 +13,20 @@
     "grunt-autoprefixer": "latest",
     "grunt-contrib-concat": "latest",
     "grunt-contrib-jshint": "latest",
-    "grunt-bower-task": "latest",
+    "grunt-bower": "latest",
     "grunt-contrib-uglify": "latest",
     "grunt-contrib-clean": "latest",
     "grunt-contrib-watch": "latest",
     "grunt-contrib-htmlmin": "latest",
     "grunt-contrib-imagemin": "latest",
     "grunt-contrib-copy": "latest",
-    "grunt-contrib-connect": "latest"
+    "grunt-contrib-connect": "latest",
+    "connect-livereload": "latest",
+    "grunt-open": "latest",
+    "css-parse": "latest",
+    "grunt-combine-media-queries": "latest"
+  },
+  "scripts": {
+    "postinstall": "node_modules/.bin/bower install"
   }
 }
