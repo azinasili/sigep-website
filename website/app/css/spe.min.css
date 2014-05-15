@@ -1,3 +1,16 @@
+/*  Syntax Quick Reference
+  --------------------------
+  column($ratios: 1, $offset: 0, $cycle: 0, $uncycle: 0, $gutter: $jeet-gutter)
+  span($ratio: 1, $offset: 0)
+  shift($ratios: 0, $col_or_span: column, $gutter: $jeet-gutter)
+  unshift()
+  edit()
+  center($max_width: 1410px, $pad: 0)
+  stack($pad: 0, $align: false)
+  unstack()
+  align($direction: both)
+  cf()
+*/
 @-webkit-viewport {
   width: device-width;
   zoom: 1.0;
@@ -486,7 +499,7 @@ q::after {
   content: none;
 }
 
-/* line 128, ../../src/scss/base/_grid.scss */
+/* line 16, ../../src/scss/base/_grid.scss */
 *,
 *::before,
 *::after {
@@ -494,296 +507,1359 @@ q::after {
   box-sizing: border-box;
 }
 
-/* line 138, ../../src/scss/base/_grid.scss */
-.grid {
-  float: left;
-  margin-left: 2.1052631579%;
-  -webkit-transition: width 0.25s ease-in-out;
-  transition: width 0.25s ease-in-out;
+/* line 23, ../../src/scss/base/_grid.scss */
+.row,
+.group,
+.clearfix {
+  *zoom: 1;
 }
-
-/* line 146, ../../src/scss/base/_grid.scss */
-.group::before,
-.clearfix::before,
-.container::before,
-.row::before,
-.navbar::before, .group::after,
-.clearfix::after,
-.container::after,
-.row::after,
-.navbar::after {
+/* line 197, ../../src/scss/jeet/_grid.scss */
+.row:before, .row:after,
+.group:before,
+.group:after,
+.clearfix:before,
+.clearfix:after {
+  content: '';
   display: table;
-  content: "";
 }
-/* line 151, ../../src/scss/base/_grid.scss */
-.group::after,
-.clearfix::after,
-.container::after,
-.row::after,
-.navbar::after {
+/* line 201, ../../src/scss/jeet/_grid.scss */
+.row:after,
+.group:after,
+.clearfix:after {
   clear: both;
 }
 
-/* line 165, ../../src/scss/base/_grid.scss */
+/* line 31, ../../src/scss/base/_grid.scss */
 .container {
+  *zoom: 1;
+  width: auto;
   max-width: 1140px;
+  float: none;
+  display: block;
   margin-right: auto;
   margin-left: auto;
-  width: 98%;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+}
+/* line 197, ../../src/scss/jeet/_grid.scss */
+.container:before, .container:after {
+  content: '';
+  display: table;
+}
+/* line 201, ../../src/scss/jeet/_grid.scss */
+.container:after {
+  clear: both;
 }
 
-/* line 169, ../../src/scss/base/_grid.scss */
-.row {
-  margin-left: -2.1052631579%;
-}
-
-/* line 175, ../../src/scss/base/_grid.scss */
+/* line 37, ../../src/scss/base/_grid.scss */
 .flip {
   float: right;
 }
 
-@media (min-width: 20em) {
-  /* line 189, ../../src/scss/base/_grid.scss */
-  .whole-xs {
-    width: 97.8947368421%;
-  }
-
-  /* line 190, ../../src/scss/base/_grid.scss */
-  .half-xs {
-    width: 47.8947368421%;
-  }
-
-  /* line 191, ../../src/scss/base/_grid.scss */
-  .third-xs {
-    width: 31.2280701754%;
-  }
-
-  /* line 192, ../../src/scss/base/_grid.scss */
-  .two-third-xs {
-    width: 64.5614035088%;
-  }
-
-  /* line 193, ../../src/scss/base/_grid.scss */
-  .fourth-xs {
-    width: 22.8947368421%;
-  }
-
-  /* line 194, ../../src/scss/base/_grid.scss */
-  .three-fourth-xs {
-    width: 72.8947368421%;
-  }
-
-  /* line 195, ../../src/scss/base/_grid.scss */
-  .fifth-xs {
-    width: 17.8947368421%;
-  }
-
-  /* line 196, ../../src/scss/base/_grid.scss */
-  .two-fifth-xs {
-    width: 37.8947368421%;
-  }
-
-  /* line 197, ../../src/scss/base/_grid.scss */
-  .three-fifth-xs {
-    width: 57.8947368421%;
-  }
-
-  /* line 198, ../../src/scss/base/_grid.scss */
-  .four-fifth-xs {
-    width: 77.8947368421%;
-  }
-
-  /* line 199, ../../src/scss/base/_grid.scss */
-  .sixth-xs {
-    width: 14.5614035088%;
-  }
-
-  /* line 200, ../../src/scss/base/_grid.scss */
-  .five-sixth-xs {
-    width: 81.2280701754%;
-  }
+/* line 46, ../../src/scss/base/_grid.scss */
+.grid {
+  -webkit-transition: width .25s ease-in-out;
+  transition: width .25s ease-in-out;
 }
+
+/* line 50, ../../src/scss/base/_grid.scss */
+.whole-xs {
+  *zoom: 1;
+  float: left;
+  display: inline;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+/* line 197, ../../src/scss/jeet/_grid.scss */
+.whole-xs:before, .whole-xs:after {
+  content: '';
+  display: table;
+}
+/* line 201, ../../src/scss/jeet/_grid.scss */
+.whole-xs:after {
+  clear: both;
+}
+/* line 49, ../../src/scss/jeet/_grid.scss */
+.whole-xs:last-child {
+  margin-right: 0%;
+}
+
+/* line 51, ../../src/scss/base/_grid.scss */
+.half-xs {
+  *zoom: 1;
+  float: left;
+  display: inline;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 48.5%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+/* line 197, ../../src/scss/jeet/_grid.scss */
+.half-xs:before, .half-xs:after {
+  content: '';
+  display: table;
+}
+/* line 201, ../../src/scss/jeet/_grid.scss */
+.half-xs:after {
+  clear: both;
+}
+/* line 49, ../../src/scss/jeet/_grid.scss */
+.half-xs:last-child {
+  margin-right: 0%;
+}
+
+/* line 52, ../../src/scss/base/_grid.scss */
+.third-xs {
+  *zoom: 1;
+  float: left;
+  display: inline;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 31.3333333333%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+/* line 197, ../../src/scss/jeet/_grid.scss */
+.third-xs:before, .third-xs:after {
+  content: '';
+  display: table;
+}
+/* line 201, ../../src/scss/jeet/_grid.scss */
+.third-xs:after {
+  clear: both;
+}
+/* line 49, ../../src/scss/jeet/_grid.scss */
+.third-xs:last-child {
+  margin-right: 0%;
+}
+
+/* line 53, ../../src/scss/base/_grid.scss */
+.two-third-xs {
+  *zoom: 1;
+  float: left;
+  display: inline;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 65.6666666667%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+/* line 197, ../../src/scss/jeet/_grid.scss */
+.two-third-xs:before, .two-third-xs:after {
+  content: '';
+  display: table;
+}
+/* line 201, ../../src/scss/jeet/_grid.scss */
+.two-third-xs:after {
+  clear: both;
+}
+/* line 49, ../../src/scss/jeet/_grid.scss */
+.two-third-xs:last-child {
+  margin-right: 0%;
+}
+
+/* line 54, ../../src/scss/base/_grid.scss */
+.fourth-xs {
+  *zoom: 1;
+  float: left;
+  display: inline;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 22.75%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+/* line 197, ../../src/scss/jeet/_grid.scss */
+.fourth-xs:before, .fourth-xs:after {
+  content: '';
+  display: table;
+}
+/* line 201, ../../src/scss/jeet/_grid.scss */
+.fourth-xs:after {
+  clear: both;
+}
+/* line 49, ../../src/scss/jeet/_grid.scss */
+.fourth-xs:last-child {
+  margin-right: 0%;
+}
+
+/* line 55, ../../src/scss/base/_grid.scss */
+.three-fourth-xs {
+  *zoom: 1;
+  float: left;
+  display: inline;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 74.25%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+/* line 197, ../../src/scss/jeet/_grid.scss */
+.three-fourth-xs:before, .three-fourth-xs:after {
+  content: '';
+  display: table;
+}
+/* line 201, ../../src/scss/jeet/_grid.scss */
+.three-fourth-xs:after {
+  clear: both;
+}
+/* line 49, ../../src/scss/jeet/_grid.scss */
+.three-fourth-xs:last-child {
+  margin-right: 0%;
+}
+
+/* line 56, ../../src/scss/base/_grid.scss */
+.fifth-xs {
+  *zoom: 1;
+  float: left;
+  display: inline;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 17.6%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+/* line 197, ../../src/scss/jeet/_grid.scss */
+.fifth-xs:before, .fifth-xs:after {
+  content: '';
+  display: table;
+}
+/* line 201, ../../src/scss/jeet/_grid.scss */
+.fifth-xs:after {
+  clear: both;
+}
+/* line 49, ../../src/scss/jeet/_grid.scss */
+.fifth-xs:last-child {
+  margin-right: 0%;
+}
+
+/* line 57, ../../src/scss/base/_grid.scss */
+.two-fifth-xs {
+  *zoom: 1;
+  float: left;
+  display: inline;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 38.2%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+/* line 197, ../../src/scss/jeet/_grid.scss */
+.two-fifth-xs:before, .two-fifth-xs:after {
+  content: '';
+  display: table;
+}
+/* line 201, ../../src/scss/jeet/_grid.scss */
+.two-fifth-xs:after {
+  clear: both;
+}
+/* line 49, ../../src/scss/jeet/_grid.scss */
+.two-fifth-xs:last-child {
+  margin-right: 0%;
+}
+
+/* line 58, ../../src/scss/base/_grid.scss */
+.three-fifth-xs {
+  *zoom: 1;
+  float: left;
+  display: inline;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 58.8%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+/* line 197, ../../src/scss/jeet/_grid.scss */
+.three-fifth-xs:before, .three-fifth-xs:after {
+  content: '';
+  display: table;
+}
+/* line 201, ../../src/scss/jeet/_grid.scss */
+.three-fifth-xs:after {
+  clear: both;
+}
+/* line 49, ../../src/scss/jeet/_grid.scss */
+.three-fifth-xs:last-child {
+  margin-right: 0%;
+}
+
+/* line 59, ../../src/scss/base/_grid.scss */
+.four-fifth-xs {
+  *zoom: 1;
+  float: left;
+  display: inline;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 79.4%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+/* line 197, ../../src/scss/jeet/_grid.scss */
+.four-fifth-xs:before, .four-fifth-xs:after {
+  content: '';
+  display: table;
+}
+/* line 201, ../../src/scss/jeet/_grid.scss */
+.four-fifth-xs:after {
+  clear: both;
+}
+/* line 49, ../../src/scss/jeet/_grid.scss */
+.four-fifth-xs:last-child {
+  margin-right: 0%;
+}
+
+/* line 60, ../../src/scss/base/_grid.scss */
+.sixth-xs {
+  *zoom: 1;
+  float: left;
+  display: inline;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 14.1666666667%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+/* line 197, ../../src/scss/jeet/_grid.scss */
+.sixth-xs:before, .sixth-xs:after {
+  content: '';
+  display: table;
+}
+/* line 201, ../../src/scss/jeet/_grid.scss */
+.sixth-xs:after {
+  clear: both;
+}
+/* line 49, ../../src/scss/jeet/_grid.scss */
+.sixth-xs:last-child {
+  margin-right: 0%;
+}
+
+/* line 61, ../../src/scss/base/_grid.scss */
+.five-sixth-xs {
+  *zoom: 1;
+  float: left;
+  display: inline;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 82.8333333333%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+/* line 197, ../../src/scss/jeet/_grid.scss */
+.five-sixth-xs:before, .five-sixth-xs:after {
+  content: '';
+  display: table;
+}
+/* line 201, ../../src/scss/jeet/_grid.scss */
+.five-sixth-xs:after {
+  clear: both;
+}
+/* line 49, ../../src/scss/jeet/_grid.scss */
+.five-sixth-xs:last-child {
+  margin-right: 0%;
+}
+
 @media (min-width: 30em) {
-  /* line 204, ../../src/scss/base/_grid.scss */
+  /* line 64, ../../src/scss/base/_grid.scss */
   .whole-sm {
-    width: 97.8947368421%;
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 197, ../../src/scss/jeet/_grid.scss */
+  .whole-sm:before, .whole-sm:after {
+    content: '';
+    display: table;
+  }
+  /* line 201, ../../src/scss/jeet/_grid.scss */
+  .whole-sm:after {
+    clear: both;
+  }
+  /* line 49, ../../src/scss/jeet/_grid.scss */
+  .whole-sm:last-child {
+    margin-right: 0%;
   }
 
-  /* line 205, ../../src/scss/base/_grid.scss */
+  /* line 65, ../../src/scss/base/_grid.scss */
   .half-sm {
-    width: 47.8947368421%;
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 48.5%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 197, ../../src/scss/jeet/_grid.scss */
+  .half-sm:before, .half-sm:after {
+    content: '';
+    display: table;
+  }
+  /* line 201, ../../src/scss/jeet/_grid.scss */
+  .half-sm:after {
+    clear: both;
+  }
+  /* line 49, ../../src/scss/jeet/_grid.scss */
+  .half-sm:last-child {
+    margin-right: 0%;
   }
 
-  /* line 206, ../../src/scss/base/_grid.scss */
+  /* line 66, ../../src/scss/base/_grid.scss */
   .third-sm {
-    width: 31.2280701754%;
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 31.3333333333%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 197, ../../src/scss/jeet/_grid.scss */
+  .third-sm:before, .third-sm:after {
+    content: '';
+    display: table;
+  }
+  /* line 201, ../../src/scss/jeet/_grid.scss */
+  .third-sm:after {
+    clear: both;
+  }
+  /* line 49, ../../src/scss/jeet/_grid.scss */
+  .third-sm:last-child {
+    margin-right: 0%;
   }
 
-  /* line 207, ../../src/scss/base/_grid.scss */
+  /* line 67, ../../src/scss/base/_grid.scss */
   .two-third-sm {
-    width: 64.5614035088%;
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 65.6666666667%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 197, ../../src/scss/jeet/_grid.scss */
+  .two-third-sm:before, .two-third-sm:after {
+    content: '';
+    display: table;
+  }
+  /* line 201, ../../src/scss/jeet/_grid.scss */
+  .two-third-sm:after {
+    clear: both;
+  }
+  /* line 49, ../../src/scss/jeet/_grid.scss */
+  .two-third-sm:last-child {
+    margin-right: 0%;
   }
 
-  /* line 208, ../../src/scss/base/_grid.scss */
+  /* line 68, ../../src/scss/base/_grid.scss */
   .fourth-sm {
-    width: 22.8947368421%;
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 22.75%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 197, ../../src/scss/jeet/_grid.scss */
+  .fourth-sm:before, .fourth-sm:after {
+    content: '';
+    display: table;
+  }
+  /* line 201, ../../src/scss/jeet/_grid.scss */
+  .fourth-sm:after {
+    clear: both;
+  }
+  /* line 49, ../../src/scss/jeet/_grid.scss */
+  .fourth-sm:last-child {
+    margin-right: 0%;
   }
 
-  /* line 209, ../../src/scss/base/_grid.scss */
+  /* line 69, ../../src/scss/base/_grid.scss */
   .three-fourth-sm {
-    width: 72.8947368421%;
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 74.25%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 197, ../../src/scss/jeet/_grid.scss */
+  .three-fourth-sm:before, .three-fourth-sm:after {
+    content: '';
+    display: table;
+  }
+  /* line 201, ../../src/scss/jeet/_grid.scss */
+  .three-fourth-sm:after {
+    clear: both;
+  }
+  /* line 49, ../../src/scss/jeet/_grid.scss */
+  .three-fourth-sm:last-child {
+    margin-right: 0%;
   }
 
-  /* line 210, ../../src/scss/base/_grid.scss */
+  /* line 70, ../../src/scss/base/_grid.scss */
   .fifth-sm {
-    width: 17.8947368421%;
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 17.6%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 197, ../../src/scss/jeet/_grid.scss */
+  .fifth-sm:before, .fifth-sm:after {
+    content: '';
+    display: table;
+  }
+  /* line 201, ../../src/scss/jeet/_grid.scss */
+  .fifth-sm:after {
+    clear: both;
+  }
+  /* line 49, ../../src/scss/jeet/_grid.scss */
+  .fifth-sm:last-child {
+    margin-right: 0%;
   }
 
-  /* line 211, ../../src/scss/base/_grid.scss */
+  /* line 71, ../../src/scss/base/_grid.scss */
   .two-fifth-sm {
-    width: 37.8947368421%;
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 38.2%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 197, ../../src/scss/jeet/_grid.scss */
+  .two-fifth-sm:before, .two-fifth-sm:after {
+    content: '';
+    display: table;
+  }
+  /* line 201, ../../src/scss/jeet/_grid.scss */
+  .two-fifth-sm:after {
+    clear: both;
+  }
+  /* line 49, ../../src/scss/jeet/_grid.scss */
+  .two-fifth-sm:last-child {
+    margin-right: 0%;
   }
 
-  /* line 212, ../../src/scss/base/_grid.scss */
+  /* line 72, ../../src/scss/base/_grid.scss */
   .three-fifth-sm {
-    width: 57.8947368421%;
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 58.8%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 197, ../../src/scss/jeet/_grid.scss */
+  .three-fifth-sm:before, .three-fifth-sm:after {
+    content: '';
+    display: table;
+  }
+  /* line 201, ../../src/scss/jeet/_grid.scss */
+  .three-fifth-sm:after {
+    clear: both;
+  }
+  /* line 49, ../../src/scss/jeet/_grid.scss */
+  .three-fifth-sm:last-child {
+    margin-right: 0%;
   }
 
-  /* line 213, ../../src/scss/base/_grid.scss */
+  /* line 73, ../../src/scss/base/_grid.scss */
   .four-fifth-sm {
-    width: 77.8947368421%;
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 79.4%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 197, ../../src/scss/jeet/_grid.scss */
+  .four-fifth-sm:before, .four-fifth-sm:after {
+    content: '';
+    display: table;
+  }
+  /* line 201, ../../src/scss/jeet/_grid.scss */
+  .four-fifth-sm:after {
+    clear: both;
+  }
+  /* line 49, ../../src/scss/jeet/_grid.scss */
+  .four-fifth-sm:last-child {
+    margin-right: 0%;
   }
 
-  /* line 214, ../../src/scss/base/_grid.scss */
+  /* line 74, ../../src/scss/base/_grid.scss */
   .sixth-sm {
-    width: 14.5614035088%;
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 14.1666666667%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 197, ../../src/scss/jeet/_grid.scss */
+  .sixth-sm:before, .sixth-sm:after {
+    content: '';
+    display: table;
+  }
+  /* line 201, ../../src/scss/jeet/_grid.scss */
+  .sixth-sm:after {
+    clear: both;
+  }
+  /* line 49, ../../src/scss/jeet/_grid.scss */
+  .sixth-sm:last-child {
+    margin-right: 0%;
   }
 
-  /* line 215, ../../src/scss/base/_grid.scss */
+  /* line 75, ../../src/scss/base/_grid.scss */
   .five-sixth-sm {
-    width: 81.2280701754%;
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 82.8333333333%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 197, ../../src/scss/jeet/_grid.scss */
+  .five-sixth-sm:before, .five-sixth-sm:after {
+    content: '';
+    display: table;
+  }
+  /* line 201, ../../src/scss/jeet/_grid.scss */
+  .five-sixth-sm:after {
+    clear: both;
+  }
+  /* line 49, ../../src/scss/jeet/_grid.scss */
+  .five-sixth-sm:last-child {
+    margin-right: 0%;
   }
 }
 @media (min-width: 40em) {
-  /* line 219, ../../src/scss/base/_grid.scss */
+  /* line 79, ../../src/scss/base/_grid.scss */
   .whole-md {
-    width: 97.8947368421%;
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 197, ../../src/scss/jeet/_grid.scss */
+  .whole-md:before, .whole-md:after {
+    content: '';
+    display: table;
+  }
+  /* line 201, ../../src/scss/jeet/_grid.scss */
+  .whole-md:after {
+    clear: both;
+  }
+  /* line 49, ../../src/scss/jeet/_grid.scss */
+  .whole-md:last-child {
+    margin-right: 0%;
   }
 
-  /* line 220, ../../src/scss/base/_grid.scss */
+  /* line 80, ../../src/scss/base/_grid.scss */
   .half-md {
-    width: 47.8947368421%;
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 48.5%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 197, ../../src/scss/jeet/_grid.scss */
+  .half-md:before, .half-md:after {
+    content: '';
+    display: table;
+  }
+  /* line 201, ../../src/scss/jeet/_grid.scss */
+  .half-md:after {
+    clear: both;
+  }
+  /* line 49, ../../src/scss/jeet/_grid.scss */
+  .half-md:last-child {
+    margin-right: 0%;
   }
 
-  /* line 221, ../../src/scss/base/_grid.scss */
+  /* line 81, ../../src/scss/base/_grid.scss */
   .third-md {
-    width: 31.2280701754%;
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 31.3333333333%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 197, ../../src/scss/jeet/_grid.scss */
+  .third-md:before, .third-md:after {
+    content: '';
+    display: table;
+  }
+  /* line 201, ../../src/scss/jeet/_grid.scss */
+  .third-md:after {
+    clear: both;
+  }
+  /* line 49, ../../src/scss/jeet/_grid.scss */
+  .third-md:last-child {
+    margin-right: 0%;
   }
 
-  /* line 222, ../../src/scss/base/_grid.scss */
+  /* line 82, ../../src/scss/base/_grid.scss */
   .two-third-md {
-    width: 64.5614035088%;
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 65.6666666667%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 197, ../../src/scss/jeet/_grid.scss */
+  .two-third-md:before, .two-third-md:after {
+    content: '';
+    display: table;
+  }
+  /* line 201, ../../src/scss/jeet/_grid.scss */
+  .two-third-md:after {
+    clear: both;
+  }
+  /* line 49, ../../src/scss/jeet/_grid.scss */
+  .two-third-md:last-child {
+    margin-right: 0%;
   }
 
-  /* line 223, ../../src/scss/base/_grid.scss */
+  /* line 83, ../../src/scss/base/_grid.scss */
   .fourth-md {
-    width: 22.8947368421%;
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 22.75%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 197, ../../src/scss/jeet/_grid.scss */
+  .fourth-md:before, .fourth-md:after {
+    content: '';
+    display: table;
+  }
+  /* line 201, ../../src/scss/jeet/_grid.scss */
+  .fourth-md:after {
+    clear: both;
+  }
+  /* line 49, ../../src/scss/jeet/_grid.scss */
+  .fourth-md:last-child {
+    margin-right: 0%;
   }
 
-  /* line 224, ../../src/scss/base/_grid.scss */
+  /* line 84, ../../src/scss/base/_grid.scss */
   .three-fourth-md {
-    width: 72.8947368421%;
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 74.25%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 197, ../../src/scss/jeet/_grid.scss */
+  .three-fourth-md:before, .three-fourth-md:after {
+    content: '';
+    display: table;
+  }
+  /* line 201, ../../src/scss/jeet/_grid.scss */
+  .three-fourth-md:after {
+    clear: both;
+  }
+  /* line 49, ../../src/scss/jeet/_grid.scss */
+  .three-fourth-md:last-child {
+    margin-right: 0%;
   }
 
-  /* line 225, ../../src/scss/base/_grid.scss */
+  /* line 85, ../../src/scss/base/_grid.scss */
   .fifth-md {
-    width: 17.8947368421%;
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 17.6%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 197, ../../src/scss/jeet/_grid.scss */
+  .fifth-md:before, .fifth-md:after {
+    content: '';
+    display: table;
+  }
+  /* line 201, ../../src/scss/jeet/_grid.scss */
+  .fifth-md:after {
+    clear: both;
+  }
+  /* line 49, ../../src/scss/jeet/_grid.scss */
+  .fifth-md:last-child {
+    margin-right: 0%;
   }
 
-  /* line 226, ../../src/scss/base/_grid.scss */
+  /* line 86, ../../src/scss/base/_grid.scss */
   .two-fifth-md {
-    width: 37.8947368421%;
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 38.2%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 197, ../../src/scss/jeet/_grid.scss */
+  .two-fifth-md:before, .two-fifth-md:after {
+    content: '';
+    display: table;
+  }
+  /* line 201, ../../src/scss/jeet/_grid.scss */
+  .two-fifth-md:after {
+    clear: both;
+  }
+  /* line 49, ../../src/scss/jeet/_grid.scss */
+  .two-fifth-md:last-child {
+    margin-right: 0%;
   }
 
-  /* line 227, ../../src/scss/base/_grid.scss */
+  /* line 87, ../../src/scss/base/_grid.scss */
   .three-fifth-md {
-    width: 57.8947368421%;
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 58.8%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 197, ../../src/scss/jeet/_grid.scss */
+  .three-fifth-md:before, .three-fifth-md:after {
+    content: '';
+    display: table;
+  }
+  /* line 201, ../../src/scss/jeet/_grid.scss */
+  .three-fifth-md:after {
+    clear: both;
+  }
+  /* line 49, ../../src/scss/jeet/_grid.scss */
+  .three-fifth-md:last-child {
+    margin-right: 0%;
   }
 
-  /* line 228, ../../src/scss/base/_grid.scss */
+  /* line 88, ../../src/scss/base/_grid.scss */
   .four-fifth-md {
-    width: 77.8947368421%;
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 79.4%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 197, ../../src/scss/jeet/_grid.scss */
+  .four-fifth-md:before, .four-fifth-md:after {
+    content: '';
+    display: table;
+  }
+  /* line 201, ../../src/scss/jeet/_grid.scss */
+  .four-fifth-md:after {
+    clear: both;
+  }
+  /* line 49, ../../src/scss/jeet/_grid.scss */
+  .four-fifth-md:last-child {
+    margin-right: 0%;
   }
 
-  /* line 229, ../../src/scss/base/_grid.scss */
+  /* line 89, ../../src/scss/base/_grid.scss */
   .sixth-md {
-    width: 14.5614035088%;
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 14.1666666667%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 197, ../../src/scss/jeet/_grid.scss */
+  .sixth-md:before, .sixth-md:after {
+    content: '';
+    display: table;
+  }
+  /* line 201, ../../src/scss/jeet/_grid.scss */
+  .sixth-md:after {
+    clear: both;
+  }
+  /* line 49, ../../src/scss/jeet/_grid.scss */
+  .sixth-md:last-child {
+    margin-right: 0%;
   }
 
-  /* line 230, ../../src/scss/base/_grid.scss */
+  /* line 90, ../../src/scss/base/_grid.scss */
   .five-sixth-md {
-    width: 81.2280701754%;
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 82.8333333333%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 197, ../../src/scss/jeet/_grid.scss */
+  .five-sixth-md:before, .five-sixth-md:after {
+    content: '';
+    display: table;
+  }
+  /* line 201, ../../src/scss/jeet/_grid.scss */
+  .five-sixth-md:after {
+    clear: both;
+  }
+  /* line 49, ../../src/scss/jeet/_grid.scss */
+  .five-sixth-md:last-child {
+    margin-right: 0%;
   }
 }
 @media (min-width: 60em) {
-  /* line 234, ../../src/scss/base/_grid.scss */
+  /* line 94, ../../src/scss/base/_grid.scss */
   .whole-lg {
-    width: 97.8947368421%;
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 197, ../../src/scss/jeet/_grid.scss */
+  .whole-lg:before, .whole-lg:after {
+    content: '';
+    display: table;
+  }
+  /* line 201, ../../src/scss/jeet/_grid.scss */
+  .whole-lg:after {
+    clear: both;
+  }
+  /* line 49, ../../src/scss/jeet/_grid.scss */
+  .whole-lg:last-child {
+    margin-right: 0%;
   }
 
-  /* line 235, ../../src/scss/base/_grid.scss */
+  /* line 95, ../../src/scss/base/_grid.scss */
   .half-lg {
-    width: 47.8947368421%;
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 48.5%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 197, ../../src/scss/jeet/_grid.scss */
+  .half-lg:before, .half-lg:after {
+    content: '';
+    display: table;
+  }
+  /* line 201, ../../src/scss/jeet/_grid.scss */
+  .half-lg:after {
+    clear: both;
+  }
+  /* line 49, ../../src/scss/jeet/_grid.scss */
+  .half-lg:last-child {
+    margin-right: 0%;
   }
 
-  /* line 236, ../../src/scss/base/_grid.scss */
+  /* line 96, ../../src/scss/base/_grid.scss */
   .third-lg {
-    width: 31.2280701754%;
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 31.3333333333%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 197, ../../src/scss/jeet/_grid.scss */
+  .third-lg:before, .third-lg:after {
+    content: '';
+    display: table;
+  }
+  /* line 201, ../../src/scss/jeet/_grid.scss */
+  .third-lg:after {
+    clear: both;
+  }
+  /* line 49, ../../src/scss/jeet/_grid.scss */
+  .third-lg:last-child {
+    margin-right: 0%;
   }
 
-  /* line 237, ../../src/scss/base/_grid.scss */
+  /* line 97, ../../src/scss/base/_grid.scss */
   .two-third-lg {
-    width: 64.5614035088%;
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 65.6666666667%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 197, ../../src/scss/jeet/_grid.scss */
+  .two-third-lg:before, .two-third-lg:after {
+    content: '';
+    display: table;
+  }
+  /* line 201, ../../src/scss/jeet/_grid.scss */
+  .two-third-lg:after {
+    clear: both;
+  }
+  /* line 49, ../../src/scss/jeet/_grid.scss */
+  .two-third-lg:last-child {
+    margin-right: 0%;
   }
 
-  /* line 238, ../../src/scss/base/_grid.scss */
+  /* line 98, ../../src/scss/base/_grid.scss */
   .fourth-lg {
-    width: 22.8947368421%;
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 22.75%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 197, ../../src/scss/jeet/_grid.scss */
+  .fourth-lg:before, .fourth-lg:after {
+    content: '';
+    display: table;
+  }
+  /* line 201, ../../src/scss/jeet/_grid.scss */
+  .fourth-lg:after {
+    clear: both;
+  }
+  /* line 49, ../../src/scss/jeet/_grid.scss */
+  .fourth-lg:last-child {
+    margin-right: 0%;
   }
 
-  /* line 239, ../../src/scss/base/_grid.scss */
+  /* line 99, ../../src/scss/base/_grid.scss */
   .three-fourth-lg {
-    width: 72.8947368421%;
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 74.25%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 197, ../../src/scss/jeet/_grid.scss */
+  .three-fourth-lg:before, .three-fourth-lg:after {
+    content: '';
+    display: table;
+  }
+  /* line 201, ../../src/scss/jeet/_grid.scss */
+  .three-fourth-lg:after {
+    clear: both;
+  }
+  /* line 49, ../../src/scss/jeet/_grid.scss */
+  .three-fourth-lg:last-child {
+    margin-right: 0%;
   }
 
-  /* line 240, ../../src/scss/base/_grid.scss */
+  /* line 100, ../../src/scss/base/_grid.scss */
   .fifth-lg {
-    width: 17.8947368421%;
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 17.6%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 197, ../../src/scss/jeet/_grid.scss */
+  .fifth-lg:before, .fifth-lg:after {
+    content: '';
+    display: table;
+  }
+  /* line 201, ../../src/scss/jeet/_grid.scss */
+  .fifth-lg:after {
+    clear: both;
+  }
+  /* line 49, ../../src/scss/jeet/_grid.scss */
+  .fifth-lg:last-child {
+    margin-right: 0%;
   }
 
-  /* line 241, ../../src/scss/base/_grid.scss */
+  /* line 101, ../../src/scss/base/_grid.scss */
   .two-fifth-lg {
-    width: 37.8947368421%;
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 38.2%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 197, ../../src/scss/jeet/_grid.scss */
+  .two-fifth-lg:before, .two-fifth-lg:after {
+    content: '';
+    display: table;
+  }
+  /* line 201, ../../src/scss/jeet/_grid.scss */
+  .two-fifth-lg:after {
+    clear: both;
+  }
+  /* line 49, ../../src/scss/jeet/_grid.scss */
+  .two-fifth-lg:last-child {
+    margin-right: 0%;
   }
 
-  /* line 242, ../../src/scss/base/_grid.scss */
+  /* line 102, ../../src/scss/base/_grid.scss */
   .three-fifth-lg {
-    width: 57.8947368421%;
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 58.8%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 197, ../../src/scss/jeet/_grid.scss */
+  .three-fifth-lg:before, .three-fifth-lg:after {
+    content: '';
+    display: table;
+  }
+  /* line 201, ../../src/scss/jeet/_grid.scss */
+  .three-fifth-lg:after {
+    clear: both;
+  }
+  /* line 49, ../../src/scss/jeet/_grid.scss */
+  .three-fifth-lg:last-child {
+    margin-right: 0%;
   }
 
-  /* line 243, ../../src/scss/base/_grid.scss */
+  /* line 103, ../../src/scss/base/_grid.scss */
   .four-fifth-lg {
-    width: 77.8947368421%;
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 79.4%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 197, ../../src/scss/jeet/_grid.scss */
+  .four-fifth-lg:before, .four-fifth-lg:after {
+    content: '';
+    display: table;
+  }
+  /* line 201, ../../src/scss/jeet/_grid.scss */
+  .four-fifth-lg:after {
+    clear: both;
+  }
+  /* line 49, ../../src/scss/jeet/_grid.scss */
+  .four-fifth-lg:last-child {
+    margin-right: 0%;
   }
 
-  /* line 244, ../../src/scss/base/_grid.scss */
+  /* line 104, ../../src/scss/base/_grid.scss */
   .sixth-lg {
-    width: 14.5614035088%;
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 14.1666666667%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 197, ../../src/scss/jeet/_grid.scss */
+  .sixth-lg:before, .sixth-lg:after {
+    content: '';
+    display: table;
+  }
+  /* line 201, ../../src/scss/jeet/_grid.scss */
+  .sixth-lg:after {
+    clear: both;
+  }
+  /* line 49, ../../src/scss/jeet/_grid.scss */
+  .sixth-lg:last-child {
+    margin-right: 0%;
   }
 
-  /* line 245, ../../src/scss/base/_grid.scss */
+  /* line 105, ../../src/scss/base/_grid.scss */
   .five-sixth-lg {
-    width: 81.2280701754%;
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 82.8333333333%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 197, ../../src/scss/jeet/_grid.scss */
+  .five-sixth-lg:before, .five-sixth-lg:after {
+    content: '';
+    display: table;
+  }
+  /* line 201, ../../src/scss/jeet/_grid.scss */
+  .five-sixth-lg:after {
+    clear: both;
+  }
+  /* line 49, ../../src/scss/jeet/_grid.scss */
+  .five-sixth-lg:last-child {
+    margin-right: 0%;
   }
 }
 /* line 14, ../../src/scss/objects/_buttons.scss */
@@ -1001,15 +2077,32 @@ pre code {
 
 /* line 1, ../../src/scss/modules/_navbar.scss */
 .navbar {
+  *zoom: 1;
+  width: auto;
   max-width: 1140px;
+  float: none;
+  display: block;
   margin-right: auto;
   margin-left: auto;
-  width: 98%;
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 197, ../../src/scss/jeet/_grid.scss */
+.navbar:before, .navbar:after {
+  content: '';
+  display: table;
+}
+/* line 201, ../../src/scss/jeet/_grid.scss */
+.navbar:after {
+  clear: both;
 }
 
 /* line 1, ../../src/scss/modules/_social-media.scss */
 .social-media {
-  background: silver;
+  margin-top: 6.25em;
+  margin-bottom: 6.25em;
+  padding: 3.125em 1.25em;
+  background: #f4f4f4;
 }
 
 /* line 1, ../../src/scss/modules/_blog-post.scss */
@@ -1017,37 +2110,59 @@ pre code {
   border-radius: 0.3125em;
   margin-bottom: 1.875em;
   border: 1px solid #dbdbdb;
-  box-shadow: 0 0.1875em 0.3125em -0.1875em #b3b3b3;
 }
-/* line 8, ../../src/scss/modules/_blog-post.scss */
+/* line 7, ../../src/scss/modules/_blog-post.scss */
 .blog-post .img {
   width: 100%;
 }
-/* line 12, ../../src/scss/modules/_blog-post.scss */
+/* line 11, ../../src/scss/modules/_blog-post.scss */
 .blog-post a {
   font-size: 0.875em;
   text-transform: capitalize;
 }
 
-/* line 18, ../../src/scss/modules/_blog-post.scss */
+/* line 17, ../../src/scss/modules/_blog-post.scss */
 .blog-post--header {
   margin-bottom: 0.9375em;
 }
-/* line 21, ../../src/scss/modules/_blog-post.scss */
+/* line 20, ../../src/scss/modules/_blog-post.scss */
 .blog-post--header h2 {
   font-style: italic;
   margin-bottom: 0;
   text-transform: uppercase;
 }
-/* line 27, ../../src/scss/modules/_blog-post.scss */
+/* line 26, ../../src/scss/modules/_blog-post.scss */
 .blog-post--header span {
   display: inline-block;
 }
 
 /* line 1, ../../src/scss/layout/_hero.scss */
-.hero {
-  height: 25em;
+.hero-large, .hero-small {
   background: silver;
+  position: relative;
+}
+
+/* line 15, ../../src/scss/layout/_hero.scss */
+.hero-content--centerboth {
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* line 19, ../../src/scss/layout/_hero.scss */
+.hero-large {
+  height: 25em;
+}
+
+/* line 24, ../../src/scss/layout/_hero.scss */
+.hero-small {
+  height: 12.5em;
 }
 
 /* line 4, ../../src/scss/pages/_home.scss */
@@ -1131,33 +2246,33 @@ pre code {
 }
 
 /* line 57, ../../src/scss/helpers/_overrides.scss */
-.blog-post, .hero, .values {
+.blog-post, .hero-large, .hero-small, .values {
   padding: 1.875em 1.25em;
 }
 
 /* line 63, ../../src/scss/helpers/_overrides.scss */
-.hero {
+.hero-large, .hero-small {
   padding-right: 0;
   padding-left: 0;
 }
 
 /* line 70, ../../src/scss/helpers/_overrides.scss */
-.content, .social-media, .hero {
+.content, .hero-large, .hero-small {
   margin: 1.875em 1.25em;
 }
 
 /* line 71, ../../src/scss/helpers/_overrides.scss */
-.logo, .hero h1 {
+.logo, .hero-large h1, .hero-small h1 {
   margin: 0;
 }
 
 /* line 72, ../../src/scss/helpers/_overrides.scss */
-.hero {
+.hero-large, .hero-small {
   margin-top: 0;
 }
 
 /* line 76, ../../src/scss/helpers/_overrides.scss */
-.content, .social-media, .hero {
+.content, .hero-large, .hero-small {
   margin-right: 0;
   margin-left: 0;
 }

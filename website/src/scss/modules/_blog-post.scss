@@ -3,7 +3,6 @@
   @include em(border-radius, 5px);
   @include em(margin-bottom, 30px);
   border: em(1px) solid $color-gray-light;
-  box-shadow: 0 em(3px) em(5px) em(-3px) lighten($color-gray-dark, 20%);
 
   .img {
     width: 100%;

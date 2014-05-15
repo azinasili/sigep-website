@@ -1,13 +1,27 @@
-.hero {
+%hero {
   @extend %padding-lg;
   @extend %margin-lg;
   @extend %no-padding-horz;
   @extend %no-margin-top;
   @extend %no-margin-horz;
-  @include em(height, 400px);
   background: silver;
+  position: relative;
 
   h1 {
     @extend %no-margin;
   }
+}
+
+.hero-content--centerboth {
+  @include align(both);
+}
+
+.hero-large {
+  @extend %hero;
+  @include em(height, 400px);
+}
+
+.hero-small {
+  @extend %hero;
+  @include em(height, 200px);
 }
