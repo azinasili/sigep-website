@@ -1,0 +1,29 @@
+// ----------------------------------------------------------------------------
+//
+// Jump Functions
+// Jump packaged functions
+//
+// ----------------------------------------------------------------------------
+
+// Create dynamic text color based on background
+@function brightness($color) {
+  @return ((red($color)) + (green($color)) + (blue($color))) / 255 * 100%;
+}
+
+@function text-color($color, $dark: mix(#111, $color, 60%), $light: mix(#fff, $color, 70%)) {
+  @if $color == null {
+    @return null;
+  }
+  @else {
+    $color-brightness: brightness($color);
+    $light-text-brightness: brightness($light);
+    $dark-text-brightness: brightness($dark);
+
+    @if abs($color-brightness - $light-text-brightness) > abs($color-brightness - $dark-text-brightness) {
+      @return $light;
+    }
+    @else {
+      @return $dark;
+    }
+  }
+}

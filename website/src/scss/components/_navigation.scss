@@ -7,12 +7,14 @@
 .navigation ul {
   text-align: center;
 
-  @media (min-width: $bp-medium) {
+  @media (min-width: $bp-large) {
     text-align: right;
   }
 }
 
 .navigation ul li {
   @extend %inline-item;
+  @include em(font-size, 14px);
   @include em(margin, 10px);
+  text-transform: uppercase;
 }

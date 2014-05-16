@@ -4,16 +4,9 @@
   @extend %no-padding-horz;
   @extend %no-margin-top;
   @extend %no-margin-horz;
-  background: silver;
+  background: $color-secondary;
+  color: text-color($color-secondary);
   position: relative;
-
-  h1 {
-    @extend %no-margin;
-  }
-}
-
-.hero-content--centerboth {
-  @include align(both);
 }
 
 .hero-large {
@@ -24,4 +17,28 @@
 .hero-small {
   @extend %hero;
   @include em(height, 200px);
+}
+
+%hero-content {
+  text-transform: uppercase;
+
+  h1 {
+    @extend %no-margin;
+  }
+
+  span {
+    display: block;
+    margin-top: $spacing;
+  }
+}
+
+.hero-content--centerboth {
+  @extend %hero-content;
+  @extend .text-center;
+  @include align();
+}
+
+.hero-content--centerleft {
+  @extend %hero-content;
+  @include align(v);
 }

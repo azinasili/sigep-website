@@ -6,6 +6,7 @@
 // ----------------------------------------------------------------------------
 .logo {
   @extend %no-margin;
+  text-align: center;
   text-transform: capitalize;
 
   &::before {
@@ -16,5 +17,9 @@
     height: 65px;
     width: 65px;
     vertical-align: middle;
+  }
+
+  @media (min-width: $bp-large) {
+    text-align: left;
   }
 }

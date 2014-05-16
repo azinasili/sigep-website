@@ -1,6 +1,6 @@
 // ----------------------------------------------------------------------------
 //
-// Launchpad
+// Jump
 // Simple SCSS framework to kick start projects
 // Framework can easily be configured to suit each any theme
 //
@@ -9,6 +9,10 @@
 // Basic settings -------------------------------------------------------------
 @import "settings";
 @import "jeet/index";
+
+
+// Theme helpers -----------------------------------------------------------------
+@import "helpers/functions";
 
 
 // Theme base -----------------------------------------------------------------
