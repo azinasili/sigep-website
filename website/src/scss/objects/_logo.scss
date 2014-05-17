@@ -10,13 +10,17 @@
   text-transform: capitalize;
 
   &::before {
-    @include em(margin-right, 10px);
+    @include em(margin-right, 5px);
     content: "";
     background: url("../img/logo.png") no-repeat center center;
     display: inline-block;
     height: 65px;
     width: 65px;
     vertical-align: middle;
+  }
+
+  @media (max-width: 995px) {
+    @include em(font-size, 23px)
   }
 
   @media (min-width: $bp-large) {

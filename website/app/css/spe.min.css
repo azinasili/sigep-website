@@ -384,7 +384,7 @@ dd {
 /* line 139, ../../src/scss/base/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
-  font-weight: normal;
+  font-weight: 400;
   font-family: "Bitter", sans-serif;
   margin-top: 0;
   margin-bottom: 1em;
@@ -394,73 +394,65 @@ h1, h2, h3, h4, h5, h6 {
 /* line 148, ../../src/scss/base/_typography.scss */
 h1,
 .h1 {
-  font-size: 1.5em;
+  font-size: 1.625em;
 }
 
-/* line 153, ../../src/scss/base/_typography.scss */
+/* line 151, ../../src/scss/base/_typography.scss */
 h2,
 .h2 {
-  font-size: 1.3125em;
+  font-size: 1.4375em;
 }
 
-/* line 158, ../../src/scss/base/_typography.scss */
+/* line 154, ../../src/scss/base/_typography.scss */
 h3,
 .h3 {
-  font-size: 1.1875em;
+  font-size: 1.25em;
+}
+
+/* line 157, ../../src/scss/base/_typography.scss */
+h4,
+.h4 {
+  font-size: 1.125em;
+}
+
+/* line 160, ../../src/scss/base/_typography.scss */
+h5,
+.h5 {
+  font-size: 1em;
 }
 
 /* line 163, ../../src/scss/base/_typography.scss */
-h4, h5,
-.h4, .h5 {
-  font-style: italic;
-  font-size: 0.9375em;
-}
-
-/* line 169, ../../src/scss/base/_typography.scss */
-h4,
-.h4 {
-  text-transform: uppercase;
-}
-
-/* line 174, ../../src/scss/base/_typography.scss */
 h6,
 .h6 {
-  font-size: 0.75em;
+  font-size: 0.875em;
 }
 
-@media (min-width: 40em) {
-  /* line 180, ../../src/scss/base/_typography.scss */
-  h1,
-  .h1 {
-    font-size: 1.75em;
-  }
-}
-/* line 192, ../../src/scss/base/_typography.scss */
+/* line 172, ../../src/scss/base/_typography.scss */
 hr {
   border: 0;
   border-top: 1px solid #dbdbdb;
-  margin: 2em auto;
+  margin: 1em auto;
 }
 
-/* line 199, ../../src/scss/base/_typography.scss */
+/* line 179, ../../src/scss/base/_typography.scss */
 em {
   font-style: italic;
 }
 
-/* line 204, ../../src/scss/base/_typography.scss */
+/* line 184, ../../src/scss/base/_typography.scss */
 sub,
 sup {
   margin-left: 0.25em;
   font-weight: bold;
 }
 
-/* line 210, ../../src/scss/base/_typography.scss */
+/* line 190, ../../src/scss/base/_typography.scss */
 .img {
   height: auto;
   max-width: 100%;
 }
 
-/* line 218, ../../src/scss/base/_typography.scss */
+/* line 198, ../../src/scss/base/_typography.scss */
 ::-moz-selection {
   background: #cd363f;
   color: white;
@@ -470,13 +462,13 @@ sup {
   color: white;
 }
 
-/* line 223, ../../src/scss/base/_typography.scss */
+/* line 203, ../../src/scss/base/_typography.scss */
 ::-moz-selection {
   background: #cd363f;
   color: white;
 }
 
-/* line 232, ../../src/scss/base/_typography.scss */
+/* line 212, ../../src/scss/base/_typography.scss */
 blockquote {
   border-left: 0.25em solid #dbdbdb;
   margin-bottom: 1.125em;
@@ -485,12 +477,12 @@ blockquote {
   padding-left: 1.125em;
 }
 
-/* line 240, ../../src/scss/base/_typography.scss */
+/* line 220, ../../src/scss/base/_typography.scss */
 blockquote, q {
   quotes: none;
 }
 
-/* line 244, ../../src/scss/base/_typography.scss */
+/* line 224, ../../src/scss/base/_typography.scss */
 blockquote::before,
 blockquote::after,
 q::before,
@@ -2052,13 +2044,19 @@ pre code {
 }
 /* line 12, ../../src/scss/objects/_logo.scss */
 .logo::before {
-  margin-right: 0.625em;
+  margin-right: 0.3125em;
   content: "";
   background: url("../img/logo.png") no-repeat center center;
   display: inline-block;
   height: 65px;
   width: 65px;
   vertical-align: middle;
+}
+@media (max-width: 995px) {
+  /* line 7, ../../src/scss/objects/_logo.scss */
+  .logo {
+    font-size: 1.4375em;
+  }
 }
 @media (min-width: 60em) {
   /* line 7, ../../src/scss/objects/_logo.scss */
@@ -2107,6 +2105,11 @@ pre code {
   clear: both;
 }
 
+/* line 5, ../../src/scss/modules/_content.scss */
+.content h2 {
+  text-transform: uppercase;
+}
+
 /* line 1, ../../src/scss/modules/_social-media.scss */
 .social-media {
   margin-top: 6.25em;
@@ -2132,16 +2135,21 @@ pre code {
 }
 
 /* line 17, ../../src/scss/modules/_blog-post.scss */
+.blog-post--preview {
+  font-size: 0.875em;
+}
+
+/* line 23, ../../src/scss/modules/_blog-post.scss */
 .blog-post--header {
   margin-bottom: 0.9375em;
 }
-/* line 20, ../../src/scss/modules/_blog-post.scss */
+/* line 26, ../../src/scss/modules/_blog-post.scss */
 .blog-post--header h2 {
   font-style: italic;
   margin-bottom: 0;
   text-transform: uppercase;
 }
-/* line 26, ../../src/scss/modules/_blog-post.scss */
+/* line 32, ../../src/scss/modules/_blog-post.scss */
 .blog-post--header span {
   display: inline-block;
 }
@@ -2200,12 +2208,17 @@ pre code {
   transform: translateY(-50%);
 }
 
-/* line 4, ../../src/scss/pages/_home.scss */
+/* line 1, ../../src/scss/pages/_home.scss */
+.values {
+  margin-top: 6.25em;
+  margin-bottom: 6.25em;
+}
+/* line 6, ../../src/scss/pages/_home.scss */
 .values h2 {
   margin-top: 0.625em;
   text-transform: capitalize;
 }
-/* line 9, ../../src/scss/pages/_home.scss */
+/* line 11, ../../src/scss/pages/_home.scss */
 .values p {
   margin-bottom: 2.1875em;
 }
@@ -2292,7 +2305,7 @@ pre code {
 }
 
 /* line 70, ../../src/scss/helpers/_overrides.scss */
-.content, .hero-large, .hero-small {
+.content, .blog-post--preview, .hero-large, .hero-small {
   margin: 1.875em 1.25em;
 }
 
@@ -2307,7 +2320,7 @@ pre code {
 }
 
 /* line 76, ../../src/scss/helpers/_overrides.scss */
-.content, .hero-large, .hero-small {
+.content, .blog-post--preview, .hero-large, .hero-small {
   margin-right: 0;
   margin-left: 0;
 }

@@ -1,4 +1,8 @@
 .content {
   @extend %margin-lg;
   @extend %no-margin-horz;
+
+  h2 {
+    text-transform: uppercase;
+  }
 }
