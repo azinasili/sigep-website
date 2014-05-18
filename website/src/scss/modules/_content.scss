@@ -2,7 +2,12 @@
   @extend %margin-lg;
   @extend %no-margin-horz;
 
-  h2 {
-    text-transform: uppercase;
+  @media (min-width: $bp-medium) {
+    @include em(padding-right, 30px);
   }
+}
+
+.side-bar {
+  @extend %margin-lg;
+  @extend %no-margin-horz;
 }

@@ -30,7 +30,7 @@
 
 // Set page container
 .container {
-  @include center();
+  @include center($pad: em(20px));
   height: 100%;
 }
 
