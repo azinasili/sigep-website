@@ -269,7 +269,7 @@ table {
 body {
   background: white;
   color: #272727;
-  font-family: "Merriweather Sans", serif;
+  font-family: "Merriweather Sans", sans-serif;
   line-height: 1.5;
   font-size: 100%;
 }
@@ -385,7 +385,7 @@ dd {
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   font-weight: 400;
-  font-family: "Bitter", sans-serif;
+  font-family: "Bitter", serif;
   margin-top: 0;
   margin-bottom: 1em;
   word-wrap: break-word;
@@ -470,25 +470,29 @@ sup {
 
 /* line 212, ../../src/scss/base/_typography.scss */
 blockquote {
-  border-left: 0.25em solid #dbdbdb;
-  margin-bottom: 1.125em;
-  margin-left: 1.125em;
   padding-right: 1.125em;
   padding-left: 1.125em;
 }
 
-/* line 220, ../../src/scss/base/_typography.scss */
+/* line 217, ../../src/scss/base/_typography.scss */
 blockquote, q {
+  font-size: 1.25em;
+  text-align: center;
   quotes: none;
 }
-
-/* line 224, ../../src/scss/base/_typography.scss */
-blockquote::before,
-blockquote::after,
-q::before,
-q::after {
-  content: '';
-  content: none;
+/* line 222, ../../src/scss/base/_typography.scss */
+blockquote::before, blockquote::after, q::before, q::after {
+  font-size: 1.25em;
+  color: #999999;
+  font-family: 'Bitter', serif;
+}
+/* line 229, ../../src/scss/base/_typography.scss */
+blockquote::before, q::before {
+  content: '\275D';
+}
+/* line 233, ../../src/scss/base/_typography.scss */
+blockquote::after, q::after {
+  content: '\275E';
 }
 
 /* line 16, ../../src/scss/base/_grid.scss */

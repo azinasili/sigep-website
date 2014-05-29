@@ -210,21 +210,27 @@ sup {
 // 8. Quotes
 // ----------------------------------------------------------------------------
 blockquote {
-  border-left: em(4px) solid $color-gray-light;
-  margin-bottom: $spacing;
-  margin-left: $spacing;
   padding-right: $spacing;
   padding-left: $spacing;
 }
 
 blockquote, q {
+  @include em(font-size, 20px);
+  text-align: center;
   quotes: none;
-}
 
-blockquote::before,
-blockquote::after,
-q::before,
-q::after {
-  content: '';
-  content: none;
+  &::before,
+  &::after {
+    @include em(font-size, 20px);
+    color: mix($color-white, $color-gray-dark, 20%);
+    font-family: 'Bitter', serif;
+  }
+
+  &::before {
+    content: '\275D';
+  }
+
+  &::after {
+    content: '\275E';
+  }
 }
