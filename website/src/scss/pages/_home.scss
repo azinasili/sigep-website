@@ -12,9 +12,3 @@
     @include em(margin-bottom, 35px);
   }
 }
-
-main {
-  @include em(padding-bottom, 50px);
-  background: $color-white;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .3);
-}

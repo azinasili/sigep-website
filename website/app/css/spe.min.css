@@ -2134,6 +2134,29 @@ pre code {
   display: inline-block;
 }
 
+/* line 1, ../../src/scss/layout/_basic.scss */
+.main {
+  padding-bottom: 3.125em;
+  background: white;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.7);
+}
+
+/* line 7, ../../src/scss/layout/_basic.scss */
+.footer {
+  font-size: 0.875em;
+  background: #272727;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+}
+/* line 18, ../../src/scss/layout/_basic.scss */
+.footer h4 {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
 /* line 1, ../../src/scss/layout/_hero.scss */
 .hero-large, .hero-small {
   background: #7b1e5c;
@@ -2188,16 +2211,6 @@ pre code {
   transform: translateY(-50%);
 }
 
-/* line 1, ../../src/scss/layout/_footer.scss */
-.footer {
-  background: #272727;
-  color: white;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  z-index: -1;
-}
-
 /* line 1, ../../src/scss/pages/_home.scss */
 .values {
   margin-top: 6.25em;
@@ -2211,13 +2224,6 @@ pre code {
 /* line 11, ../../src/scss/pages/_home.scss */
 .values p {
   margin-bottom: 2.1875em;
-}
-
-/* line 16, ../../src/scss/pages/_home.scss */
-main {
-  padding-bottom: 3.125em;
-  background: white;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
 }
 
 /* line 16, ../../src/scss/helpers/_overrides.scss */
@@ -2285,13 +2291,18 @@ main {
   float: right;
 }
 
+/* line 56, ../../src/scss/helpers/_overrides.scss */
+.footer {
+  padding: 0.9375em 1.25em;
+}
+
 /* line 57, ../../src/scss/helpers/_overrides.scss */
-.blog-post, .hero-large, .hero-small, .footer, .values {
+.blog-post, .hero-large, .hero-small, .values {
   padding: 1.875em 1.25em;
 }
 
 /* line 63, ../../src/scss/helpers/_overrides.scss */
-.hero-large, .hero-small, .footer {
+.footer, .hero-large, .hero-small {
   padding-right: 0;
   padding-left: 0;
 }
