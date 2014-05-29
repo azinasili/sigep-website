@@ -269,9 +269,9 @@ table {
 body {
   background: white;
   color: #272727;
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
   line-height: 1.5;
-  font-size: 100%;
+  font-size: 87.5%;
 }
 
 /* line 27, ../../src/scss/base/_typography.scss */
@@ -391,68 +391,68 @@ h1, h2, h3, h4, h5, h6 {
   word-wrap: break-word;
 }
 
-/* line 148, ../../src/scss/base/_typography.scss */
+/* line 149, ../../src/scss/base/_typography.scss */
 h1,
 .h1 {
   font-size: 1.625em;
 }
 
-/* line 151, ../../src/scss/base/_typography.scss */
+/* line 152, ../../src/scss/base/_typography.scss */
 h2,
 .h2 {
   font-size: 1.4375em;
 }
 
-/* line 154, ../../src/scss/base/_typography.scss */
+/* line 155, ../../src/scss/base/_typography.scss */
 h3,
 .h3 {
   font-size: 1.25em;
 }
 
-/* line 157, ../../src/scss/base/_typography.scss */
+/* line 158, ../../src/scss/base/_typography.scss */
 h4,
 .h4 {
   font-size: 1.125em;
 }
 
-/* line 160, ../../src/scss/base/_typography.scss */
+/* line 161, ../../src/scss/base/_typography.scss */
 h5,
 .h5 {
   font-size: 1em;
 }
 
-/* line 163, ../../src/scss/base/_typography.scss */
+/* line 164, ../../src/scss/base/_typography.scss */
 h6,
 .h6 {
   font-size: 0.875em;
 }
 
-/* line 172, ../../src/scss/base/_typography.scss */
+/* line 173, ../../src/scss/base/_typography.scss */
 hr {
   border: 0;
   border-top: 1px solid #dbdbdb;
   margin: 1em auto;
 }
 
-/* line 179, ../../src/scss/base/_typography.scss */
+/* line 180, ../../src/scss/base/_typography.scss */
 em {
   font-style: italic;
 }
 
-/* line 184, ../../src/scss/base/_typography.scss */
+/* line 185, ../../src/scss/base/_typography.scss */
 sub,
 sup {
   margin-left: 0.25em;
   font-weight: bold;
 }
 
-/* line 190, ../../src/scss/base/_typography.scss */
+/* line 191, ../../src/scss/base/_typography.scss */
 .img {
   height: auto;
   max-width: 100%;
 }
 
-/* line 198, ../../src/scss/base/_typography.scss */
+/* line 199, ../../src/scss/base/_typography.scss */
 ::-moz-selection {
   background: #cd363f;
   color: white;
@@ -462,35 +462,35 @@ sup {
   color: white;
 }
 
-/* line 203, ../../src/scss/base/_typography.scss */
+/* line 204, ../../src/scss/base/_typography.scss */
 ::-moz-selection {
   background: #cd363f;
   color: white;
 }
 
-/* line 212, ../../src/scss/base/_typography.scss */
+/* line 213, ../../src/scss/base/_typography.scss */
 blockquote {
   padding-right: 1.125em;
   padding-left: 1.125em;
 }
 
-/* line 217, ../../src/scss/base/_typography.scss */
+/* line 218, ../../src/scss/base/_typography.scss */
 blockquote, q {
   font-size: 1.25em;
   text-align: center;
   quotes: none;
 }
-/* line 222, ../../src/scss/base/_typography.scss */
+/* line 223, ../../src/scss/base/_typography.scss */
 blockquote::before, blockquote::after, q::before, q::after {
   font-size: 1.25em;
   color: #999999;
   font-family: 'Bitter', serif;
 }
-/* line 229, ../../src/scss/base/_typography.scss */
+/* line 230, ../../src/scss/base/_typography.scss */
 blockquote::before, q::before {
   content: '\275D';
 }
-/* line 233, ../../src/scss/base/_typography.scss */
+/* line 234, ../../src/scss/base/_typography.scss */
 blockquote::after, q::after {
   content: '\275E';
 }
@@ -2056,12 +2056,6 @@ pre code {
   width: 65px;
   vertical-align: middle;
 }
-@media (max-width: 995px) {
-  /* line 7, ../../src/scss/objects/_logo.scss */
-  .logo {
-    font-size: 1.4375em;
-  }
-}
 @media (min-width: 60em) {
   /* line 7, ../../src/scss/objects/_logo.scss */
   .logo {
@@ -2082,7 +2076,6 @@ pre code {
 
 /* line 15, ../../src/scss/components/_navigation.scss */
 .navigation ul li {
-  font-size: 0.875em;
   margin: 0.625em;
   text-transform: uppercase;
 }
@@ -2114,13 +2107,13 @@ pre code {
 }
 /* line 11, ../../src/scss/modules/_blog-post.scss */
 .blog-post a {
-  font-size: 0.875em;
+  font-size: 0.9375em;
   text-transform: capitalize;
 }
 
 /* line 17, ../../src/scss/modules/_blog-post.scss */
 .blog-post--preview {
-  font-size: 0.875em;
+  font-size: 0.9375em;
 }
 
 /* line 23, ../../src/scss/modules/_blog-post.scss */
@@ -2139,13 +2132,20 @@ pre code {
 }
 
 /* line 1, ../../src/scss/layout/_basic.scss */
+.header {
+  padding-top: 0.3125em;
+  padding-bottom: 0.3125em;
+  background: white;
+}
+
+/* line 7, ../../src/scss/layout/_basic.scss */
 .main {
   padding-bottom: 3.125em;
   background: white;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.7);
 }
 
-/* line 7, ../../src/scss/layout/_basic.scss */
+/* line 13, ../../src/scss/layout/_basic.scss */
 .footer {
   font-size: 0.875em;
   background: #272727;
@@ -2155,7 +2155,7 @@ pre code {
   width: 100%;
   z-index: -1;
 }
-/* line 18, ../../src/scss/layout/_basic.scss */
+/* line 24, ../../src/scss/layout/_basic.scss */
 .footer h4 {
   text-transform: uppercase;
   font-weight: 400;

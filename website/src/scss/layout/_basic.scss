@@ -1,3 +1,9 @@
+.header {
+  @include em(padding-top, 5px);
+  @include em(padding-bottom, 5px);
+  background: $color-white;
+}
+
 .main {
   @include em(padding-bottom, 50px);
   background: $color-white;

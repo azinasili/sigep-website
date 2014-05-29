@@ -19,10 +19,6 @@
     vertical-align: middle;
   }
 
-  @media (max-width: 995px) {
-    @include em(font-size, 23px)
-  }
-
   @media (min-width: $bp-large) {
     text-align: left;
   }

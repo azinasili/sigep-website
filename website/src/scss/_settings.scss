@@ -13,7 +13,7 @@ $full-screen                  : no;
 // Grid Sizing
 // Variables accept em, px, or % values
 // Container-max 100% = 1600px
-$font-base                    : 100%;
+$font-base                    : 87.5%;
 $spacing                      : 1.125em;
 $container-max                : 1140px;
 $gutter                       : 3; // Percentage value
@@ -28,7 +28,7 @@ $bp-xlarge                    : 80em; // 1280px
 
 
 // Theme Font settings --------------------------------------------------------
-$font-primary                 : 'Merriweather Sans', sans-serif;
+$font-primary                 : 'Raleway', sans-serif;
 $font-secondary               : 'Bitter', serif;
 $font-monospace               : monospace, serif;
 

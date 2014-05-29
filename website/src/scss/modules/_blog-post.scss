@@ -9,7 +9,7 @@
   }
 
   a {
-    @include em(font-size, 14px);
+    @include em(font-size, 15px);
     text-transform: capitalize;
   }
 }
@@ -17,7 +17,7 @@
 .blog-post--preview {
   @extend %margin-lg;
   @extend %no-margin-horz;
-  @include em(font-size, 14px);
+  @include em(font-size, 15px);
 }
 
 .blog-post--header {
