@@ -20,8 +20,8 @@ body {
   background: $color-white;
   color: $color-black;
   font-family: $font-primary;
-  line-height: 1.5;
   font-size: $font-base;
+  line-height: 1.5;
 }
 
 p {
@@ -140,7 +140,6 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   font-weight: 400;
   font-family: $font-secondary;
-  margin-top: 0;
   margin-bottom: 1em;
   word-wrap: break-word;
 }
