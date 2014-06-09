@@ -32,13 +32,8 @@
   }
 }
 
-.hero-content--centerboth {
+.hero-content {
   @extend %hero-content;
   @extend .text-center;
   @include align();
-}
-
-.hero-content--centerleft {
-  @extend %hero-content;
-  @include align(v);
 }
