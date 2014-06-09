@@ -7,7 +7,6 @@
 .main {
   @include em(padding-bottom, 50px);
   background: $color-white;
-  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .7);
 }
 
 .footer {
