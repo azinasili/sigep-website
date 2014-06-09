@@ -1,8 +1,6 @@
 .blog-post {
-  @extend %padding-lg;
-  @include em(border-radius, 5px);
-  @include em(margin-bottom, 30px);
-  border: em(1px) solid $color-gray-light;
+  @include em(margin-bottom, 75px);
+  @include em(padding-bottom, 30px);
 
   .img {
     width: 100%;
@@ -24,12 +22,16 @@
   @include em(margin-bottom, 15px);
 
   h2 {
+    @include em(font-size, 28px);
     font-style: italic;
     margin-bottom: 0;
     text-transform: uppercase;
   }
 
   span {
+    @extend %margin-md;
+    @extend %no-margin-top;
+    @extend %no-margin-horz;
     display: inline-block;
   }
 }
