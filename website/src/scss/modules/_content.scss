@@ -5,9 +5,21 @@
   @media (min-width: $bp-medium) {
     @include em(padding-right, 30px);
   }
+
+  h2:not(:first-of-type),
+  h3,
+  h4 {
+    margin-top: 3em;
+  }
 }
 
 .side-bar {
   @extend %margin-lg;
   @extend %no-margin-horz;
+
+  h2:not(:first-of-type),
+  h3,
+  h4 {
+    margin-top: 3em;
+  }
 }
