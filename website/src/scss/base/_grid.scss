@@ -39,6 +39,16 @@
   float: right;
 }
 
+// Media object
+.media {
+  @include em(margin-bottom, 20px);
+
+  .img {
+    @include em(margin-right, 10px);
+    float: left;
+  }
+}
+
 
 // ----------------------------------------------------------------------------
 // 2. Grid classes

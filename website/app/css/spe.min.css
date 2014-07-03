@@ -499,7 +499,7 @@ blockquote::after, q::after {
 *::before,
 *::after {
   -moz-box-sizing: border-box;
-  box-sizing: border-box;
+       box-sizing: border-box;
 }
 
 /* line 23, ../../src/scss/base/_grid.scss */
@@ -553,13 +553,23 @@ blockquote::after, q::after {
   float: right;
 }
 
-/* line 47, ../../src/scss/base/_grid.scss */
-.grid {
-  -webkit-transition: width .25s ease-in-out;
-  transition: width .25s ease-in-out;
+/* line 43, ../../src/scss/base/_grid.scss */
+.media {
+  margin-bottom: 1.25em;
+}
+/* line 46, ../../src/scss/base/_grid.scss */
+.media .img {
+  margin-right: 0.625em;
+  float: left;
 }
 
-/* line 51, ../../src/scss/base/_grid.scss */
+/* line 57, ../../src/scss/base/_grid.scss */
+.grid {
+  -webkit-transition: width .25s ease-in-out;
+          transition: width .25s ease-in-out;
+}
+
+/* line 61, ../../src/scss/base/_grid.scss */
 .whole-xs {
   *zoom: 1;
   float: left;
@@ -586,7 +596,7 @@ blockquote::after, q::after {
   margin-right: 0%;
 }
 
-/* line 52, ../../src/scss/base/_grid.scss */
+/* line 62, ../../src/scss/base/_grid.scss */
 .half-xs {
   *zoom: 1;
   float: left;
@@ -613,7 +623,7 @@ blockquote::after, q::after {
   margin-right: 0%;
 }
 
-/* line 53, ../../src/scss/base/_grid.scss */
+/* line 63, ../../src/scss/base/_grid.scss */
 .third-xs {
   *zoom: 1;
   float: left;
@@ -640,7 +650,7 @@ blockquote::after, q::after {
   margin-right: 0%;
 }
 
-/* line 54, ../../src/scss/base/_grid.scss */
+/* line 64, ../../src/scss/base/_grid.scss */
 .two-third-xs {
   *zoom: 1;
   float: left;
@@ -667,7 +677,7 @@ blockquote::after, q::after {
   margin-right: 0%;
 }
 
-/* line 55, ../../src/scss/base/_grid.scss */
+/* line 65, ../../src/scss/base/_grid.scss */
 .fourth-xs {
   *zoom: 1;
   float: left;
@@ -694,7 +704,7 @@ blockquote::after, q::after {
   margin-right: 0%;
 }
 
-/* line 56, ../../src/scss/base/_grid.scss */
+/* line 66, ../../src/scss/base/_grid.scss */
 .three-fourth-xs {
   *zoom: 1;
   float: left;
@@ -721,7 +731,7 @@ blockquote::after, q::after {
   margin-right: 0%;
 }
 
-/* line 57, ../../src/scss/base/_grid.scss */
+/* line 67, ../../src/scss/base/_grid.scss */
 .fifth-xs {
   *zoom: 1;
   float: left;
@@ -748,7 +758,7 @@ blockquote::after, q::after {
   margin-right: 0%;
 }
 
-/* line 58, ../../src/scss/base/_grid.scss */
+/* line 68, ../../src/scss/base/_grid.scss */
 .two-fifth-xs {
   *zoom: 1;
   float: left;
@@ -775,7 +785,7 @@ blockquote::after, q::after {
   margin-right: 0%;
 }
 
-/* line 59, ../../src/scss/base/_grid.scss */
+/* line 69, ../../src/scss/base/_grid.scss */
 .three-fifth-xs {
   *zoom: 1;
   float: left;
@@ -802,7 +812,7 @@ blockquote::after, q::after {
   margin-right: 0%;
 }
 
-/* line 60, ../../src/scss/base/_grid.scss */
+/* line 70, ../../src/scss/base/_grid.scss */
 .four-fifth-xs {
   *zoom: 1;
   float: left;
@@ -829,7 +839,7 @@ blockquote::after, q::after {
   margin-right: 0%;
 }
 
-/* line 61, ../../src/scss/base/_grid.scss */
+/* line 71, ../../src/scss/base/_grid.scss */
 .sixth-xs {
   *zoom: 1;
   float: left;
@@ -856,7 +866,7 @@ blockquote::after, q::after {
   margin-right: 0%;
 }
 
-/* line 62, ../../src/scss/base/_grid.scss */
+/* line 72, ../../src/scss/base/_grid.scss */
 .five-sixth-xs {
   *zoom: 1;
   float: left;
@@ -884,7 +894,7 @@ blockquote::after, q::after {
 }
 
 @media (min-width: 30em) {
-  /* line 65, ../../src/scss/base/_grid.scss */
+  /* line 75, ../../src/scss/base/_grid.scss */
   .whole-sm {
     *zoom: 1;
     float: left;
@@ -911,7 +921,7 @@ blockquote::after, q::after {
     margin-right: 0%;
   }
 
-  /* line 66, ../../src/scss/base/_grid.scss */
+  /* line 76, ../../src/scss/base/_grid.scss */
   .half-sm {
     *zoom: 1;
     float: left;
@@ -938,7 +948,7 @@ blockquote::after, q::after {
     margin-right: 0%;
   }
 
-  /* line 67, ../../src/scss/base/_grid.scss */
+  /* line 77, ../../src/scss/base/_grid.scss */
   .third-sm {
     *zoom: 1;
     float: left;
@@ -965,7 +975,7 @@ blockquote::after, q::after {
     margin-right: 0%;
   }
 
-  /* line 68, ../../src/scss/base/_grid.scss */
+  /* line 78, ../../src/scss/base/_grid.scss */
   .two-third-sm {
     *zoom: 1;
     float: left;
@@ -992,7 +1002,7 @@ blockquote::after, q::after {
     margin-right: 0%;
   }
 
-  /* line 69, ../../src/scss/base/_grid.scss */
+  /* line 79, ../../src/scss/base/_grid.scss */
   .fourth-sm {
     *zoom: 1;
     float: left;
@@ -1019,7 +1029,7 @@ blockquote::after, q::after {
     margin-right: 0%;
   }
 
-  /* line 70, ../../src/scss/base/_grid.scss */
+  /* line 80, ../../src/scss/base/_grid.scss */
   .three-fourth-sm {
     *zoom: 1;
     float: left;
@@ -1046,7 +1056,7 @@ blockquote::after, q::after {
     margin-right: 0%;
   }
 
-  /* line 71, ../../src/scss/base/_grid.scss */
+  /* line 81, ../../src/scss/base/_grid.scss */
   .fifth-sm {
     *zoom: 1;
     float: left;
@@ -1073,7 +1083,7 @@ blockquote::after, q::after {
     margin-right: 0%;
   }
 
-  /* line 72, ../../src/scss/base/_grid.scss */
+  /* line 82, ../../src/scss/base/_grid.scss */
   .two-fifth-sm {
     *zoom: 1;
     float: left;
@@ -1100,7 +1110,7 @@ blockquote::after, q::after {
     margin-right: 0%;
   }
 
-  /* line 73, ../../src/scss/base/_grid.scss */
+  /* line 83, ../../src/scss/base/_grid.scss */
   .three-fifth-sm {
     *zoom: 1;
     float: left;
@@ -1127,7 +1137,7 @@ blockquote::after, q::after {
     margin-right: 0%;
   }
 
-  /* line 74, ../../src/scss/base/_grid.scss */
+  /* line 84, ../../src/scss/base/_grid.scss */
   .four-fifth-sm {
     *zoom: 1;
     float: left;
@@ -1154,7 +1164,7 @@ blockquote::after, q::after {
     margin-right: 0%;
   }
 
-  /* line 75, ../../src/scss/base/_grid.scss */
+  /* line 85, ../../src/scss/base/_grid.scss */
   .sixth-sm {
     *zoom: 1;
     float: left;
@@ -1181,7 +1191,7 @@ blockquote::after, q::after {
     margin-right: 0%;
   }
 
-  /* line 76, ../../src/scss/base/_grid.scss */
+  /* line 86, ../../src/scss/base/_grid.scss */
   .five-sixth-sm {
     *zoom: 1;
     float: left;
@@ -1209,7 +1219,7 @@ blockquote::after, q::after {
   }
 }
 @media (min-width: 40em) {
-  /* line 80, ../../src/scss/base/_grid.scss */
+  /* line 90, ../../src/scss/base/_grid.scss */
   .whole-md {
     *zoom: 1;
     float: left;
@@ -1236,7 +1246,7 @@ blockquote::after, q::after {
     margin-right: 0%;
   }
 
-  /* line 81, ../../src/scss/base/_grid.scss */
+  /* line 91, ../../src/scss/base/_grid.scss */
   .half-md {
     *zoom: 1;
     float: left;
@@ -1263,7 +1273,7 @@ blockquote::after, q::after {
     margin-right: 0%;
   }
 
-  /* line 82, ../../src/scss/base/_grid.scss */
+  /* line 92, ../../src/scss/base/_grid.scss */
   .third-md {
     *zoom: 1;
     float: left;
@@ -1290,7 +1300,7 @@ blockquote::after, q::after {
     margin-right: 0%;
   }
 
-  /* line 83, ../../src/scss/base/_grid.scss */
+  /* line 93, ../../src/scss/base/_grid.scss */
   .two-third-md {
     *zoom: 1;
     float: left;
@@ -1317,7 +1327,7 @@ blockquote::after, q::after {
     margin-right: 0%;
   }
 
-  /* line 84, ../../src/scss/base/_grid.scss */
+  /* line 94, ../../src/scss/base/_grid.scss */
   .fourth-md {
     *zoom: 1;
     float: left;
@@ -1344,7 +1354,7 @@ blockquote::after, q::after {
     margin-right: 0%;
   }
 
-  /* line 85, ../../src/scss/base/_grid.scss */
+  /* line 95, ../../src/scss/base/_grid.scss */
   .three-fourth-md {
     *zoom: 1;
     float: left;
@@ -1371,7 +1381,7 @@ blockquote::after, q::after {
     margin-right: 0%;
   }
 
-  /* line 86, ../../src/scss/base/_grid.scss */
+  /* line 96, ../../src/scss/base/_grid.scss */
   .fifth-md {
     *zoom: 1;
     float: left;
@@ -1398,7 +1408,7 @@ blockquote::after, q::after {
     margin-right: 0%;
   }
 
-  /* line 87, ../../src/scss/base/_grid.scss */
+  /* line 97, ../../src/scss/base/_grid.scss */
   .two-fifth-md {
     *zoom: 1;
     float: left;
@@ -1425,7 +1435,7 @@ blockquote::after, q::after {
     margin-right: 0%;
   }
 
-  /* line 88, ../../src/scss/base/_grid.scss */
+  /* line 98, ../../src/scss/base/_grid.scss */
   .three-fifth-md {
     *zoom: 1;
     float: left;
@@ -1452,7 +1462,7 @@ blockquote::after, q::after {
     margin-right: 0%;
   }
 
-  /* line 89, ../../src/scss/base/_grid.scss */
+  /* line 99, ../../src/scss/base/_grid.scss */
   .four-fifth-md {
     *zoom: 1;
     float: left;
@@ -1479,7 +1489,7 @@ blockquote::after, q::after {
     margin-right: 0%;
   }
 
-  /* line 90, ../../src/scss/base/_grid.scss */
+  /* line 100, ../../src/scss/base/_grid.scss */
   .sixth-md {
     *zoom: 1;
     float: left;
@@ -1506,7 +1516,7 @@ blockquote::after, q::after {
     margin-right: 0%;
   }
 
-  /* line 91, ../../src/scss/base/_grid.scss */
+  /* line 101, ../../src/scss/base/_grid.scss */
   .five-sixth-md {
     *zoom: 1;
     float: left;
@@ -1534,7 +1544,7 @@ blockquote::after, q::after {
   }
 }
 @media (min-width: 60em) {
-  /* line 95, ../../src/scss/base/_grid.scss */
+  /* line 105, ../../src/scss/base/_grid.scss */
   .whole-lg {
     *zoom: 1;
     float: left;
@@ -1561,7 +1571,7 @@ blockquote::after, q::after {
     margin-right: 0%;
   }
 
-  /* line 96, ../../src/scss/base/_grid.scss */
+  /* line 106, ../../src/scss/base/_grid.scss */
   .half-lg {
     *zoom: 1;
     float: left;
@@ -1588,7 +1598,7 @@ blockquote::after, q::after {
     margin-right: 0%;
   }
 
-  /* line 97, ../../src/scss/base/_grid.scss */
+  /* line 107, ../../src/scss/base/_grid.scss */
   .third-lg {
     *zoom: 1;
     float: left;
@@ -1615,7 +1625,7 @@ blockquote::after, q::after {
     margin-right: 0%;
   }
 
-  /* line 98, ../../src/scss/base/_grid.scss */
+  /* line 108, ../../src/scss/base/_grid.scss */
   .two-third-lg {
     *zoom: 1;
     float: left;
@@ -1642,7 +1652,7 @@ blockquote::after, q::after {
     margin-right: 0%;
   }
 
-  /* line 99, ../../src/scss/base/_grid.scss */
+  /* line 109, ../../src/scss/base/_grid.scss */
   .fourth-lg {
     *zoom: 1;
     float: left;
@@ -1669,7 +1679,7 @@ blockquote::after, q::after {
     margin-right: 0%;
   }
 
-  /* line 100, ../../src/scss/base/_grid.scss */
+  /* line 110, ../../src/scss/base/_grid.scss */
   .three-fourth-lg {
     *zoom: 1;
     float: left;
@@ -1696,7 +1706,7 @@ blockquote::after, q::after {
     margin-right: 0%;
   }
 
-  /* line 101, ../../src/scss/base/_grid.scss */
+  /* line 111, ../../src/scss/base/_grid.scss */
   .fifth-lg {
     *zoom: 1;
     float: left;
@@ -1723,7 +1733,7 @@ blockquote::after, q::after {
     margin-right: 0%;
   }
 
-  /* line 102, ../../src/scss/base/_grid.scss */
+  /* line 112, ../../src/scss/base/_grid.scss */
   .two-fifth-lg {
     *zoom: 1;
     float: left;
@@ -1750,7 +1760,7 @@ blockquote::after, q::after {
     margin-right: 0%;
   }
 
-  /* line 103, ../../src/scss/base/_grid.scss */
+  /* line 113, ../../src/scss/base/_grid.scss */
   .three-fifth-lg {
     *zoom: 1;
     float: left;
@@ -1777,7 +1787,7 @@ blockquote::after, q::after {
     margin-right: 0%;
   }
 
-  /* line 104, ../../src/scss/base/_grid.scss */
+  /* line 114, ../../src/scss/base/_grid.scss */
   .four-fifth-lg {
     *zoom: 1;
     float: left;
@@ -1804,7 +1814,7 @@ blockquote::after, q::after {
     margin-right: 0%;
   }
 
-  /* line 105, ../../src/scss/base/_grid.scss */
+  /* line 115, ../../src/scss/base/_grid.scss */
   .sixth-lg {
     *zoom: 1;
     float: left;
@@ -1831,7 +1841,7 @@ blockquote::after, q::after {
     margin-right: 0%;
   }
 
-  /* line 106, ../../src/scss/base/_grid.scss */
+  /* line 116, ../../src/scss/base/_grid.scss */
   .five-sixth-lg {
     *zoom: 1;
     float: left;
@@ -2079,6 +2089,154 @@ pre code {
   text-transform: uppercase;
 }
 
+/* line 1, ../../src/scss/components/_brother-profile.scss */
+.brother-profile {
+  *zoom: 1;
+  float: left;
+  display: inline;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+/* line 197, ../../src/scss/jeet/_grid.scss */
+.brother-profile:before, .brother-profile:after {
+  content: '';
+  display: table;
+}
+/* line 201, ../../src/scss/jeet/_grid.scss */
+.brother-profile:after {
+  clear: both;
+}
+/* line 49, ../../src/scss/jeet/_grid.scss */
+.brother-profile:last-child {
+  margin-right: 0%;
+}
+@media (min-width: 40em) {
+  /* line 1, ../../src/scss/components/_brother-profile.scss */
+  .brother-profile {
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 48.5%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 197, ../../src/scss/jeet/_grid.scss */
+  .brother-profile:before, .brother-profile:after {
+    content: '';
+    display: table;
+  }
+  /* line 201, ../../src/scss/jeet/_grid.scss */
+  .brother-profile:after {
+    clear: both;
+  }
+  /* line 40, ../../src/scss/jeet/_grid.scss */
+  .brother-profile:nth-child(2n) {
+    margin-right: 0%;
+    float: right;
+  }
+  /* line 45, ../../src/scss/jeet/_grid.scss */
+  .brother-profile:nth-child(2n + 1) {
+    clear: both;
+  }
+}
+@media (min-width: 60em) {
+  /* line 1, ../../src/scss/components/_brother-profile.scss */
+  .brother-profile {
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 31.3333333333%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 197, ../../src/scss/jeet/_grid.scss */
+  .brother-profile:before, .brother-profile:after {
+    content: '';
+    display: table;
+  }
+  /* line 201, ../../src/scss/jeet/_grid.scss */
+  .brother-profile:after {
+    clear: both;
+  }
+  /* line 30, ../../src/scss/jeet/_grid.scss */
+  .brother-profile:nth-child(2n) {
+    margin-right: 3%;
+    float: left;
+  }
+  /* line 35, ../../src/scss/jeet/_grid.scss */
+  .brother-profile:nth-child(2n + 1) {
+    clear: none;
+  }
+  /* line 40, ../../src/scss/jeet/_grid.scss */
+  .brother-profile:nth-child(3n) {
+    margin-right: 0%;
+    float: right;
+  }
+  /* line 45, ../../src/scss/jeet/_grid.scss */
+  .brother-profile:nth-child(3n + 1) {
+    clear: both;
+  }
+}
+@media (min-width: 80em) {
+  /* line 1, ../../src/scss/components/_brother-profile.scss */
+  .brother-profile {
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 22.75%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 197, ../../src/scss/jeet/_grid.scss */
+  .brother-profile:before, .brother-profile:after {
+    content: '';
+    display: table;
+  }
+  /* line 201, ../../src/scss/jeet/_grid.scss */
+  .brother-profile:after {
+    clear: both;
+  }
+  /* line 30, ../../src/scss/jeet/_grid.scss */
+  .brother-profile:nth-child(3n) {
+    margin-right: 3%;
+    float: left;
+  }
+  /* line 35, ../../src/scss/jeet/_grid.scss */
+  .brother-profile:nth-child(3n + 1) {
+    clear: none;
+  }
+  /* line 40, ../../src/scss/jeet/_grid.scss */
+  .brother-profile:nth-child(4n) {
+    margin-right: 0%;
+    float: right;
+  }
+  /* line 45, ../../src/scss/jeet/_grid.scss */
+  .brother-profile:nth-child(4n + 1) {
+    clear: both;
+  }
+}
+/* line 16, ../../src/scss/components/_brother-profile.scss */
+.brother-profile h3 {
+  margin: 0;
+}
+
 @media (min-width: 40em) {
   /* line 1, ../../src/scss/modules/_content.scss */
   .content {
@@ -2161,10 +2319,6 @@ pre code {
   font-size: 0.875em;
   background: #272727;
   color: white;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  z-index: -1;
 }
 /* line 23, ../../src/scss/layout/_basic.scss */
 .footer h4 {
@@ -2204,7 +2358,6 @@ pre code {
   position: absolute;
   -webkit-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
-  -o-transform-style: preserve-3d;
   transform-style: preserve-3d;
   top: 50%;
   left: 50%;
@@ -2334,5 +2487,3 @@ pre code {
   margin-right: 0;
   margin-left: 0;
 }
-
-/*# sourceMappingURL=spe.min.css.map */
