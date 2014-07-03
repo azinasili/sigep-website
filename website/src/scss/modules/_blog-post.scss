@@ -35,3 +35,16 @@
     display: inline-block;
   }
 }
+
+.blog-post--content {
+  margin: auto;
+  width: 100%;
+
+  @media (min-width: $bp-medium) {
+    width: 70%;
+  }
+
+  @media (min-width: $bp-large) {
+    width: 60%;
+  }
+}
