@@ -19,5 +19,6 @@
 
   span {
     @include em(font-size, 14px);
+    text-transform: capitalize;
   }
 }

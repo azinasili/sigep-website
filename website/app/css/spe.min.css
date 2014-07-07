@@ -2245,6 +2245,7 @@ pre code {
 /* line 20, ../../src/scss/components/_brother-profile.scss */
 .brother-profile span {
   font-size: 0.875em;
+  text-transform: capitalize;
 }
 
 @media (min-width: 40em) {
