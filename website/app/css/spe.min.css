@@ -2236,6 +2236,10 @@ pre code {
 .brother-profile h3 {
   margin: 0;
 }
+/* line 20, ../../src/scss/components/_brother-profile.scss */
+.brother-profile span {
+  font-size: 0.875em;
+}
 
 @media (min-width: 40em) {
   /* line 1, ../../src/scss/modules/_content.scss */

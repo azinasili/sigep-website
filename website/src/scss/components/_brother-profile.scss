@@ -16,4 +16,8 @@
   h3 {
     margin: 0;
   }
+
+  span {
+    @include em(font-size, 14px);
+  }
 }
