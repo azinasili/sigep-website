@@ -382,76 +382,82 @@ dd {
 }
 
 /* line 139, ../../src/scss/base/_typography.scss */
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1.2;
-  font-weight: 400;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Bitter", serif;
+  font-weight: 400;
+  line-height: 1.2;
   margin-bottom: 1em;
+  text-transform: capitalize;
   word-wrap: break-word;
 }
 
-/* line 148, ../../src/scss/base/_typography.scss */
+/* line 154, ../../src/scss/base/_typography.scss */
 h1,
 .h1 {
   font-size: 1.625em;
 }
 
-/* line 151, ../../src/scss/base/_typography.scss */
+/* line 157, ../../src/scss/base/_typography.scss */
 h2,
 .h2 {
   font-size: 1.4375em;
 }
 
-/* line 154, ../../src/scss/base/_typography.scss */
+/* line 160, ../../src/scss/base/_typography.scss */
 h3,
 .h3 {
   font-size: 1.25em;
 }
 
-/* line 157, ../../src/scss/base/_typography.scss */
+/* line 163, ../../src/scss/base/_typography.scss */
 h4,
 .h4 {
   font-size: 1.125em;
 }
 
-/* line 160, ../../src/scss/base/_typography.scss */
+/* line 166, ../../src/scss/base/_typography.scss */
 h5,
 .h5 {
   font-size: 1em;
 }
 
-/* line 163, ../../src/scss/base/_typography.scss */
+/* line 169, ../../src/scss/base/_typography.scss */
 h6,
 .h6 {
   font-size: 0.875em;
 }
 
-/* line 172, ../../src/scss/base/_typography.scss */
+/* line 178, ../../src/scss/base/_typography.scss */
 hr {
   border: 0;
   border-top: 1px solid #dbdbdb;
   margin: 1em auto;
 }
 
-/* line 179, ../../src/scss/base/_typography.scss */
+/* line 185, ../../src/scss/base/_typography.scss */
 em {
   font-style: italic;
 }
 
-/* line 184, ../../src/scss/base/_typography.scss */
+/* line 190, ../../src/scss/base/_typography.scss */
 sub,
 sup {
   margin-left: 0.25em;
   font-weight: bold;
 }
 
-/* line 190, ../../src/scss/base/_typography.scss */
+/* line 196, ../../src/scss/base/_typography.scss */
 .img {
   height: auto;
   max-width: 100%;
 }
 
-/* line 198, ../../src/scss/base/_typography.scss */
+/* line 204, ../../src/scss/base/_typography.scss */
 ::-moz-selection {
   background: #cd363f;
   color: white;
@@ -461,35 +467,35 @@ sup {
   color: white;
 }
 
-/* line 203, ../../src/scss/base/_typography.scss */
+/* line 209, ../../src/scss/base/_typography.scss */
 ::-moz-selection {
   background: #cd363f;
   color: white;
 }
 
-/* line 212, ../../src/scss/base/_typography.scss */
+/* line 218, ../../src/scss/base/_typography.scss */
 blockquote {
   padding-right: 1.125em;
   padding-left: 1.125em;
 }
 
-/* line 217, ../../src/scss/base/_typography.scss */
+/* line 223, ../../src/scss/base/_typography.scss */
 blockquote, q {
   font-size: 1.25em;
   text-align: center;
   quotes: none;
 }
-/* line 222, ../../src/scss/base/_typography.scss */
+/* line 228, ../../src/scss/base/_typography.scss */
 blockquote::before, blockquote::after, q::before, q::after {
   font-size: 1.25em;
   color: #999999;
   font-family: 'Bitter', serif;
 }
-/* line 229, ../../src/scss/base/_typography.scss */
+/* line 235, ../../src/scss/base/_typography.scss */
 blockquote::before, q::before {
   content: '\275D';
 }
-/* line 233, ../../src/scss/base/_typography.scss */
+/* line 239, ../../src/scss/base/_typography.scss */
 blockquote::after, q::after {
   content: '\275E';
 }
@@ -2296,28 +2302,26 @@ pre code {
 /* line 24, ../../src/scss/modules/_blog-post.scss */
 .blog-post--header h2 {
   font-size: 1.75em;
-  font-style: italic;
   margin-bottom: 0;
-  text-transform: uppercase;
 }
-/* line 31, ../../src/scss/modules/_blog-post.scss */
+/* line 30, ../../src/scss/modules/_blog-post.scss */
 .blog-post--header span {
   display: inline-block;
 }
 
-/* line 39, ../../src/scss/modules/_blog-post.scss */
+/* line 38, ../../src/scss/modules/_blog-post.scss */
 .blog-post--content {
   margin: auto;
   width: 100%;
 }
 @media (min-width: 40em) {
-  /* line 39, ../../src/scss/modules/_blog-post.scss */
+  /* line 38, ../../src/scss/modules/_blog-post.scss */
   .blog-post--content {
     width: 70%;
   }
 }
 @media (min-width: 60em) {
-  /* line 39, ../../src/scss/modules/_blog-post.scss */
+  /* line 38, ../../src/scss/modules/_blog-post.scss */
   .blog-post--content {
     width: 60%;
   }
@@ -2369,13 +2373,17 @@ pre code {
 .hero-content {
   text-transform: uppercase;
 }
-/* line 29, ../../src/scss/layout/_hero.scss */
+/* line 25, ../../src/scss/layout/_hero.scss */
+.hero-content h1 {
+  text-transform: uppercase;
+}
+/* line 30, ../../src/scss/layout/_hero.scss */
 .hero-content span {
   display: block;
   margin-top: 1.125em;
 }
 
-/* line 35, ../../src/scss/layout/_hero.scss */
+/* line 36, ../../src/scss/layout/_hero.scss */
 .hero-content {
   position: absolute;
   -webkit-transform-style: preserve-3d;
