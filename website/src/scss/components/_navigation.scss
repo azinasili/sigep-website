@@ -5,7 +5,7 @@
 .navigation ul {
   text-align: center;
 
-  @media (min-width: $bp-large) {
+  @include mq($from: desktop) {
     text-align: right;
   }
 

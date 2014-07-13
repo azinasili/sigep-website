@@ -39,11 +39,11 @@
   margin: auto;
   width: 100%;
 
-  @media (min-width: $bp-medium) {
+  @include mq($from: tablet) {
     width: 70%;
   }
 
-  @media (min-width: $bp-large) {
+  @include mq($from: desktop) {
     width: 60%;
   }
 }

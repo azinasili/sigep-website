@@ -2,7 +2,7 @@
   @extend %margin-lg;
   @extend %no-margin-horz;
 
-  @media (min-width: $bp-medium) {
+  @include mq($from: tablet) {
     @include em(padding-right, 30px);
   }
 

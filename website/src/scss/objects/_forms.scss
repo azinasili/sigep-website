@@ -46,13 +46,13 @@ select {
   @include em(border-radius, 1px);
   @include em(margin-bottom, 19px);
   @include em(padding, 5px);
-  border: em(1px) solid lighten( $color-gray-dark, 22% );
+  border: em(1px) solid lighten($color-gray-dark, 22%);
   color: lighten($color-black, 18%);
   display: block;
   line-height: 1.5;
   width: 100%;
 
-  @media (min-width: $bp-medium) {
+  @include mq($from: tablet) {
     line-height: 1.5625;
   }
 }
@@ -70,8 +70,8 @@ textarea {
 input:focus,
 select:focus,
 textarea:focus,
-input[type="file"]:focus,
-input[type="checkbox"]:focus {
+input[type='file']:focus,
+input[type='checkbox']:focus {
   outline: 0;
 }
 
@@ -85,11 +85,11 @@ form .button {
 }
 
 // Setup form button
-input[type="image"],
-input[type="checkbox"],
-input[type="radio"] {
-  display: inline-block;
+input[type='image'],
+input[type='checkbox'],
+input[type='radio'] {
   cursor: pointer;
+  display: inline-block;
   height: auto;
   width: auto;
   @include em(margin-bottom, 5px);

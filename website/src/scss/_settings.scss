@@ -19,11 +19,12 @@ $gutter                       : 3; // Percentage value
 
 // Responsive Breakpoints
 // Accepts em or px values
-$bp-xsmall                    : 20em; // 320px
-$bp-small                     : 30em; // 480px
-$bp-medium                    : 40em; // 640px
-$bp-large                     : 60em; // 960px
-$bp-xlarge                    : 80em; // 1280px
+$breakpoints: (
+  mobile                     : 320px,
+  tablet                     : 740px,
+  desktop                    : 980px,
+  wide                       : 1300px
+);
 
 
 // Theme Font settings --------------------------------------------------------

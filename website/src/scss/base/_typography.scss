@@ -27,7 +27,7 @@ p {
   margin-bottom: $spacing;
 }
 
-@media (min-width: $bp-medium) {
+@include mq($from: tablet) {
   body {
     line-height: 1.5625;
   }
@@ -46,7 +46,7 @@ p {
   line-height: 1.4;
 }
 
-@media (min-width: $bp-medium) {
+@include mq($from: tablet) {
   .text-tall {
     @include em(font-size, 21px);
   }

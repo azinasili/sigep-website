@@ -279,7 +279,7 @@ p {
   margin-bottom: 1.25em;
 }
 
-@media (min-width: 40em) {
+@media all and (min-width: 46.25em) {
   /* line 31, ../../src/scss/base/_typography.scss */
   body {
     line-height: 1.5625;
@@ -296,7 +296,7 @@ p {
   line-height: 1.4;
 }
 
-@media (min-width: 40em) {
+@media all and (min-width: 46.25em) {
   /* line 50, ../../src/scss/base/_typography.scss */
   .text-tall {
     font-size: 1.5em;
@@ -899,7 +899,7 @@ blockquote::after, q::after {
   margin-right: 0%;
 }
 
-@media (min-width: 30em) {
+@media all and (min-width: 20em) {
   /* line 74, ../../src/scss/base/_grid.scss */
   .whole-sm {
     *zoom: 1;
@@ -1224,7 +1224,7 @@ blockquote::after, q::after {
     margin-right: 0%;
   }
 }
-@media (min-width: 40em) {
+@media all and (min-width: 46.25em) {
   /* line 89, ../../src/scss/base/_grid.scss */
   .whole-md {
     *zoom: 1;
@@ -1549,7 +1549,7 @@ blockquote::after, q::after {
     margin-right: 0%;
   }
 }
-@media (min-width: 60em) {
+@media all and (min-width: 61.25em) {
   /* line 104, ../../src/scss/base/_grid.scss */
   .whole-lg {
     *zoom: 1;
@@ -1909,7 +1909,7 @@ select {
   line-height: 1.5;
   width: 100%;
 }
-@media (min-width: 40em) {
+@media all and (min-width: 46.25em) {
   /* line 43, ../../src/scss/objects/_forms.scss */
   input,
   textarea,
@@ -1927,8 +1927,8 @@ textarea {
 input:focus,
 select:focus,
 textarea:focus,
-input[type="file"]:focus,
-input[type="checkbox"]:focus {
+input[type='file']:focus,
+input[type='checkbox']:focus {
   outline: 0;
 }
 
@@ -1939,11 +1939,11 @@ form .button {
 }
 
 /* line 88, ../../src/scss/objects/_forms.scss */
-input[type="image"],
-input[type="checkbox"],
-input[type="radio"] {
-  display: inline-block;
+input[type='image'],
+input[type='checkbox'],
+input[type='radio'] {
   cursor: pointer;
+  display: inline-block;
   height: auto;
   width: auto;
   margin-bottom: 0.3571428571em;
@@ -1957,14 +1957,14 @@ input[type="radio"] {
 /* line 10, ../../src/scss/objects/_logo.scss */
 .logo::before {
   margin-right: 0.3571428571em;
-  content: '';
   background: url("../img/logo.png") no-repeat center center;
+  content: '';
   display: inline-block;
   height: 65px;
-  width: 65px;
   vertical-align: middle;
+  width: 65px;
 }
-@media (min-width: 60em) {
+@media all and (min-width: 61.25em) {
   /* line 5, ../../src/scss/objects/_logo.scss */
   .logo {
     text-align: left;
@@ -2047,7 +2047,7 @@ input[type="button"].btn-block {
 .navigation ul {
   text-align: center;
 }
-@media (min-width: 60em) {
+@media all and (min-width: 61.25em) {
   /* line 5, ../../src/scss/components/_navigation.scss */
   .navigation ul {
     text-align: right;
@@ -2085,7 +2085,7 @@ input[type="button"].btn-block {
 .brother-profile:last-child {
   margin-right: 0%;
 }
-@media (min-width: 40em) {
+@media all and (min-width: 20em) {
   /* line 1, ../../src/scss/components/_brother-profile.scss */
   .brother-profile {
     *zoom: 1;
@@ -2118,7 +2118,7 @@ input[type="button"].btn-block {
     clear: both;
   }
 }
-@media (min-width: 60em) {
+@media all and (min-width: 46.25em) {
   /* line 1, ../../src/scss/components/_brother-profile.scss */
   .brother-profile {
     *zoom: 1;
@@ -2160,7 +2160,7 @@ input[type="button"].btn-block {
     clear: both;
   }
 }
-@media (min-width: 80em) {
+@media all and (min-width: 81.25em) {
   /* line 1, ../../src/scss/components/_brother-profile.scss */
   .brother-profile {
     *zoom: 1;
@@ -2212,7 +2212,7 @@ input[type="button"].btn-block {
   text-transform: capitalize;
 }
 
-@media (min-width: 40em) {
+@media all and (min-width: 46.25em) {
   /* line 1, ../../src/scss/modules/_content.scss */
   .content {
     padding-right: 2.1428571429em;
@@ -2279,13 +2279,13 @@ input[type="button"].btn-block {
   margin: auto;
   width: 100%;
 }
-@media (min-width: 40em) {
+@media all and (min-width: 46.25em) {
   /* line 38, ../../src/scss/modules/_blog-post.scss */
   .blog-post--content {
     width: 70%;
   }
 }
-@media (min-width: 60em) {
+@media all and (min-width: 61.25em) {
   /* line 38, ../../src/scss/modules/_blog-post.scss */
   .blog-post--content {
     width: 60%;
