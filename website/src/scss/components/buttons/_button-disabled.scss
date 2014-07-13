@@ -1,0 +1,11 @@
+// ----------------------------------------------------------------------------
+// Buttons
+// Disabled state
+// ----------------------------------------------------------------------------
+.btn.disabled,
+.btn[disabled] {
+  cursor: not-allowed;
+  filter: alpha(opacity=50);
+  opacity: .5;
+  pointer-events: none;
+}

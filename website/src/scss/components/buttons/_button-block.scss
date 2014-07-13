@@ -1,0 +1,14 @@
+// ----------------------------------------------------------------------------
+// Buttons
+// Block style button
+// ----------------------------------------------------------------------------
+.btn-block,
+input[type="submit"].btn-block,
+input[type="reset"].btn-block,
+input[type="button"].btn-block {
+  display: block;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+}

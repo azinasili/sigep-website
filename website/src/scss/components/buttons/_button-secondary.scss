@@ -1,0 +1,14 @@
+// ----------------------------------------------------------------------------
+// Buttons
+// Secondary button
+// ----------------------------------------------------------------------------
+.btn-secondary {
+  background-color: $color-gray-dark;
+  border-color: $color-gray-dark;
+
+  &:hover,
+  &.active {
+    background-color: darken($color-gray-dark, 15%);
+    border-color: darken($color-gray-dark, 15%);
+  }
+}

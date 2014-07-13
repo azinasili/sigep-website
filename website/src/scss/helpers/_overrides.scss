@@ -5,7 +5,6 @@
 // 1. Text override
 // 2. Floats
 // 3. Spacing
-//
 // ----------------------------------------------------------------------------
 
 // ----------------------------------------------------------------------------
@@ -30,12 +29,12 @@
 
 // Inline hyperlink styles
 .inline-link {
-    @include em(margin-left, 15px);
+  @include em(margin-left, 15px);
 
-    // Remove margin on last item
-    &:last-of-type {
-        margin-left: 0;
-    }
+  // Remove margin on last item
+  &:last-of-type {
+    margin-left: 0;
+  }
 }
 
 

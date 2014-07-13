@@ -5,7 +5,6 @@
 // 1. Inline px to em conversion
 // 2. Px to em conversion tool
 // 3. CSS triangles
-//
 // ----------------------------------------------------------------------------
 
 
@@ -19,7 +18,7 @@
 }
 
 // Calculate ems from pixels
-@function em($px, $base: 16) {
+@function em($px, $base: $font-base) {
   $px: strip-unit($px);
   $base: strip-unit($base);
   @if $px == 1 {
@@ -37,7 +36,7 @@
 // Accepts any property with dimension value
 @mixin em($property, $values) {
   // Create a couple of empty lists as output buffers.
-  $font-size: 16px;
+  $font-size: $font-base;
   $em-values: ();
 
   // Loop through the $values list

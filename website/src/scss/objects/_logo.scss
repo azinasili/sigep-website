@@ -1,8 +1,6 @@
 // ----------------------------------------------------------------------------
-//
 // Logo
 // Logo and variations
-//
 // ----------------------------------------------------------------------------
 .logo {
   @extend %no-margin;
@@ -11,8 +9,8 @@
 
   &::before {
     @include em(margin-right, 5px);
-    content: "";
-    background: url("../img/logo.png") no-repeat center center;
+    content: '';
+    background: url('../img/logo.png') no-repeat center center;
     display: inline-block;
     height: 65px;
     width: 65px;

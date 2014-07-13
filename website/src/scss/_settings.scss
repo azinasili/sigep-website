@@ -11,10 +11,9 @@ $responsive                   : yes;
 $full-screen                  : no;
 
 // Grid Sizing
-// Variables accept em, px, or % values
 // Container-max 100% = 1600px
-$font-base                    : 87.5%; // 87.5% = 14px
-$spacing                      : 1.125em;
+$font-base                    : 14px;
+$spacing                      : 1.25em;
 $container-max                : 1140px;
 $gutter                       : 3; // Percentage value
 
@@ -37,12 +36,12 @@ $font-monospace               : monospace, serif;
 $color-primary                : #cd363f;
 $color-secondary              : #7b1e5c;
 $color-black                  : #272727;
-$color-white                  : #ffffff;
+$color-white                  : #fff;
 
-$color-success                : #47BA16; // Green
-$color-danger                 : #F54049; // Red
+$color-success                : #47ba16; // Green
+$color-danger                 : #f54049; // Red
 $color-warning                : #dba909; // Yellow
-$color-code                   : #dd1144;
+$color-code                   : #d14;
 
 $color-gray-dark              : #808080;
 $color-gray-light             : #dbdbdb;

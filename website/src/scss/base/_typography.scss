@@ -10,7 +10,6 @@
 // 6. Misc
 // 7. Selections
 // 8. Quotes
-//
 // ----------------------------------------------------------------------------
 
 // ----------------------------------------------------------------------------
@@ -20,7 +19,7 @@ body {
   background: $color-white;
   color: $color-black;
   font-family: $font-primary;
-  font-size: $font-base;
+  font-size: $font-base/16px * 100%;
   line-height: 1.5;
 }
 
