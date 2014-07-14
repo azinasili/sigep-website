@@ -1180,6 +1180,12 @@ input[type='checkbox']:focus {
   }
 }
 
+/* line 1, ../../src/scss/modules/_map.scss */
+.map iframe {
+  pointer-events: none;
+  width: 100%;
+}
+
 /* line 1, ../../src/scss/layout/_basic.scss */
 .header {
   padding-top: 0.3571428571em;
