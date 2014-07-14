@@ -717,60 +717,6 @@ blockquote::after, q::after {
   .two-third-lg:last-child {
     margin-right: 0%;
   }
-
-  /* line 71, ../../src/scss/base/_grid.scss */
-  .two-fifth-lg {
-    *zoom: 1;
-    float: left;
-    display: inline;
-    clear: none;
-    text-align: inherit;
-    padding-left: 0;
-    padding-right: 0;
-    width: 38.2%;
-    margin-left: 0%;
-    margin-right: 3%;
-  }
-  /* line 197, ../../src/scss/vendor/jeet/_grid.scss */
-  .two-fifth-lg:before, .two-fifth-lg:after {
-    content: '';
-    display: table;
-  }
-  /* line 201, ../../src/scss/vendor/jeet/_grid.scss */
-  .two-fifth-lg:after {
-    clear: both;
-  }
-  /* line 49, ../../src/scss/vendor/jeet/_grid.scss */
-  .two-fifth-lg:last-child {
-    margin-right: 0%;
-  }
-
-  /* line 72, ../../src/scss/base/_grid.scss */
-  .three-fifth-lg {
-    *zoom: 1;
-    float: left;
-    display: inline;
-    clear: none;
-    text-align: inherit;
-    padding-left: 0;
-    padding-right: 0;
-    width: 58.8%;
-    margin-left: 0%;
-    margin-right: 3%;
-  }
-  /* line 197, ../../src/scss/vendor/jeet/_grid.scss */
-  .three-fifth-lg:before, .three-fifth-lg:after {
-    content: '';
-    display: table;
-  }
-  /* line 201, ../../src/scss/vendor/jeet/_grid.scss */
-  .three-fifth-lg:after {
-    clear: both;
-  }
-  /* line 49, ../../src/scss/vendor/jeet/_grid.scss */
-  .three-fifth-lg:last-child {
-    margin-right: 0%;
-  }
 }
 /* FONT PATH
  * -------------------------- */
