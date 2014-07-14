@@ -21,7 +21,7 @@ $mq-static-breakpoint: desktop !default;
 // to this list, ordered by width, e.g. (mobile, tablet, desktop).
 $mq-show-breakpoints: () !default;
 
-@function mq-px2em($px, $base-font-size: 16px) {
+@function mq-px2em($px, $base-font-size: $font-base) {
   @if (unitless($px)) {
     @warn "Assuming #{$px} to be in pixels, attempting to convert it into pixels for you";
     @return mq-px2em($px + 0px); // That may fail.

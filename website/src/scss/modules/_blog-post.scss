@@ -1,5 +1,5 @@
 .blog-post {
-  @include em(margin-bottom, 75px);
+  @include em(margin-bottom, 55px);
   @include em(padding-bottom, 30px);
 
   .img {
@@ -7,7 +7,6 @@
   }
 
   a {
-    @include em(font-size, 15px);
     text-transform: capitalize;
   }
 }
@@ -15,15 +14,14 @@
 .blog-post--preview {
   @extend %margin-lg;
   @extend %no-margin-horz;
-  @include em(font-size, 15px);
+  @include em(font-size, 13px);
 }
 
 .blog-post--header {
   @include em(margin-bottom, 15px);
 
   h2 {
-    @include em(font-size, 28px);
-    // font-style: italic;
+    @extend .h1;
     margin-bottom: 0;
   }
 

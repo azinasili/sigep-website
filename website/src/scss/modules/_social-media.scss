@@ -1,6 +1,6 @@
 .social-media {
-  @include em(margin-top, 100px);
-  @include em(margin-bottom, 100px);
+  @include em(margin-top, 75px);
+  @include em(margin-bottom, 75px);
   @include em(padding, 50px 20px);
   background: lighten($color-gray-light, 10%);
 }

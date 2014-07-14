@@ -279,7 +279,7 @@ p {
   margin-bottom: 1.25em;
 }
 
-@media all and (min-width: 46.25em) {
+@media all and (min-width: 52.8571428571em) {
   /* line 31, ../../src/scss/base/_typography.scss */
   body {
     line-height: 1.5625;
@@ -296,7 +296,7 @@ p {
   line-height: 1.4;
 }
 
-@media all and (min-width: 46.25em) {
+@media all and (min-width: 52.8571428571em) {
   /* line 50, ../../src/scss/base/_typography.scss */
   .text-tall {
     font-size: 1.5em;
@@ -398,7 +398,8 @@ h6 {
 
 /* line 153, ../../src/scss/base/_typography.scss */
 h1,
-.h1 {
+.h1,
+.blog-post--header h2 {
   font-size: 1.8571428571em;
 }
 
@@ -608,7 +609,7 @@ blockquote::after, q::after {
   margin-right: 0%;
 }
 
-@media all and (min-width: 46.25em) {
+@media all and (min-width: 52.8571428571em) {
   /* line 64, ../../src/scss/base/_grid.scss */
   .third-md {
     *zoom: 1;
@@ -663,7 +664,7 @@ blockquote::after, q::after {
     margin-right: 0%;
   }
 }
-@media all and (min-width: 61.25em) {
+@media all and (min-width: 70em) {
   /* line 69, ../../src/scss/base/_grid.scss */
   .third-lg {
     *zoom: 1;
@@ -869,7 +870,7 @@ select {
   line-height: 1.5;
   width: 100%;
 }
-@media all and (min-width: 46.25em) {
+@media all and (min-width: 52.8571428571em) {
   /* line 5, ../../src/scss/components/forms/_form-input.scss */
   input,
   textarea,
@@ -913,7 +914,7 @@ input[type='checkbox']:focus {
 .navigation ul {
   text-align: center;
 }
-@media all and (min-width: 61.25em) {
+@media all and (min-width: 70em) {
   /* line 13, ../../src/scss/modules/_navigation.scss */
   .navigation ul {
     text-align: right;
@@ -940,7 +941,7 @@ input[type='checkbox']:focus {
   vertical-align: middle;
   width: 65px;
 }
-@media all and (min-width: 61.25em) {
+@media all and (min-width: 70em) {
   /* line 31, ../../src/scss/modules/_navigation.scss */
   .logo {
     text-align: left;
@@ -973,7 +974,7 @@ input[type='checkbox']:focus {
 .brother-profile:last-child {
   margin-right: 0%;
 }
-@media all and (min-width: 20em) {
+@media all and (min-width: 22.8571428571em) {
   /* line 1, ../../src/scss/modules/_brother-profile.scss */
   .brother-profile {
     *zoom: 1;
@@ -1006,7 +1007,7 @@ input[type='checkbox']:focus {
     clear: both;
   }
 }
-@media all and (min-width: 46.25em) {
+@media all and (min-width: 52.8571428571em) {
   /* line 1, ../../src/scss/modules/_brother-profile.scss */
   .brother-profile {
     *zoom: 1;
@@ -1048,7 +1049,7 @@ input[type='checkbox']:focus {
     clear: both;
   }
 }
-@media all and (min-width: 81.25em) {
+@media all and (min-width: 92.8571428571em) {
   /* line 1, ../../src/scss/modules/_brother-profile.scss */
   .brother-profile {
     *zoom: 1;
@@ -1100,7 +1101,7 @@ input[type='checkbox']:focus {
   text-transform: capitalize;
 }
 
-@media all and (min-width: 46.25em) {
+@media all and (min-width: 52.8571428571em) {
   /* line 1, ../../src/scss/modules/_content.scss */
   .content {
     padding-right: 2.1428571429em;
@@ -1122,15 +1123,15 @@ input[type='checkbox']:focus {
 
 /* line 1, ../../src/scss/modules/_social-media.scss */
 .social-media {
-  margin-top: 7.1428571429em;
-  margin-bottom: 7.1428571429em;
+  margin-top: 5.3571428571em;
+  margin-bottom: 5.3571428571em;
   padding: 3.5714285714em 1.4285714286em;
   background: #f4f4f4;
 }
 
 /* line 1, ../../src/scss/modules/_blog-post.scss */
 .blog-post {
-  margin-bottom: 5.3571428571em;
+  margin-bottom: 3.9285714286em;
   padding-bottom: 2.1428571429em;
 }
 /* line 5, ../../src/scss/modules/_blog-post.scss */
@@ -1139,42 +1140,40 @@ input[type='checkbox']:focus {
 }
 /* line 9, ../../src/scss/modules/_blog-post.scss */
 .blog-post a {
-  font-size: 1.0714285714em;
   text-transform: capitalize;
 }
 
-/* line 15, ../../src/scss/modules/_blog-post.scss */
+/* line 14, ../../src/scss/modules/_blog-post.scss */
 .blog-post--preview {
-  font-size: 1.0714285714em;
+  font-size: 0.9285714286em;
 }
 
-/* line 21, ../../src/scss/modules/_blog-post.scss */
+/* line 20, ../../src/scss/modules/_blog-post.scss */
 .blog-post--header {
   margin-bottom: 1.0714285714em;
 }
-/* line 24, ../../src/scss/modules/_blog-post.scss */
+/* line 23, ../../src/scss/modules/_blog-post.scss */
 .blog-post--header h2 {
-  font-size: 2em;
   margin-bottom: 0;
 }
-/* line 30, ../../src/scss/modules/_blog-post.scss */
+/* line 28, ../../src/scss/modules/_blog-post.scss */
 .blog-post--header span {
   display: inline-block;
 }
 
-/* line 38, ../../src/scss/modules/_blog-post.scss */
+/* line 36, ../../src/scss/modules/_blog-post.scss */
 .blog-post--content {
   margin: auto;
   width: 100%;
 }
-@media all and (min-width: 46.25em) {
-  /* line 38, ../../src/scss/modules/_blog-post.scss */
+@media all and (min-width: 52.8571428571em) {
+  /* line 36, ../../src/scss/modules/_blog-post.scss */
   .blog-post--content {
     width: 70%;
   }
 }
-@media all and (min-width: 61.25em) {
-  /* line 38, ../../src/scss/modules/_blog-post.scss */
+@media all and (min-width: 70em) {
+  /* line 36, ../../src/scss/modules/_blog-post.scss */
   .blog-post--content {
     width: 60%;
   }
@@ -1184,6 +1183,21 @@ input[type='checkbox']:focus {
 .map iframe {
   pointer-events: none;
   width: 100%;
+}
+
+/* line 1, ../../src/scss/modules/_values.scss */
+.values {
+  margin-top: 1.7857142857em;
+  margin-bottom: 3.5714285714em;
+}
+/* line 6, ../../src/scss/modules/_values.scss */
+.values h2 {
+  margin-top: 0.7142857143em;
+  text-transform: capitalize;
+}
+/* line 11, ../../src/scss/modules/_values.scss */
+.values p {
+  margin-bottom: 2.5em;
 }
 
 /* line 1, ../../src/scss/layout/_basic.scss */
@@ -1253,21 +1267,6 @@ input[type='checkbox']:focus {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-}
-
-/* line 1, ../../src/scss/pages/_home.scss */
-.values {
-  margin-top: 7.1428571429em;
-  margin-bottom: 7.1428571429em;
-}
-/* line 6, ../../src/scss/pages/_home.scss */
-.values h2 {
-  margin-top: 0.7142857143em;
-  text-transform: capitalize;
-}
-/* line 11, ../../src/scss/pages/_home.scss */
-.values p {
-  margin-bottom: 2.5em;
 }
 
 /* line 15, ../../src/scss/helpers/_overrides.scss */
@@ -1341,7 +1340,7 @@ input[type='checkbox']:focus {
 }
 
 /* line 56, ../../src/scss/helpers/_overrides.scss */
-.hero-large, .hero-small, .values {
+.values, .hero-large, .hero-small {
   padding: 2.1428571429em 1.4285714286em;
 }
 
