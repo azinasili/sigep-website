@@ -1,0 +1,17 @@
+// ----------------------------------------------------------------------------
+// Forms
+// Form titles
+// ----------------------------------------------------------------------------
+legend,
+label {
+  @include em(margin-bottom, 5px);
+  display: block;
+  font-weight: normal;
+  padding: 0;
+}
+
+legend {
+  @include em(font-size, 16px);
+  font-weight: bold;
+  text-transform: capitalize;
+}

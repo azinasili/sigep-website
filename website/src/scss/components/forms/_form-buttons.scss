@@ -1,0 +1,19 @@
+// ----------------------------------------------------------------------------
+// Forms
+// Form buttons
+// ----------------------------------------------------------------------------
+form button,
+form .button {
+  @include em(margin-bottom, 19px);
+}
+
+// Setup form button
+input[type='image'],
+input[type='checkbox'],
+input[type='radio'] {
+  @include em(margin-bottom, 5px);
+  cursor: pointer;
+  display: inline-block;
+  height: auto;
+  width: auto;
+}

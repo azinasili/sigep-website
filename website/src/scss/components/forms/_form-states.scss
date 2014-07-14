@@ -1,0 +1,11 @@
+// ----------------------------------------------------------------------------
+// Forms
+// Input states
+// ----------------------------------------------------------------------------
+input:focus,
+select:focus,
+textarea:focus,
+input[type='file']:focus,
+input[type='checkbox']:focus {
+  outline: 0;
+}

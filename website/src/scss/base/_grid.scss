@@ -19,11 +19,12 @@
 }
 
 // Clearfix class
+%clearfix { @include cf();}
+
 .row,
 .group,
-.clearfix,
-%clearfix {
-  @include cf();
+.clearfix {
+  @extend %clearfix;
   height: 100%;
 }
 
@@ -58,78 +59,15 @@
 }
 
 .whole-xs                        { @include col(1/1); }
-.half-xs                         { @include col(1/2); }
-.third-xs                        { @include col(1/3); }
-.two-third-xs                    { @include col(2/3); }
-.fourth-xs                       { @include col(1/4); }
-.three-fourth-xs                 { @include col(3/4); }
-.fifth-xs                        { @include col(1/5); }
-.two-fifth-xs                    { @include col(2/5); }
-.three-fifth-xs                  { @include col(3/5); }
-.four-fifth-xs                   { @include col(4/5); }
-.sixth-xs                        { @include col(1/6); }
-.five-sixth-xs                   { @include col(5/6); }
-
-@include mq($from: mobile) {
-  .whole-sm                      { @include col(1/1); }
-  .half-sm                       { @include col(1/2); }
-  .third-sm                      { @include col(1/3); }
-  .two-third-sm                  { @include col(2/3); }
-  .fourth-sm                     { @include col(1/4); }
-  .three-fourth-sm               { @include col(3/4); }
-  .fifth-sm                      { @include col(1/5); }
-  .two-fifth-sm                  { @include col(2/5); }
-  .three-fifth-sm                { @include col(3/5); }
-  .four-fifth-sm                 { @include col(4/5); }
-  .sixth-sm                      { @include col(1/6); }
-  .five-sixth-sm                 { @include col(5/6); }
-}
 
 @include mq($from: tablet) {
-  .whole-md                      { @include col(1/1); }
-  .half-md                       { @include col(1/2); }
   .third-md                      { @include col(1/3); }
   .two-third-md                  { @include col(2/3); }
-  .fourth-md                     { @include col(1/4); }
-  .three-fourth-md               { @include col(3/4); }
-  .fifth-md                      { @include col(1/5); }
-  .two-fifth-md                  { @include col(2/5); }
-  .three-fifth-md                { @include col(3/5); }
-  .four-fifth-md                 { @include col(4/5); }
-  .sixth-md                      { @include col(1/6); }
-  .five-sixth-md                 { @include col(5/6); }
 }
 
 @include mq($from: desktop) {
-  .whole-lg                      { @include col(1/1); }
-  .half-lg                       { @include col(1/2); }
   .third-lg                      { @include col(1/3); }
   .two-third-lg                  { @include col(2/3); }
-  .fourth-lg                     { @include col(1/4); }
-  .three-fourth-lg               { @include col(3/4); }
-  .fifth-lg                      { @include col(1/5); }
   .two-fifth-lg                  { @include col(2/5); }
   .three-fifth-lg                { @include col(3/5); }
-  .four-fifth-lg                 { @include col(4/5); }
-  .sixth-lg                      { @include col(1/6); }
-  .five-sixth-lg                 { @include col(5/6); }
 }
-
-
-// Offsets --------------------------------------------------------------------
-
-// Offets let you shift grid elements to the right
-// but stay aligned to the grid.
-// @media (min-width: $bp-medium) {
-//   .offset-third                { @include offset(1, 3); }
-//   .offset-two-third            { @include offset(2, 3); }
-//   .offset-fourth               { @include offset(1, 4); }
-//   .offset-three-fourth         { @include offset(3, 4); }
-//   .offset-half                 { @include offset(1, 2); }
-//   .offset-fifth                { @include offset(1, 5); }
-//   .offset-two-fifth            { @include offset(2, 5); }
-//   .offset-three-fifth          { @include offset(3, 5); }
-//   .offset-four-fifth           { @include offset(4, 5); }
-//   .offset-sixth                { @include offset(1, 6); }
-//   .offset-five-sixth           { @include offset(5, 6); }
-// }

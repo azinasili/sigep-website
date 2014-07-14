@@ -1,0 +1,49 @@
+// ----------------------------------------------------------------------------
+// Navigation
+// Navigation and logo
+//
+// 1. Navigation
+// 2. Logo
+// ----------------------------------------------------------------------------
+
+
+// ----------------------------------------------------------------------------
+// 1. Navigation
+// ----------------------------------------------------------------------------
+.navigation ul {
+  text-align: center;
+
+  @include mq($from: desktop) {
+    text-align: right;
+  }
+
+  li {
+    @extend %inline-item;
+    @include em(margin, 10px);
+    text-transform: uppercase;
+  }
+}
+
+
+// ----------------------------------------------------------------------------
+// 2. Logo
+// ----------------------------------------------------------------------------
+.logo {
+  @extend %no-margin;
+  text-align: center;
+  text-transform: capitalize;
+
+  &::before {
+    @include em(margin-right, 5px);
+    background: url('../img/logo.png') no-repeat center center;
+    content: '';
+    display: inline-block;
+    height: 65px;
+    vertical-align: middle;
+    width: 65px;
+  }
+
+  @include mq($from: desktop) {
+    text-align: left;
+  }
+}
