@@ -51,12 +51,12 @@
       // px value given - calculate em value from font-size
       $new-em-value: $value / $font-size;
       $em-values: join($em-values, #{$new-em-value}em);
-    } @else if type-of($value) == number and not unitless($value) and (unit($value) == "%") {
+    } @else if type-of($value) == number and not unitless($value) and (unit($value) == '%') {
       // % value given - don't add px or em
       $em-values: join($em-values, #{$value});
-    } @else if $value == auto {
+    } @else if $value == auto or $value == inherit {
       // auto - don't add px or em
-      $em-values: join($em-values, auto);
+      $em-values: join($em-values, $value);
     } @else {
       // unitless value - use those directly as em and calculate the px-fallback
       $em-values: join($em-values, #{$value}em);
