@@ -1,4 +1,4 @@
-.map iframe {
-  pointer-events: none;
-  width: 100%;
+.map {
+  @include em(height, 450px);
+  @include em(margin-top, 55px);
 }

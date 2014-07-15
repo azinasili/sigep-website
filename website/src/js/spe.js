@@ -1,11 +1,3 @@
-/*!
- * my-project-name
- * title of project
- * enter description of project
- * http://www.adminovate.com/
- * @version 0.0.0
- * Copyright 2014.
- */
 'use strict';
 
 // Function to start Google Maps

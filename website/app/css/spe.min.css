@@ -1098,6 +1098,7 @@ input[type='checkbox']:focus {
 /* line 20, ../../src/scss/modules/_brother-profile.scss */
 .brother-profile span {
   font-size: 1em;
+  display: block;
   text-transform: capitalize;
 }
 
@@ -1180,9 +1181,9 @@ input[type='checkbox']:focus {
 }
 
 /* line 1, ../../src/scss/modules/_map.scss */
-.map iframe {
-  pointer-events: none;
-  width: 100%;
+.map {
+  height: 32.1428571429em;
+  margin-top: 3.9285714286em;
 }
 
 /* line 1, ../../src/scss/modules/_values.scss */
