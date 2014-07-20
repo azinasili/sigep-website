@@ -1239,6 +1239,11 @@ input[type='checkbox']:focus {
   color: white;
 }
 
+/* line 77, ../../src/scss/modules/_blog-post.scss */
+.blog-post--footer {
+  background: #333;
+}
+
 /* line 1, ../../src/scss/modules/_map.scss */
 .map {
   height: 32.1428571429em;
@@ -1269,21 +1274,32 @@ input[type='checkbox']:focus {
 
 /* line 7, ../../src/scss/layout/_basic.scss */
 .main {
-  padding-bottom: 3.5714285714em;
   background: white;
 }
 
-/* line 12, ../../src/scss/layout/_basic.scss */
+/* line 11, ../../src/scss/layout/_basic.scss */
 .footer {
   font-size: 1em;
   background: #272727;
   color: white;
 }
-/* line 19, ../../src/scss/layout/_basic.scss */
+/* line 18, ../../src/scss/layout/_basic.scss */
 .footer h4 {
   color: #cd363f;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+/* line 25, ../../src/scss/layout/_basic.scss */
+.copywrite {
+  font-size: 0.7857142857em;
+  padding: 0.3571428571em 0.7142857143em;
+  background: #171717;
+  text-align: center;
+}
+/* line 31, ../../src/scss/layout/_basic.scss */
+.copywrite p {
+  margin: 0;
 }
 
 /* line 1, ../../src/scss/layout/_hero.scss */
@@ -1395,18 +1411,13 @@ input[type='checkbox']:focus {
   float: right;
 }
 
-/* line 55, ../../src/scss/helpers/_overrides.scss */
-.footer {
-  padding: 1.0714285714em 1.4285714286em;
-}
-
 /* line 56, ../../src/scss/helpers/_overrides.scss */
 .values, .hero-large, .hero-small {
   padding: 2.1428571429em 1.4285714286em;
 }
 
 /* line 62, ../../src/scss/helpers/_overrides.scss */
-.footer, .hero-large, .hero-small {
+.hero-large, .hero-small {
   padding-right: 0;
   padding-left: 0;
 }

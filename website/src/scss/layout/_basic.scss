@@ -5,13 +5,12 @@
 }
 
 .main {
-  @include em(padding-bottom, 50px);
   background: $color-white;
 }
 
 .footer {
-  @extend %padding-md;
-  @extend %no-padding-horz;
+  // @extend %padding-md;
+  // @extend %no-padding-horz;
   @include em(font-size, 14px);
   background: $color-black;
   color: $color-white;
@@ -20,5 +19,16 @@
     color: $color-primary;
     font-weight: 400;
     text-transform: uppercase;
+  }
+}
+
+.copywrite {
+  @include em(font-size, 11px);
+  @include em(padding, 5px 10px);
+  background: mix(#000, $color-black, 40%);
+  text-align: center;
+
+  p {
+    margin: 0;
   }
 }
