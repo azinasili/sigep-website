@@ -1211,11 +1211,7 @@ input[type='checkbox']:focus {
   }
 }
 
-/* line 50, ../../src/scss/modules/_blog-post.scss */
-.blog-post--recent ul > li {
-  border-top: 1px solid #dbdbdb;
-}
-/* line 54, ../../src/scss/modules/_blog-post.scss */
+/* line 49, ../../src/scss/modules/_blog-post.scss */
 .blog-post--recent li > a {
   font-size: 0.8571428571em;
   padding: 0.7142857143em 0.7142857143em 0.7142857143em 0;
@@ -1223,23 +1219,19 @@ input[type='checkbox']:focus {
   position: relative;
   text-transform: uppercase;
 }
-/* line 61, ../../src/scss/modules/_blog-post.scss */
+/* line 56, ../../src/scss/modules/_blog-post.scss */
 .blog-post--recent li > a > .fa {
   font-size: 14px;
   position: absolute;
   right: 0;
 }
 
-/* line 69, ../../src/scss/modules/_blog-post.scss */
-.footer .blog-post--recent ul > li {
-  border-top: 0;
-}
-/* line 72, ../../src/scss/modules/_blog-post.scss */
+/* line 63, ../../src/scss/modules/_blog-post.scss */
 .footer .blog-post--recent ul > li > a {
   color: white;
 }
 
-/* line 77, ../../src/scss/modules/_blog-post.scss */
+/* line 67, ../../src/scss/modules/_blog-post.scss */
 .blog-post--footer {
   background: #333;
 }

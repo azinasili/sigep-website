@@ -46,32 +46,22 @@
   }
 }
 
-.blog-post--recent {
-  ul > li {
-    border-top: em(1px) solid $color-gray-light;
-  }
+.blog-post--recent li > a {
+  @include em(font-size, 12px);
+  @include em(padding, 10px 10px 10px 0);
+  display: block;
+  position: relative;
+  text-transform: uppercase;
 
-  li > a {
-    @include em(font-size, 12px);
-    @include em(padding, 10px 10px 10px 0);
-    display: block;
-    position: relative;
-    text-transform: uppercase;
-
-    > .fa {
-      font-size: 14px;
-      position: absolute;
-      right: 0;
-    }
+  > .fa {
+    font-size: 14px;
+    position: absolute;
+    right: 0;
   }
 }
 
-.footer .blog-post--recent ul > li {
-  border-top: 0;
-
-  > a {
-    color: $color-white;
-  }
+.footer .blog-post--recent ul > li > a {
+  color: $color-white;
 }
 
 .blog-post--footer {
