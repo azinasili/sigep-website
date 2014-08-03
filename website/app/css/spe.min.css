@@ -1164,18 +1164,17 @@ input[type='checkbox']:focus {
 /* line 1, ../../src/scss/modules/_blog-post.scss */
 .blog-post {
   margin-bottom: 3.9285714286em;
-  padding-bottom: 2.1428571429em;
 }
-/* line 5, ../../src/scss/modules/_blog-post.scss */
+/* line 4, ../../src/scss/modules/_blog-post.scss */
 .blog-post .img {
   width: 100%;
 }
-/* line 9, ../../src/scss/modules/_blog-post.scss */
+/* line 8, ../../src/scss/modules/_blog-post.scss */
 .blog-post a {
   text-transform: capitalize;
 }
 
-/* line 14, ../../src/scss/modules/_blog-post.scss */
+/* line 13, ../../src/scss/modules/_blog-post.scss */
 .blog-post--preview {
   font-size: 0.9285714286em;
 }
@@ -1420,6 +1419,11 @@ input[type='checkbox']:focus {
 /* line 56, ../../src/scss/helpers/_overrides.scss */
 .values, .hero-large, .hero-small {
   padding: 2.1428571429em 1.4285714286em;
+}
+
+/* line 60, ../../src/scss/helpers/_overrides.scss */
+.blog-post--preview {
+  padding-bottom: 0;
 }
 
 /* line 62, ../../src/scss/helpers/_overrides.scss */

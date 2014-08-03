@@ -1,6 +1,5 @@
 .blog-post {
   @include em(margin-bottom, 55px);
-  @include em(padding-bottom, 30px);
 
   .img {
     width: 100%;
@@ -13,6 +12,7 @@
 
 .blog-post--preview {
   @extend %margin-lg;
+  @extend %no-padding-bottom;
   @extend %no-margin-horz;
   @include em(font-size, 13px);
 }
