@@ -74,7 +74,7 @@
     <!-- Main content -->
     <main class="main" id="main">
 
-      <div class="hero-large">
+      <div id="hero" class="hero-large">
         <div class="container">
           <div class="row">
             <div class="hero-content">
@@ -83,6 +83,7 @@
             </div>
           </div>
         </div>
+        <img src="http://placecage.com/g/1500/490" />
       </div>
 
       <div class="container">
@@ -262,6 +263,25 @@
     <!-- Javascript -->
     <script src="js/vendor/jquery.min.js" type="text/javascript"></script>
     <script src="js/spe.min.js" type="text/javascript"></script>
+    <script>
+    $(document).ready(function() {
+      $(window).scroll(function() {
+        var y = $(this).scrollTop();
+
+        while (y <= 300) {
+            // $('#my-div').addClass('animate');
+          var position = 'translate3d(0px ' + y + 'px' + '0px);'
+          $('#hero > img').css(
+            {
+              '-moz-transform' : position,
+              '-webkit-transform' : position,
+              'transform' : position
+            }
+          );
+        }
+      });
+    });
+    </script>
 
     <!-- Google Analytics -->
     <script type="text/javascript">

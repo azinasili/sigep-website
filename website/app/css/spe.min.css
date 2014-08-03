@@ -1299,33 +1299,47 @@ input[type='checkbox']:focus {
   background: #7b1e5c;
   color: #e4d2de;
   position: relative;
+  z-index: 2;
 }
 
-/* line 12, ../../src/scss/layout/_hero.scss */
+/* line 13, ../../src/scss/layout/_hero.scss */
 .hero-large {
   height: 28.5714285714em;
+  overflow: hidden;
+}
+/* line 18, ../../src/scss/layout/_hero.scss */
+.hero-large > img {
+  background-size: cover;
+  bottom: -9999px;
+  left: 0;
+  margin: auto 0;
+  position: absolute;
+  right: 0;
+  top: -9999px;
+  width: 100%;
+  z-index: 1;
 }
 
-/* line 17, ../../src/scss/layout/_hero.scss */
+/* line 31, ../../src/scss/layout/_hero.scss */
 .hero-small {
   height: 14.2857142857em;
 }
 
-/* line 22, ../../src/scss/layout/_hero.scss */
+/* line 36, ../../src/scss/layout/_hero.scss */
 .hero-content {
   text-transform: uppercase;
 }
-/* line 25, ../../src/scss/layout/_hero.scss */
+/* line 39, ../../src/scss/layout/_hero.scss */
 .hero-content h1 {
   text-transform: uppercase;
 }
-/* line 30, ../../src/scss/layout/_hero.scss */
+/* line 44, ../../src/scss/layout/_hero.scss */
 .hero-content span {
   display: block;
   margin-top: 1.25em;
 }
 
-/* line 36, ../../src/scss/layout/_hero.scss */
+/* line 50, ../../src/scss/layout/_hero.scss */
 .hero-content {
   position: absolute;
   -webkit-transform-style: preserve-3d;

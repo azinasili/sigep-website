@@ -7,11 +7,25 @@
   background: $color-secondary;
   color: text-color($color-secondary);
   position: relative;
+  z-index: 2;
 }
 
 .hero-large {
   @extend %hero;
   @include em(height, 400px);
+  overflow: hidden;
+
+  > img {
+    background-size: cover;
+    bottom: -9999px;
+    left: 0;
+    margin: auto 0;
+    position: absolute;
+    right: 0;
+    top: -9999px;
+    width: 100%;
+    z-index: 1;
+  }
 }
 
 .hero-small {

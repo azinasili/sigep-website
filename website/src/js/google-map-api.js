@@ -8,7 +8,7 @@ function initialize() {
     scrollwheel: false
   };
 
-  var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+  var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 }
 
 // Append script tag to body
