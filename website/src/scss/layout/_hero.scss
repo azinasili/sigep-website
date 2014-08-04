@@ -5,7 +5,6 @@
   @extend %no-margin-top;
   @extend %no-margin-horz;
   background: $color-secondary;
-  color: text-color($color-secondary);
   position: relative;
   z-index: 2;
 }
@@ -13,16 +12,16 @@
 .hero-large {
   @extend %hero;
   @include em(height, 400px);
+  color: $color-white;
+  text-shadow: 0 1px 0 $color-black;
   overflow: hidden;
+  opacity: 1;
+  position: relative;
 
   > img {
     background-size: cover;
-    bottom: -9999px;
-    left: 0;
-    margin: auto 0;
     position: absolute;
-    right: 0;
-    top: -9999px;
+    top: 0;
     width: 100%;
     z-index: 1;
   }
@@ -31,6 +30,7 @@
 .hero-small {
   @extend %hero;
   @include em(height, 200px);
+  color: text-color($color-secondary);
 }
 
 %hero-content {
@@ -53,4 +53,8 @@
   @extend %hero-content;
   @extend .text-center;
   @include align();
+
+  .hero-large > & > h1 {
+    @include em(margin-bottom, 20px);
+  }
 }

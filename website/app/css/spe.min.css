@@ -1322,32 +1322,32 @@ input[type='checkbox']:focus {
 /* line 1, ../../src/scss/layout/_hero.scss */
 .hero-large, .hero-small {
   background: #7b1e5c;
-  color: #e4d2de;
   position: relative;
   z-index: 2;
 }
 
-/* line 13, ../../src/scss/layout/_hero.scss */
+/* line 12, ../../src/scss/layout/_hero.scss */
 .hero-large {
   height: 28.5714285714em;
+  color: white;
+  text-shadow: 0 1px 0 #272727;
   overflow: hidden;
+  opacity: 1;
+  position: relative;
 }
-/* line 18, ../../src/scss/layout/_hero.scss */
+/* line 21, ../../src/scss/layout/_hero.scss */
 .hero-large > img {
   background-size: cover;
-  bottom: -9999px;
-  left: 0;
-  margin: auto 0;
   position: absolute;
-  right: 0;
-  top: -9999px;
+  top: 0;
   width: 100%;
   z-index: 1;
 }
 
-/* line 31, ../../src/scss/layout/_hero.scss */
+/* line 30, ../../src/scss/layout/_hero.scss */
 .hero-small {
   height: 14.2857142857em;
+  color: #e4d2de;
 }
 
 /* line 36, ../../src/scss/layout/_hero.scss */
@@ -1377,6 +1377,10 @@ input[type='checkbox']:focus {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+/* line 57, ../../src/scss/layout/_hero.scss */
+.hero-large > .hero-content > h1 {
+  margin-bottom: 1.4285714286em;
 }
 
 /* line 15, ../../src/scss/helpers/_overrides.scss */

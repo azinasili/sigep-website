@@ -79,9 +79,9 @@
       <div id="hero" class="hero-large">
         <div class="hero-content">
           <h1>headline for home page hero here</h1>
-          <span class="text-large">sub headline for home page here</span>
+          <a href="blog-post.html" class="btn">continue reading</a>
         </div>
-        <img src="http://placecage.com/g/1500/490" />
+        <img src="http://placecage.com/g/1500/600" />
       </div>
 
       <div class="container">
@@ -282,6 +282,25 @@
     <!-- Javascript -->
     <script src="js/vendor/jquery.min.js" type="text/javascript"></script>
     <script src="js/spe.min.js" type="text/javascript"></script>
+    <script>
+      $(document).ready(function() {
+        $(window).scroll(function(){
+          $('#hero').each(function(r){
+            var pos = $(this).offset().top;
+            var scrolled = $(window).scrollTop();
+
+            if(pos !== 0) {
+              $('.hero-content').css(
+                {
+                  // 'transform': 'translate(-50%, ' + (scrolled * 0.2) + '%)',
+                  'opacity': (scrolled * -.001) + 1
+                });
+              $('#hero img').css('transform', 'translate(0, ' + -(scrolled * 0.15) + 'px)');
+            }
+          });
+        });
+      });
+    </script>
 
     <!-- Google Analytics -->
     <script type="text/javascript">
