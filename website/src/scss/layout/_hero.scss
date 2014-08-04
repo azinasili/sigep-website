@@ -35,6 +35,8 @@
 
 %hero-content {
   text-transform: uppercase;
+  position: relative;
+  z-index: 2;
 
   h1 {
     @extend %no-margin;
