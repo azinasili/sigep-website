@@ -1256,6 +1256,32 @@ input[type='checkbox']:focus {
   margin-bottom: 2.5em;
 }
 
+/* line 1, ../../src/scss/modules/_rush-event.scss */
+.rush-event {
+  border-radius: 0.2142857143em;
+  margin-bottom: 1.4285714286em;
+  padding: 0.7142857143em;
+  border: 1px solid;
+  border-color: #f4f4f4 #e9e9e9 lightgray;
+}
+/* line 8, ../../src/scss/modules/_rush-event.scss */
+.rush-event h3 {
+  margin: 0 0 0.1428571429em;
+}
+
+/* line 13, ../../src/scss/modules/_rush-event.scss */
+.rush-notes {
+  font-size: 0.9285714286em;
+  margin: 1.4285714286em -0.7142857143em -0.7142857143em;
+  background: #fafafa;
+  border-top: 1px solid lightgray;
+}
+/* line 19, ../../src/scss/modules/_rush-event.scss */
+.rush-notes p {
+  padding: 0.7142857143em;
+  margin: 0;
+}
+
 /* line 1, ../../src/scss/layout/_basic.scss */
 .header {
   padding-top: 0.3571428571em;

@@ -1,0 +1,23 @@
+.rush-event {
+  @include em(border-radius, 3px);
+  @include em(margin-bottom, 20px);
+  @include em(padding, 10px);
+  border: em(1px) solid;
+  border-color: mix($color-white, $color-black, 95%) mix($color-white, $color-black, 90%) mix($color-white, $color-black, 80%);
+
+  h3 {
+    @include em(margin, 0 0 2px);
+  }
+}
+
+.rush-notes {
+  @include em(font-size, 13px);
+  @include em(margin, 20px -10px -10px);
+  background: mix($color-white, $color-black, 98%);
+  border-top: em(1px) solid mix($color-white, $color-black, 80%);
+
+  p {
+    @include em(padding, 10px);
+    margin: 0;
+  }
+}
