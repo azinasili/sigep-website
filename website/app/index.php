@@ -55,21 +55,7 @@
     <!-- Header content -->
     <header class="container header">
       <div class="row">
-        <div class="grid third-lg whole-xs">
-          <a href="index.html"><h1 class="logo">sigma phi epsilon</h1></a>
-        </div>
-        <div class="grid two-third-lg whole-xs">
-          <nav class="navigation">
-            <ul class="list-unstyled">
-              <li><a href="about.html">about SigEp</a></li>
-              <li><a href="join.html">join SigEp</a></li>
-              <li><a href="news.html">news</a></li>
-              <li><a href="brothers.html">brothers</a></li>
-              <li><a href="bms.html">Scholarships</a></li>
-              <li><a href="contact.html">contact</a></li>
-            </ul>
-          </nav>
-        </div>
+        <?php include("incl/navigation.php"); ?>
       </div>
     </header>
 
@@ -78,10 +64,10 @@
 
       <div id="hero" class="hero-large">
         <div class="hero-content">
-          <h1>headline for home page hero here</h1>
-          <a href="blog-post.html" class="btn">continue reading</a>
+          <h1>St. Baldrick's 2014</h1>
+          <a href="blog-post.php" class="btn">continue reading</a>
         </div>
-        <img src="http://placecage.com/g/1500/600" />
+        <img src="img/st-baldricks-2014.jpg" />
       </div>
 
       <div class="container">
@@ -182,51 +168,7 @@
       <div class="blog-post--footer">
         <div class="container">
           <div class="row">
-            <div class="grid third-md whole-xs">
-              <article class="blog-post blog-post--preview">
-                <header class="blog-post--header">
-                  <img src="http://placecage.com/710/250" class="img" />
-                  <h2>blog post headline</h2>
-                </header>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat.
-                </p>
-                <a href="blog-post.html">continue reading</a>
-              </article>
-            </div>
-            <div class="grid third-md whole-xs">
-              <article class="blog-post blog-post--preview">
-                <header class="blog-post--header">
-                  <img src="http://placecage.com/710/250" class="img" />
-                  <h2>blog post headline</h2>
-                </header>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat.
-                </p>
-                <a href="blog-post.html">continue reading</a>
-              </article>
-            </div>
-            <div class="grid third-md whole-xs">
-              <article class="blog-post blog-post--preview">
-                <header class="blog-post--header">
-                  <img src="http://placecage.com/710/250" class="img" />
-                  <h2>blog post headline</h2>
-                </header>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat.
-                </p>
-                <a href="blog-post.html">continue reading</a>
-              </article>
-            </div>
+            <?php include("incl/blog-post-preview.php"); ?>
           </div>
         </div>
       </div>

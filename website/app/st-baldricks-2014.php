@@ -54,21 +54,7 @@
     <!-- Header content -->
     <header class="container header">
       <div class="row">
-        <div class="grid third-lg whole-xs">
-          <a href="index.html"><h1 class="logo">sigma phi epsilon</h1></a>
-        </div>
-        <div class="grid two-third-lg whole-xs">
-          <nav class="navigation">
-            <ul class="list-unstyled">
-              <li><a href="about.html">about SigEp</a></li>
-              <li><a href="join.html">join SigEp</a></li>
-              <li><a href="news.html">news</a></li>
-              <li><a href="brothers.html">brothers</a></li>
-              <li><a href="bms.html">Scholarships</a></li>
-              <li><a href="contact.html">contact</a></li>
-            </ul>
-          </nav>
-        </div>
+        <?php include("incl/navigation.php"); ?>
       </div>
     </header>
 
@@ -78,52 +64,51 @@
       <div class="container">
         <div class="row">
           <div class="grid whole-xs">
-            <img src="http://placecage.com/c/1140/300" class="img" />
+            <img src="img/st-baldricks-2014.jpg" class="img" />
             <article class="blog-post--content">
               <header class="blog-post--header">
-                <h2>blog post headline</h2>
-                <span class="text-small">4/24/2014</span>
+                <h2>St. Baldricks 2014</h2>
+                <span class="text-small">2/24/2014</span>
                 <span class="text-small">written by:</span>
-                <span class="text-small">azin asili</span>
+                <span class="text-small">Sean Soboloski</span>
               </header>
+              <h3>What is the St .Baldrick’s Foundation…</h3>
               <p>
-                On November 14th, 1999, 37 men were brought before Brothers Erin
-                Mullally and Ryan Elliot from Headquarters, to begin the first
-                challenge along the journey of brotherhood, The Sigma Challenge.
-                Brothers were eager, yet anxious, to build a brotherhood worthy
-                to join the National Fraternity of Sigma Phi Epsilon.
+                The St. Baldrick’s Foundation is a volunteer-driven charity
+                committed to funding the most promising research to find cures
+                for childhood cancers and give survivors long and healthy lives.
+              </p>
+              <h3>How are we involved…</h3>
+              <p>
+                Sigma Phi Epsilon supports the St. Baldrick’s Foundation by
+                fund raising and hosting a head shaving event every year. Last
+                year we raised $51,850 increasing our total to over $212,000!
+                This year we are hosting our 7th annual head shaving event, with
+                a goal to raise at least $55,000. The event is taking place on
+                Friday, March 14th from 6:00 PM to 9:00 PM in the Drexel Armory,
+                located at 33rd and Cuthbert Streets. The event is a free
+                carnival, open to the public, and it will include live music,
+                DJs, three large inflatable inter-actives, raffles, food, and of
+                course, the head shaving.
+              </p>
+              <h3>How you can show your support…</h3>
+              <p>
+                Donate to the event at
+                <a href="http://www.stbaldricks.org/events/mypage/890/2014">http://www.stbaldricks.org/events/mypage/890/2014</a>
               </p>
               <p>
-                Shortly after Brother Mullally returned to headquarters, the
-                Brothers who were appointed to the executive board began to
-                develop different ideas and beliefs of what the Fraternity
-                should be; ideas and beliefs that contradicted those of our Oath
-                of Obligation. Tension and dissent grew within the brotherhood,
-                creating definitively separate groups with their own agenda,
-                each trying to gain control of the Fraternity. Accompanying this
-                internal struggle was the challenge the brothers faced from the
-                Inter-Fraternal Council (IFC). The IFC was not given a choice
-                whether or not to allow a new Fraternity onto campus and had no
-                involvement with the selection of which Fraternity it would be.
-                Members of IFC also over-heard a conversation that took place
-                between members of SigEp and alumni, the topic of which IFC
-                misinterpreted, and resulted in more animosity towards SigEp
-                by the IFC.
+                Sign up to shave your head and help fund raise
+              </p>
+              <ul>
+                <li>Search and select “Head Shaving at Drexel University”</li>
+                <li>Hit the blue “Join Us” button and follow the instructions</li>
+              </ul>
+              <p>
+                Attend the event and join in on the celebration!
               </p>
               <p>
-                Marred by the negative relationship within the brotherhood, the
-                lack of support from the IFC, and lack of confidence within
-                themselves, 27 of the new members of the Drexel Sigma Epsilon
-                Chapter decided they didn't want to accept the struggle that
-                lay ahead.
-              </p>
-              <p>
-                At the next meeting following Christmas break, only the
-                following men showed up: Mohamed Al-Khalifa Khalifa, Martin
-                Christian, Steven Goble, Jonathan Huynh, Robert Li, Michael
-                Maslanik, Rahul Patel, Terrence Purnell, Jamie Rosley, and Ryan
-                Turman. These 10 brothers are the founding fathers of the Sigma
-                Epsilon Chapter of Sigma Phi Epsilon Fraternity.
+              Please feel free to contact
+              <a href="#">Sean Soboloski</a> with any questions!
               </p>
             </article>
           </div>
@@ -145,51 +130,7 @@
       <div class="blog-post--footer">
         <div class="container">
           <div class="row">
-            <div class="grid third-md whole-xs">
-              <article class="blog-post blog-post--preview">
-                <header class="blog-post--header">
-                  <img src="http://placecage.com/710/250" class="img" />
-                  <h2>blog post headline</h2>
-                </header>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat.
-                </p>
-                <a href="blog-post.html">continue reading</a>
-              </article>
-            </div>
-            <div class="grid third-md whole-xs">
-              <article class="blog-post blog-post--preview">
-                <header class="blog-post--header">
-                  <img src="http://placecage.com/710/250" class="img" />
-                  <h2>blog post headline</h2>
-                </header>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat.
-                </p>
-                <a href="blog-post.html">continue reading</a>
-              </article>
-            </div>
-            <div class="grid third-md whole-xs">
-              <article class="blog-post blog-post--preview">
-                <header class="blog-post--header">
-                  <img src="http://placecage.com/710/250" class="img" />
-                  <h2>blog post headline</h2>
-                </header>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat.
-                </p>
-                <a href="blog-post.html">continue reading</a>
-              </article>
-            </div>
+            <?php include("incl/blog-post-preview.php"); ?>
           </div>
         </div>
       </div>

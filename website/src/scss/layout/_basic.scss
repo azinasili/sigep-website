@@ -9,9 +9,7 @@
 }
 
 .footer {
-  // @extend %padding-md;
-  // @extend %no-padding-horz;
-  @include em(font-size, 14px);
+  @include em(font-size, ($font-base - 1px));
   background: $color-black;
   color: $color-white;
 
@@ -22,8 +20,16 @@
   }
 }
 
+.sigep-crest {
+  background: url('../img/sigep-crest.png') no-repeat center center;
+  // background: url('../img/sigep-crest.png') no-repeat 0 0;
+  min-width: 330px;
+  width: 330px;
+  height: 412px;
+}
+
 .copywrite {
-  @include em(font-size, 11px);
+  @include em(font-size, 13px);
   @include em(padding, 5px 10px);
   background: mix(#000, $color-black, 40%);
   text-align: center;

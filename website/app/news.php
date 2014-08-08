@@ -54,21 +54,7 @@
     <!-- Header content -->
     <header class="container header">
       <div class="row">
-        <div class="grid third-lg whole-xs">
-          <a href="index.html"><h1 class="logo">sigma phi epsilon</h1></a>
-        </div>
-        <div class="grid two-third-lg whole-xs">
-          <nav class="navigation">
-            <ul class="list-unstyled">
-              <li><a href="about.html">about SigEp</a></li>
-              <li><a href="join.html">join SigEp</a></li>
-              <li><a href="news.html">news</a></li>
-              <li><a href="brothers.html">brothers</a></li>
-              <li><a href="bms.html">Scholarships</a></li>
-              <li><a href="contact.html">contact</a></li>
-            </ul>
-          </nav>
-        </div>
+        <?php include("incl/navigation.php"); ?>
       </div>
     </header>
 
@@ -86,12 +72,35 @@
           <div class="grid two-third-md whole-xs">
             <article class="blog-post">
               <header class="blog-post--header">
-                <h2>blog post headline</h2>
-                <span class="text-small">4/24/2014</span>
-                <span class="text-small">written by:</span>
-                <span class="text-small">azin asili</span>
+                <h2>St. Bladrick's 2014</h2>
+                <img src="img/st-baldricks-2014.jpg" class="img" />
               </header>
-              <img src="http://placecage.com/710/250" class="img" />
+              <p>
+                The St. Baldrick’s Foundation is a volunteer-driven charity
+                committed to funding the most promising research to find cures
+                for childhood cancers and give survivors long and healthy lives.
+              </p>
+              <a href="st-baldricks-2014.php">continue reading</a>
+            </article>
+            <article class="blog-post">
+              <header class="blog-post--header">
+                <h2>Fall Rush 2013</h2>
+                <img src="img/fall-rush-2013.jpg" class="img" />
+              </header>
+              <p>
+                Please come out to Sigma Phi Epsilon located at the corner of
+                34th and Race street, first house on Greek Row, and meet the
+                brothers of SigEp. The following Rush dates are open to all
+                members interested in joining Greek Life and taking part in
+                living the Balanced Man lifestyle.
+              </p>
+              <a href="fall-rush-2013.php">continue reading</a>
+            </article>
+            <article class="blog-post">
+              <header class="blog-post--header">
+                <h2>blog post headline</h2>
+                <img src="http://placecage.com/710/250" class="img" />
+              </header>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -105,47 +114,8 @@
             <article class="blog-post">
               <header class="blog-post--header">
                 <h2>blog post headline</h2>
-                <span class="text-small">4/24/2014</span>
-                <span class="text-small">written by:</span>
-                <span class="text-small">azin asili</span>
+                <img src="http://placecage.com/710/250" class="img" />
               </header>
-              <img src="http://placecage.com/710/250" class="img" />
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-              <a href="blog-post.html">continue reading</a>
-            </article>
-            <article class="blog-post">
-              <header class="blog-post--header">
-                <h2>blog post headline</h2>
-                <span class="text-small">4/24/2014</span>
-                <span class="text-small">written by:</span>
-                <span class="text-small">azin asili</span>
-              </header>
-              <img src="http://placecage.com/710/250" class="img" />
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-              <a href="blog-post.html">continue reading</a>
-            </article>
-            <article class="blog-post">
-              <header class="blog-post--header">
-                <h2>blog post headline</h2>
-                <span class="text-small">4/24/2014</span>
-                <span class="text-small">written by:</span>
-                <span class="text-small">azin asili</span>
-              </header>
-              <img src="http://placecage.com/710/250" class="img" />
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -161,11 +131,8 @@
             <div class="blog-post--recent">
               <h3>Archive</h3>
               <ul class="list-unstyled">
-                <li><a href="#">past article</a></li>
-                <li><a href="#">past article</a></li>
-                <li><a href="#">past article</a></li>
-                <li><a href="#">past article</a></li>
-                <li><a href="#">past article</a></li>
+                <li><a href="st-baldricks-2014.php">St. Baldrick's 2014</a></li>
+                <li><a href="fall-rush-2013.php">Fall Rush 2013</a></li>
               </ul>
             </div>
           </aside>
@@ -187,51 +154,7 @@
       <div class="blog-post--footer">
         <div class="container">
           <div class="row">
-            <div class="grid third-md whole-xs">
-              <article class="blog-post blog-post--preview">
-                <header class="blog-post--header">
-                  <img src="http://placecage.com/710/250" class="img" />
-                  <h2>blog post headline</h2>
-                </header>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat.
-                </p>
-                <a href="blog-post.html">continue reading</a>
-              </article>
-            </div>
-            <div class="grid third-md whole-xs">
-              <article class="blog-post blog-post--preview">
-                <header class="blog-post--header">
-                  <img src="http://placecage.com/710/250" class="img" />
-                  <h2>blog post headline</h2>
-                </header>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat.
-                </p>
-                <a href="blog-post.html">continue reading</a>
-              </article>
-            </div>
-            <div class="grid third-md whole-xs">
-              <article class="blog-post blog-post--preview">
-                <header class="blog-post--header">
-                  <img src="http://placecage.com/710/250" class="img" />
-                  <h2>blog post headline</h2>
-                </header>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat.
-                </p>
-                <a href="blog-post.html">continue reading</a>
-              </article>
-            </div>
+            <?php include("incl/blog-post-preview.php"); ?>
           </div>
         </div>
       </div>

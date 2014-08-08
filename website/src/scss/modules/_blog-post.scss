@@ -25,6 +25,10 @@
     margin-bottom: 0;
   }
 
+  img {
+    margin-top: 1em;
+  }
+
   span {
     @extend %margin-md;
     @extend %no-margin-top;
