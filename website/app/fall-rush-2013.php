@@ -129,7 +129,7 @@
               </p>
               <p>
                 For more information, please contact our
-                <a href="#">VP of Recruitment</a>.
+                <a href="mailto:recruitment@sigep-drexel.org">VP of Recruitment</a>.
               </p>
             </article>
           </div>

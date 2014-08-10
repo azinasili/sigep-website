@@ -70,7 +70,7 @@
       <div class="container">
         <div class="row">
           <div class="grid two-third-md whole-xs">
-            <h2>SigEp: a portrait of excellence</h2>
+            <h2>SigEp: A Portrait of Excellence</h2>
             <p>
               This fraternity is different. Everyday every SigEp works to exude
               excellence in every sense of the word. Every SigEp is an athlete,
@@ -94,7 +94,7 @@
               President and the former IFC President. As well as three varsity
               athletes, 2 NROTC midshipmen, 9 RA’s and 6 STAR Scholars.
             </p>
-            <h2>why join a fraternity?</h2>
+            <h2>Why Join a Fraternity?</h2>
             <p>
               “Almost everything I have needed to know about leadership for the
               Marine Corps, I learned in SigEp.” - General James T. Conway, 34th
@@ -133,46 +133,41 @@
             </p>
           </div>
           <div class="grid third-md whole-xs">
-            <h2>upcoming rush events</h2>
+            <h2>Upcoming Rush Events</h2>
             <article class="group rush-event">
-              <h3>event name</h3>
+              <h3>Hoagies and Stoagies</h3>
               <div class="group">
-                <span class="rush-date">october 19th</span>
+                <span class="rush-date">October 7, 2013</span>
                 <span>@</span>
                 <span class="rush-time">7:00 pm</span>
               </div>
             </article>
             <article class="group rush-event">
-              <h3>event name</h3>
+              <h3>Speedball</h3>
               <div class="group">
-                <span class="rush-date">october 19th</span>
+                <span class="rush-date">October 9, 2013</span>
                 <span>@</span>
-                <span class="rush-time">7:00 pm</span>
+                <span class="rush-time">9:00 pm</span>
               </div>
             </article>
             <article class="group rush-event">
-              <h3>event name</h3>
+              <h3>Pig Roast</h3>
               <div class="group">
-                <span class="rush-date">october 19th</span>
+                <span class="rush-date">October 12, 2013</span>
+                <span>@</span>
+                <span class="rush-time">1:00 pm</span>
+              </div>
+            </article>
+            <article class="group rush-event">
+              <h3>Preference</h3>
+              <div class="group">
+                <span class="rush-date">October 15, 2013</span>
                 <span>@</span>
                 <span class="rush-time">7:00 pm</span>
               </div>
               <div class="rush-notes">
                 <p>
-                  notes on rush event
-                </p>
-              </div>
-            </article>
-            <article class="group rush-event">
-              <h3>preference event</h3>
-              <div class="group">
-                <span class="rush-date">october 19th</span>
-                <span>@</span>
-                <span class="rush-time">7:00 pm</span>
-              </div>
-              <div class="rush-notes">
-                <p>
-                  invitation only
+                  Invitation only
                 </p>
               </div>
             </article>
@@ -182,7 +177,8 @@
               held.
             </p>
             <p>
-              For more information, please <a href="#" mailto="#">contact
+              For more information, please
+              <a href="mailto:mailto:recruitment@sigep-drexel.org?Subject=Question%20About%20SigEp%20Recruitment">contact
               our VP of Recruitment</a>.
             </p>
           </div>
@@ -212,38 +208,7 @@
       <!-- Footer links -->
       <div class="container">
         <div class="row">
-          <div class="grid third-md whole-xs">
-            <div class="blog-post--recent">
-              <h4>recent news</h4>
-              <ul class="list-unstyled">
-                <li><a href="#">recent article headline</a></li>
-                <li><a href="#">recent article headline</a></li>
-                <li><a href="#">recent article headline</a></li>
-                <li><a href="#">recent article headline</a></li>
-                <li><a href="#">recent article headline</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="grid third-md whole-xs">
-            <div class="social-media--links">
-              <h4>follow SigEp online</h4>
-              <ul class="list-unstyled">
-                <li><a href="https://www.facebook.com/SigEpDrexel"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a></li>
-                <li><a href="https://twitter.com/SigEp_Drexel"><i class="fa fa-twitter fa-fw"></i>Twitter</a></li>
-                <!-- <li><a href="#"><i class="fa fa-instagram fa-fw"></i>Instagram</a></li> -->
-              </ul>
-            </div>
-          </div>
-          <div class="grid third-md whole-xs">
-            <div class="contact">
-              <h4>Get in touch</h4>
-              <p>
-                Get in touch with a SigEp brother for more information on Sigma
-                Phi Epsilon or Greek Life in general
-              </p>
-              <a href="contact.html" class="btn">Contact a Brother</a>
-            </div>
-          </div>
+          <?php include("incl/footer-links.php"); ?>
         </div>
       </div>
 

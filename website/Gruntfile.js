@@ -191,6 +191,19 @@ module.exports = function (grunt) {
       }
     },
 
+    // php: {
+    //   test: {
+    //     options: {
+    //       keepalive: true,
+    //       open: true
+    //     }
+    //   }
+    // },
+
+    php: {
+      watch: {}
+    },
+
     // Opens the web server in the browser
     // https://github.com/jsoverson/grunt-open
     open: {
@@ -306,6 +319,7 @@ module.exports = function (grunt) {
     'uglify',
     'copy:dev',
     'clean:dev',
+    // 'php',
     'connect:livereload',
     'open',
     'watch'

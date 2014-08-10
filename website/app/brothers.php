@@ -68,93 +68,6 @@
       </div>
 
       <div class="container">
-        <h2>SigEp PABB execative board</h2>
-        <div class="row">
-          <div class="grid brother-profile">
-            <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
-              <div class="group">
-                <h3>Sean Soboloski</h3>
-                <span>Chapter President</span>
-                <a href="#" mailto="#">e-mail address</a>
-              </div>
-            </article>
-          </div>
-          <div class="grid brother-profile">
-            <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
-              <div class="group">
-                <h3>Matthew Cimino</h3>
-                <span>Vice President of Programming</span>
-                <a href="#" mailto="#">e-mail address</a>
-              </div>
-            </article>
-          </div>
-          <div class="grid brother-profile">
-            <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
-              <div class="group">
-                <h3>Mario Squicciarini</h3>
-                <span>Vice President of Finance</span>
-                <a href="#" mailto="#">e-mail address</a>
-              </div>
-            </article>
-          </div>
-          <div class="grid brother-profile">
-            <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
-              <div class="group">
-                <h3>Jacob Couch</h3>
-                <span>Vice President of Recruitment</span>
-                <a href="#" mailto="#">e-mail address</a>
-              </div>
-            </article>
-          </div>
-          <div class="grid brother-profile">
-            <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
-              <div class="group">
-                <h3>Brian Bucci</h3>
-                <span>Vice President of Member Development</span>
-                <a href="#" mailto="#">e-mail address</a>
-              </div>
-            </article>
-          </div>
-          <div class="grid brother-profile">
-            <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
-              <div class="group">
-                <h3>Gerardo Faia</h3>
-                <span>Vice President of Communications</span>
-                <a href="#" mailto="#">e-mail address</a>
-              </div>
-            </article>
-          </div>
-          <div class="grid brother-profile">
-            <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
-              <div class="group">
-                <h3>Peter Massey</h3>
-                <span>Chaplin</span>
-                <a href="#" mailto="#">e-mail address</a>
-              </div>
-            </article>
-          </div>
-          <div class="grid brother-profile">
-            <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
-              <div class="group">
-                <h3>Frank Gerace</h3>
-                <span>House Manager</span>
-                <a href="#" mailto="#">e-mail address</a>
-              </div>
-            </article>
-          </div>
-        </div>
-        <hr />
-      </div>
-
-      <div class="container">
         <h2>Class of 2015</h2>
         <div class="row">
           <div class="grid brother-profile">
@@ -856,38 +769,7 @@
       <!-- Footer links -->
       <div class="container">
         <div class="row">
-          <div class="grid third-md whole-xs">
-            <div class="blog-post--recent">
-              <h4>recent news</h4>
-              <ul class="list-unstyled">
-                <li><a href="#">recent article headline</a></li>
-                <li><a href="#">recent article headline</a></li>
-                <li><a href="#">recent article headline</a></li>
-                <li><a href="#">recent article headline</a></li>
-                <li><a href="#">recent article headline</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="grid third-md whole-xs">
-            <div class="social-media--links">
-              <h4>follow SigEp online</h4>
-              <ul class="list-unstyled">
-                <li><a href="https://www.facebook.com/SigEpDrexel"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a></li>
-                <li><a href="https://twitter.com/SigEp_Drexel"><i class="fa fa-twitter fa-fw"></i>Twitter</a></li>
-                <!-- <li><a href="#"><i class="fa fa-instagram fa-fw"></i>Instagram</a></li> -->
-              </ul>
-            </div>
-          </div>
-          <div class="grid third-md whole-xs">
-            <div class="contact">
-              <h4>Get in touch</h4>
-              <p>
-                Get in touch with a SigEp brother for more information on Sigma
-                Phi Epsilon or Greek Life in general
-              </p>
-              <a href="contact.html" class="btn">Contact a Brother</a>
-            </div>
-          </div>
+          <?php include("incl/footer-links.php"); ?>
         </div>
       </div>
 

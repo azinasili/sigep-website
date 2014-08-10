@@ -27,6 +27,6 @@
       Get in touch with a SigEp brother for more information on Sigma
       Phi Epsilon or Greek Life in general
     </p>
-    <a href="contact.html" class="btn">Contact a Brother</a>
+    <a href="contact.php" class="btn">Contact a Brother</a>
   </div>
 </div>

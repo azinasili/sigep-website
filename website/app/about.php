@@ -70,10 +70,11 @@
       <div class="container">
         <div class="row">
           <h2>The SigEp Chapter</h2>
-          <img src="http://placecage.com/c/1140/300" class="img" />
+          <!-- 1140 x 300 -->
+          <img src="img/sigep-chapter.jpg" class="img" />
           <div class="grid two-third-md whole-xs">
             <article class="content">
-              <h2>about SigEp PABB</h2>
+              <h2>About SigEp PABB</h2>
               <p>
                 On November 14th, 1999, 37 men were brought before Brothers Erin
                 Mullally and Ryan Elliot from Headquarters, to begin the first
@@ -113,7 +114,7 @@
                 Turman. These 10 brothers are the founding fathers of the Sigma
                 Epsilon Chapter of Sigma Phi Epsilon Fraternity.
               </p>
-              <h3>SigEp fraternity firsts</h3>
+              <h3>SigEp Fraternity Firsts</h3>
               <ul>
                 <li>First national fraternity to establish a housing trust for
                 all chapters and create a National Housing Corporation.</li>
@@ -135,7 +136,7 @@
           </div>
           <div class="grid third-md whole-xs">
             <aside class="side-bar">
-              <h2>SigEp achievements</h2>
+              <h2>SigEp Achievements</h2>
               <ul>
                 <li>Celebrating its 10th year on campus in 2012</li>
                 <li>#1 In Academics at Drexel by both term (3.46) and cumulative
@@ -203,38 +204,7 @@
       <!-- Footer links -->
       <div class="container">
         <div class="row">
-          <div class="grid third-md whole-xs">
-            <div class="blog-post--recent">
-              <h4>recent news</h4>
-              <ul class="list-unstyled">
-                <li><a href="#">recent article headline</a></li>
-                <li><a href="#">recent article headline</a></li>
-                <li><a href="#">recent article headline</a></li>
-                <li><a href="#">recent article headline</a></li>
-                <li><a href="#">recent article headline</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="grid third-md whole-xs">
-            <div class="social-media--links">
-              <h4>follow SigEp online</h4>
-              <ul class="list-unstyled">
-                <li><a href="https://www.facebook.com/SigEpDrexel"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a></li>
-                <li><a href="https://twitter.com/SigEp_Drexel"><i class="fa fa-twitter fa-fw"></i>Twitter</a></li>
-                <!-- <li><a href="#"><i class="fa fa-instagram fa-fw"></i>Instagram</a></li> -->
-              </ul>
-            </div>
-          </div>
-          <div class="grid third-md whole-xs">
-            <div class="contact">
-              <h4>Get in touch</h4>
-              <p>
-                Get in touch with a SigEp brother for more information on Sigma
-                Phi Epsilon or Greek Life in general
-              </p>
-              <a href="contact.html" class="btn">Contact a Brother</a>
-            </div>
-          </div>
+          <?php include("incl/footer-links.php"); ?>
         </div>
       </div>
 
