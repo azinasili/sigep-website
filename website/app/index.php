@@ -192,9 +192,17 @@
 
     <!-- Javascript -->
     <script src="js/vendor/jquery.min.js" type="text/javascript"></script>
+    <script src="js/vendor/jquery.resizecrop-1.0.3.min.js" type="text/javascript"></script>
     <script src="js/spe.min.js" type="text/javascript"></script>
     <script>
       $(document).ready(function() {
+
+        // $('.img').resizecrop({
+        //   width:346,
+        //   height:122,
+        //   vertical:"top"
+        // });
+
         $(window).scroll(function(){
           $('#hero').each(function(r){
             var pos = $(this).offset().top;

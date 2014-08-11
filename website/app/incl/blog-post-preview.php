@@ -32,7 +32,7 @@
   <article class="blog-post">
     <header class="blog-post--header">
       <h2>blog post headline</h2>
-      <img src="http://placecage.com/710/250" class="img" />
+      <img src="http://placecage.com/710/250" />
     </header>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

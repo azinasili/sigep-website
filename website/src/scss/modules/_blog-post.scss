@@ -1,7 +1,7 @@
 .blog-post {
   @include em(margin-bottom, 55px);
 
-  .img {
+  > .img {
     width: 100%;
   }
 
@@ -10,23 +10,22 @@
   }
 }
 
-.blog-post--preview {
-  @extend %margin-lg;
-  @extend %no-padding-bottom;
-  @extend %no-margin-horz;
-  @include em(font-size, 13px);
-}
-
 .blog-post--header {
   @include em(margin-bottom, 15px);
 
-  h2 {
+  > h2 {
     @extend .h1;
     margin-bottom: 0;
   }
 
-  img {
+  > img {
+    height: auto;
     margin-top: 1em;
+    max-height: 300px;
+
+    @include mq($from: desktop) {
+      max-height: 250px;
+    }
   }
 
   span {
@@ -34,6 +33,15 @@
     @extend %no-margin-top;
     @extend %no-margin-horz;
     display: inline-block;
+  }
+}
+
+.footer .blog-post--header > img {
+  height: auto;
+  max-height: 200px;
+
+  @include mq($from: tablet) {
+    max-height: 120px;
   }
 }
 

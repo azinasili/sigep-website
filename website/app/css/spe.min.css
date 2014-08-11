@@ -398,7 +398,7 @@ h6 {
 /* line 152, ../../src/scss/base/_typography.scss */
 h1,
 .h1,
-.blog-post--header h2 {
+.blog-post--header > h2 {
   font-size: 1.8571428571em;
 }
 
@@ -1164,7 +1164,7 @@ input[type='checkbox']:focus {
   margin-bottom: 3.9285714286em;
 }
 /* line 4, ../../src/scss/modules/_blog-post.scss */
-.blog-post .img {
+.blog-post > .img {
   width: 100%;
 }
 /* line 8, ../../src/scss/modules/_blog-post.scss */
@@ -1173,46 +1173,61 @@ input[type='checkbox']:focus {
 }
 
 /* line 13, ../../src/scss/modules/_blog-post.scss */
-.blog-post--preview {
-  font-size: 0.9285714286em;
-}
-
-/* line 20, ../../src/scss/modules/_blog-post.scss */
 .blog-post--header {
   margin-bottom: 1.0714285714em;
 }
-/* line 23, ../../src/scss/modules/_blog-post.scss */
-.blog-post--header h2 {
+/* line 16, ../../src/scss/modules/_blog-post.scss */
+.blog-post--header > h2 {
   margin-bottom: 0;
 }
-/* line 28, ../../src/scss/modules/_blog-post.scss */
-.blog-post--header img {
+/* line 21, ../../src/scss/modules/_blog-post.scss */
+.blog-post--header > img {
+  height: auto;
   margin-top: 1em;
+  max-height: 300px;
 }
-/* line 32, ../../src/scss/modules/_blog-post.scss */
+@media all and (min-width: 70em) {
+  /* line 21, ../../src/scss/modules/_blog-post.scss */
+  .blog-post--header > img {
+    max-height: 250px;
+  }
+}
+/* line 31, ../../src/scss/modules/_blog-post.scss */
 .blog-post--header span {
   display: inline-block;
 }
 
-/* line 40, ../../src/scss/modules/_blog-post.scss */
+/* line 39, ../../src/scss/modules/_blog-post.scss */
+.footer .blog-post--header > img {
+  height: auto;
+  max-height: 200px;
+}
+@media all and (min-width: 52.8571428571em) {
+  /* line 39, ../../src/scss/modules/_blog-post.scss */
+  .footer .blog-post--header > img {
+    max-height: 120px;
+  }
+}
+
+/* line 48, ../../src/scss/modules/_blog-post.scss */
 .blog-post--content {
   margin: auto;
   width: 100%;
 }
 @media all and (min-width: 52.8571428571em) {
-  /* line 40, ../../src/scss/modules/_blog-post.scss */
+  /* line 48, ../../src/scss/modules/_blog-post.scss */
   .blog-post--content {
     width: 70%;
   }
 }
 @media all and (min-width: 70em) {
-  /* line 40, ../../src/scss/modules/_blog-post.scss */
+  /* line 48, ../../src/scss/modules/_blog-post.scss */
   .blog-post--content {
     width: 60%;
   }
 }
 
-/* line 53, ../../src/scss/modules/_blog-post.scss */
+/* line 61, ../../src/scss/modules/_blog-post.scss */
 .blog-post--recent li > a {
   font-size: 0.8571428571em;
   padding: 0.7142857143em 0.7142857143em 0.7142857143em 0;
@@ -1220,19 +1235,19 @@ input[type='checkbox']:focus {
   position: relative;
   text-transform: uppercase;
 }
-/* line 60, ../../src/scss/modules/_blog-post.scss */
+/* line 68, ../../src/scss/modules/_blog-post.scss */
 .blog-post--recent li > a > .fa {
   font-size: 14px;
   position: absolute;
   right: 0;
 }
 
-/* line 67, ../../src/scss/modules/_blog-post.scss */
+/* line 75, ../../src/scss/modules/_blog-post.scss */
 .footer .blog-post--recent ul > li > a {
   color: white;
 }
 
-/* line 71, ../../src/scss/modules/_blog-post.scss */
+/* line 79, ../../src/scss/modules/_blog-post.scss */
 .blog-post--footer {
   background: #333;
 }
@@ -1312,19 +1327,18 @@ input[type='checkbox']:focus {
 /* line 23, ../../src/scss/layout/_basic.scss */
 .sigep-crest {
   background: url("../img/sigep-crest.png") no-repeat center center;
-  min-width: 330px;
   width: 330px;
   height: 412px;
 }
 
-/* line 31, ../../src/scss/layout/_basic.scss */
+/* line 30, ../../src/scss/layout/_basic.scss */
 .copywrite {
   font-size: 0.9285714286em;
   padding: 0.3571428571em 0.7142857143em;
   background: #171717;
   text-align: center;
 }
-/* line 37, ../../src/scss/layout/_basic.scss */
+/* line 36, ../../src/scss/layout/_basic.scss */
 .copywrite p {
   margin: 0;
 }
@@ -1463,11 +1477,6 @@ input[type='checkbox']:focus {
   padding: 2.1428571429em 1.4285714286em;
 }
 
-/* line 60, ../../src/scss/helpers/_overrides.scss */
-.blog-post--preview {
-  padding-bottom: 0;
-}
-
 /* line 62, ../../src/scss/helpers/_overrides.scss */
 .hero-large, .hero-small {
   padding-right: 0;
@@ -1480,7 +1489,7 @@ input[type='checkbox']:focus {
 }
 
 /* line 69, ../../src/scss/helpers/_overrides.scss */
-.content, .side-bar, .blog-post--preview, .hero-large, .hero-small {
+.content, .side-bar, .hero-large, .hero-small {
   margin: 2.1428571429em 1.4285714286em;
 }
 
@@ -1495,7 +1504,7 @@ input[type='checkbox']:focus {
 }
 
 /* line 75, ../../src/scss/helpers/_overrides.scss */
-.content, .side-bar, .blog-post--preview, .blog-post--header span, .hero-large, .hero-small {
+.content, .side-bar, .blog-post--header span, .hero-large, .hero-small {
   margin-right: 0;
   margin-left: 0;
 }

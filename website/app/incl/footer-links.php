@@ -1,14 +1,5 @@
 <div class="grid third-md whole-xs">
-  <div class="sigep-crest">
-    <!-- <h4>recent news</h4>
-    <ul class="list-unstyled">
-      <li><a href="#">recent article headline</a></li>
-      <li><a href="#">recent article headline</a></li>
-      <li><a href="#">recent article headline</a></li>
-      <li><a href="#">recent article headline</a></li>
-      <li><a href="#">recent article headline</a></li>
-    </ul> -->
-  </div>
+  <div class="sigep-crest"></div>
 </div>
 <div class="grid third-md whole-xs">
   <div class="social-media--links">
