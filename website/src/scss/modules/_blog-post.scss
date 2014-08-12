@@ -21,11 +21,6 @@
   > img {
     height: auto;
     margin-top: 1em;
-    max-height: 300px;
-
-    @include mq($from: desktop) {
-      max-height: 250px;
-    }
   }
 
   span {
@@ -33,15 +28,6 @@
     @extend %no-margin-top;
     @extend %no-margin-horz;
     display: inline-block;
-  }
-}
-
-.footer .blog-post--header > img {
-  height: auto;
-  max-height: 200px;
-
-  @include mq($from: tablet) {
-    max-height: 120px;
   }
 }
 
@@ -72,10 +58,10 @@
   }
 }
 
-.footer .blog-post--recent ul > li > a {
-  color: $color-white;
-}
-
 .blog-post--footer {
   background: #333;
+
+  .blog-post {
+    @include em(margin-bottom, 20px);
+  }
 }

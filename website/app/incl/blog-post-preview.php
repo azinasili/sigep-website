@@ -31,15 +31,18 @@
 <div class="grid third-md whole-xs">
   <article class="blog-post">
     <header class="blog-post--header">
-      <h2>blog post headline</h2>
-      <img src="http://placecage.com/710/250" />
+      <h2>SigEp Adopts a Street</h2>
+      <img src="img/street-cleaning-photo-2013.jpg" class="img" />
     </header>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat.
+      Adding to the long list of SigEp’s community service
+      initiatives, our chapter is now pioneering an effort to improve
+      the everyday lives of not only Drexel’s Greek life, but the
+      university’s students as a whole. Partnering with Drexel’s
+      student affairs office and Associate Dean John Cooke, SigEp is
+      establishing a biweekly street cleaning project on Drexel’s 34th
+      street.
     </p>
-    <a href="blog-post.html">continue reading</a>
+    <a href="sigep-adopts-a-street.php">continue reading</a>
   </article>
 </div>

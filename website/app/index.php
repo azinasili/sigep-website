@@ -65,7 +65,7 @@
       <div id="hero" class="hero-large">
         <div class="hero-content">
           <h1>St. Baldrick's 2014</h1>
-          <a href="blog-post.php" class="btn">continue reading</a>
+          <a href="st-baldricks-2014.php" class="btn">continue reading</a>
         </div>
         <img src="img/st-baldricks-2014.jpg" />
       </div>
@@ -131,7 +131,7 @@
           </div>
           <div class="grid third-md whole-xs">
             <aside class="side-bar">
-              <h2>SigEp achievements</h2>
+              <h2>SigEp Achievements</h2>
               <ul>
                 <li>Celebrating its 10th year on campus in 2012</li>
                 <li>#1 In Academics at Drexel by both term (3.46) and cumulative

@@ -78,7 +78,7 @@
         <div class="row">
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Sean Soboloski</h3>
                 <span>Chapter President</span>
@@ -88,7 +88,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Matthew Cimino</h3>
                 <span>Vice President of Programming</span>
@@ -98,7 +98,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Mario Squicciarini</h3>
                 <span>Vice President of Finance</span>
@@ -108,7 +108,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Jacob Couch</h3>
                 <span>Vice President of Recruitment</span>
@@ -118,7 +118,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Brian Bucci</h3>
                 <span>Vice President of Member Development</span>
@@ -128,7 +128,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Gerardo Faia</h3>
                 <span>Vice President of Communications</span>
@@ -138,7 +138,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Peter Massey</h3>
                 <span>Chaplin</span>
@@ -148,7 +148,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Frank Gerace</h3>
                 <span>House Manager</span>

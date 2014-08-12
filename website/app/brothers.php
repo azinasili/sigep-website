@@ -72,7 +72,7 @@
         <div class="row">
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Christopher Baccash</h3>
               </div>
@@ -80,7 +80,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Ryan Camuso</h3>
               </div>
@@ -88,7 +88,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Zorbey Canturk</h3>
               </div>
@@ -96,7 +96,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Jon Locco</h3>
               </div>
@@ -104,16 +104,17 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Peter Massey</h3>
                 <span>Chaplin</span>
+                <a href="mailto:standards@sigep-drexel.org">standards@sigep-drexel.org</a>
               </div>
             </article>
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Matthew Morimoto</h3>
               </div>
@@ -121,7 +122,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>David Pavelko</h3>
               </div>
@@ -129,7 +130,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Brandon Rozelle</h3>
               </div>
@@ -137,7 +138,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Mark Santerian</h3>
               </div>
@@ -145,16 +146,17 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Sean Soboloski</h3>
                 <span>Chapter President</span>
+                <a href="mailto:president@sigep-drexel.org">president@sigep-drexel.org</a>
               </div>
             </article>
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Christopher Whitney</h3>
               </div>
@@ -169,7 +171,7 @@
         <div class="row">
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Dimitrios Arhontoulis</h3>
               </div>
@@ -177,7 +179,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Matthew Boyer</h3>
               </div>
@@ -185,7 +187,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Mike Brandon</h3>
               </div>
@@ -193,15 +195,17 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Brian Bucci</h3>
+                <span>Vice President of Member Development</span>
+                <a href="mailto:memberdevelopment@sigep-drexel.org">memberdevelopment@sigep-drexel.org</a>
               </div>
             </article>
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Matthew Cameron</h3>
               </div>
@@ -209,16 +213,17 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Jacob Couch</h3>
                 <span>Vice President of Recruitment</span>
+                <a href="mailto:jcouch16@gmail.com">jcouch16@gmail.com</a>
               </div>
             </article>
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Zachary Cwieka</h3>
               </div>
@@ -226,7 +231,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Kyle Fitzpatrick</h3>
               </div>
@@ -234,7 +239,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Patrick Gallagher</h3>
               </div>
@@ -242,7 +247,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Sam Hofbauer</h3>
               </div>
@@ -250,7 +255,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Sam (Yingda) Huo</h3>
               </div>
@@ -258,7 +263,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Mark Killen</h3>
               </div>
@@ -266,7 +271,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>William King</h3>
               </div>
@@ -274,7 +279,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Pieter O'Shannessy</h3>
               </div>
@@ -282,7 +287,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Bennett Palmer</h3>
               </div>
@@ -290,7 +295,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Thomas Perkins</h3>
               </div>
@@ -298,7 +303,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Jacob Petroski</h3>
               </div>
@@ -306,7 +311,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Tyler Pingree</h3>
               </div>
@@ -314,7 +319,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>John Quagliariello</h3>
               </div>
@@ -322,7 +327,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Louis Schetley</h3>
               </div>
@@ -330,7 +335,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Chad Schmidt</h3>
               </div>
@@ -338,7 +343,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Brendon Sebera</h3>
               </div>
@@ -346,7 +351,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Daniel Stenger</h3>
                 <span>Alternate Chaplain</span>
@@ -355,7 +360,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Travis Weiss</h3>
               </div>
@@ -363,7 +368,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>David Zilly</h3>
               </div>
@@ -378,7 +383,7 @@
         <div class="row">
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Jonathan Amora</h3>
               </div>
@@ -386,7 +391,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Justin Bright</h3>
                 <span>Guide</span>
@@ -395,7 +400,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Alexander Brudner</h3>
               </div>
@@ -403,7 +408,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Saad Cheema</h3>
               </div>
@@ -411,16 +416,17 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Matthew Cimino</h3>
                 <span>Vice President of Programming</span>
+                <a href="mailto:matthew.cimino.21@gmail.com">matthew.cimino.21@gmail.com</a>
               </div>
             </article>
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Brett Conklin</h3>
               </div>
@@ -428,7 +434,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Peter Deluca</h3>
               </div>
@@ -436,16 +442,17 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Gerardo Faia</h3>
                 <span>Vice President of Communications</span>
+                <a href="mailto:communications@sigep-drexel.org">communications@sigep-drexel.org</a>
               </div>
             </article>
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Vincent Gazzani</h3>
               </div>
@@ -453,7 +460,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Anthony Grelli</h3>
               </div>
@@ -461,7 +468,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Michael Koerner</h3>
               </div>
@@ -469,7 +476,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Tyler Miller</h3>
               </div>
@@ -477,7 +484,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Alex Palmatier</h3>
               </div>
@@ -485,7 +492,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Kenneth Rosenblatt</h3>
                 <span>Senior Marshall</span>
@@ -494,7 +501,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Justin San Juan</h3>
               </div>
@@ -502,7 +509,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Kody Schneider</h3>
               </div>
@@ -510,16 +517,17 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Mario Squicciarini</h3>
                 <span>Vice President of Finance</span>
+                <a href="mailto:finance@sigep-drexel.org">finance@sigep-drexel.org</a>
               </div>
             </article>
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Adam Still</h3>
               </div>
@@ -527,7 +535,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Gregory Toci</h3>
               </div>
@@ -535,7 +543,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Eric Troilo</h3>
               </div>
@@ -543,7 +551,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Jim Tyrrell</h3>
               </div>
@@ -551,7 +559,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Erick Weigel</h3>
               </div>
@@ -559,7 +567,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Thomas Weil</h3>
               </div>
@@ -567,7 +575,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Ari Yamaguchi</h3>
               </div>
@@ -582,7 +590,7 @@
         <div class="row">
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Joseph (JD) Abrahams</h3>
               </div>
@@ -590,7 +598,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Joshua Boate</h3>
               </div>
@@ -598,7 +606,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Joseph Chaudhari</h3>
               </div>
@@ -606,7 +614,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Chase Connell</h3>
               </div>
@@ -614,7 +622,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Julian Downing</h3>
               </div>
@@ -622,7 +630,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Robert Garneau</h3>
               </div>
@@ -630,16 +638,17 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Frank Gerace</h3>
                 <span>House Manager</span>
+                <a href="#" mailto="#">e-mail address</a>
               </div>
             </article>
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Clayton Henery</h3>
                 <span>Guard</span>
@@ -648,7 +657,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Philip Holder</h3>
               </div>
@@ -656,7 +665,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Akshay Koottala</h3>
               </div>
@@ -664,7 +673,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Frank Musemate</h3>
               </div>
@@ -672,7 +681,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Tapiwanashe Ndlovu</h3>
               </div>
@@ -680,7 +689,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Ryan O'Hea</h3>
               </div>
@@ -688,7 +697,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Jeffrey Proko</h3>
               </div>
@@ -696,7 +705,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Oliver Robins</h3>
               </div>
@@ -704,7 +713,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Conrad Schmidt</h3>
               </div>
@@ -712,7 +721,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Tyler Tucker</h3>
               </div>
@@ -720,7 +729,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Alex Vasile</h3>
               </div>
@@ -728,7 +737,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Mark Welsh</h3>
               </div>
@@ -736,7 +745,7 @@
           </div>
           <div class="grid brother-profile">
             <article class="group media">
-              <img src="http://placecage.com/100/100" class="img" />
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Andrew Wilson</h3>
               </div>

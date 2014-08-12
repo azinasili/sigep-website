@@ -71,7 +71,7 @@
         <div class="row">
           <h2>The SigEp Chapter</h2>
           <!-- 1140 x 300 -->
-          <img src="img/sigep-chapter.jpg" class="img" />
+          <img src="img/street-cleaning-photo-2013.jpg" class="img" />
           <div class="grid two-third-md whole-xs">
             <article class="content">
               <h2>About SigEp PABB</h2>
