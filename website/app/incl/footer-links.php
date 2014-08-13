@@ -7,7 +7,8 @@
     <ul class="list-unstyled">
       <li><a href="https://www.facebook.com/SigEpDrexel"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a></li>
       <li><a href="https://twitter.com/SigEp_Drexel"><i class="fa fa-twitter fa-fw"></i>Twitter</a></li>
-      <!-- <li><a href="#"><i class="fa fa-instagram fa-fw"></i>Instagram</a></li> -->
+      <li><a href="http://instagram.com/Drexel_Sigep"><i class="fa fa-instagram fa-fw"></i>Instagram</a></li>
+      <li><a href="https://secure.flickr.com/photos/60267839@N05/"><i class="fa fa-flickr fa-fw"></i>Flickr</a></li>
     </ul>
   </div>
 </div>

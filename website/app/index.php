@@ -76,24 +76,26 @@
             <i class="fa fa-legal fw fa-4x"></i>
             <h2>virtue</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.
+              Virtue is the moral essence of the Fraternity. Living a virtuous
+              life is making the most of your time and talents with unfailing
+              integrity.
             </p>
           </div>
           <div class="grid third-md whole-xs text-center">
             <i class="fa fa-trophy fw fa-4x"></i>
             <h2>diligence</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.
+              Diligence is the force that drives the fraternity. Living
+              diligently is living your best life with courage and tenacity.
             </p>
           </div>
           <div class="grid third-md whole-xs text-center">
             <i class="fa fa-heart fw fa-4x"></i>
             <h2>brotherly love</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.
+              Brotherly Love is the foundation of the fraternity. Living with
+              Brotherly Love is supporting fellow citizens through true and
+              active friendship.
             </p>
           </div>
         </div>

@@ -137,33 +137,49 @@
             <article class="group rush-event">
               <h3>Hoagies and Stoagies</h3>
               <div class="group">
-                <span class="rush-date">October 7, 2013</span>
+                <span class="rush-date">Monday September 29th</span>
                 <span>@</span>
-                <span class="rush-time">7:00 pm</span>
+                <span class="rush-time">7:00 pm - 10:00pm</span>
               </div>
             </article>
             <article class="group rush-event">
               <h3>Speedball</h3>
               <div class="group">
-                <span class="rush-date">October 9, 2013</span>
+                <span class="rush-date">Wednesday October 1st</span>
                 <span>@</span>
-                <span class="rush-time">9:00 pm</span>
+                <span class="rush-time">8:00 pm - 11:00pm</span>
+              </div>
+            </article>
+            <article class="group rush-event">
+              <h3>Family Feud</h3>
+              <div class="group">
+                <span class="rush-date">Thursday October 2, 2013</span>
+                <span>@</span>
+                <span class="rush-time">6:30 pm - 11:00pm</span>
               </div>
             </article>
             <article class="group rush-event">
               <h3>Pig Roast</h3>
               <div class="group">
-                <span class="rush-date">October 12, 2013</span>
+                <span class="rush-date">Saturday October 4th</span>
                 <span>@</span>
-                <span class="rush-time">1:00 pm</span>
+                <span class="rush-time">12:00pm - 6:00pm</span>
+              </div>
+            </article>
+            <article class="group rush-event">
+              <h3>Dodgeball</h3>
+              <div class="group">
+                <span class="rush-date">Monday October 6th</span>
+                <span>@</span>
+                <span class="rush-time">8:30 pm - 11:00pm</span>
               </div>
             </article>
             <article class="group rush-event">
               <h3>Preference</h3>
               <div class="group">
-                <span class="rush-date">October 15, 2013</span>
+                <span class="rush-date">Thursday October 9th</span>
                 <span>@</span>
-                <span class="rush-time">7:00 pm</span>
+                <span class="rush-time">6:00 pm - Midnight</span>
               </div>
               <div class="rush-notes">
                 <p>
@@ -177,9 +193,8 @@
               held.
             </p>
             <p>
-              For more information, please
-              <a href="mailto:mailto:recruitment@sigep-drexel.org?Subject=Question%20About%20SigEp%20Recruitment">contact
-              our VP of Recruitment</a>.
+              For more information, please contact our
+              <a href="mailto:mailto:recruitment@sigep-drexel.org?Subject=Question%20About%20SigEp%20Recruitment">VP of Recruitment</a>.
             </p>
           </div>
         </div>

@@ -190,6 +190,7 @@
               <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Mike Brandon</h3>
+                <span>Junior Marshall</span>
               </div>
             </article>
           </div>
@@ -217,7 +218,7 @@
               <div class="group">
                 <h3>Jacob Couch</h3>
                 <span>Vice President of Recruitment</span>
-                <a href="mailto:jcouch16@gmail.com">jcouch16@gmail.com</a>
+                <a href="mailto:recruitment@sigep-drexel.org">recruitment@sigep-drexel.org</a>
               </div>
             </article>
           </div>
