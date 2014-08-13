@@ -29,6 +29,7 @@
 
     <!-- Fonts -->
     <link href="http://fonts.googleapis.com/css?family=Bitter:400,700,400italic|Raleway:400,700" rel="stylesheet" type="text/css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
 
     <!-- HTML5 Shim for IE 6-8 -->
     <!--[if lt IE 9]>
