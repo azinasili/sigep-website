@@ -154,7 +154,7 @@
             <article class="group rush-event">
               <h3>Family Feud</h3>
               <div class="group">
-                <span class="rush-date">Thursday October 2, 2013</span>
+                <span class="rush-date">Thursday October 2</span>
                 <span>@</span>
                 <span class="rush-time">6:30 pm - 11:00pm</span>
               </div>
