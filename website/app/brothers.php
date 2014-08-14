@@ -473,6 +473,7 @@
               <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Michael Koerner</h3>
+                <span>BMS Chair</span>
               </div>
             </article>
           </div>
