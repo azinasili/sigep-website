@@ -195,7 +195,7 @@
             </p>
             <p>
               For more information, please contact our
-              <a href="mailto:mailto:recruitment@sigep-drexel.org?Subject=Question%20About%20SigEp%20Recruitment">VP of Recruitment</a>.
+              <a href="mailto:vprecruitment@sigep-drexel.org?Subject=Question%20About%20SigEp%20Recruitment">VP of Recruitment</a>.
             </p>
           </div>
         </div>

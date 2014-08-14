@@ -219,7 +219,7 @@
               <div class="group">
                 <h3>Jacob Couch</h3>
                 <span>Vice President of Recruitment</span>
-                <a href="mailto:recruitment@sigep-drexel.org">recruitment@sigep-drexel.org</a>
+                <a href="mailto:vprecruitment@sigep-drexel.org">vprecruitment@sigep-drexel.org</a>
               </div>
             </article>
           </div>
@@ -422,7 +422,7 @@
               <div class="group">
                 <h3>Matthew Cimino</h3>
                 <span>Vice President of Programming</span>
-                <a href="mailto:matthew.cimino.21@gmail.com">matthew.cimino.21@gmail.com</a>
+                <a href="mailto:vpprogramming@sigep-drexel.org">vpprogramming@sigep-drexel.org</a>
               </div>
             </article>
           </div>
@@ -644,7 +644,7 @@
               <div class="group">
                 <h3>Frank Gerace</h3>
                 <span>House Manager</span>
-                <a href="#" mailto="#">e-mail address</a>
+                <a href="mailto:housemanager@sigep-drexel.org">housemanager@sigep-drexel.org</a>
               </div>
             </article>
           </div>

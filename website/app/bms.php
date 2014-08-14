@@ -115,7 +115,7 @@
                 Should you have any questions, please contact our
                 <a href="mailto:drexelbms@gmail.com?Subject=Question%20About%20Balanced%20Man%20Scholarship%20Application">Balanced Man Scholarship Chairman</a>
                 or the
-                <a href="mailto:mailto:recruitment@sigep-drexel.org?Subject=Question%20About%20Balanced%20Man%20Scholarship%20Application">Vice President of Recruitment</a>.
+                <a href="mailto:vprecruitment@sigep-drexel.org?Subject=Question%20About%20Balanced%20Man%20Scholarship%20Application">Vice President of Recruitment</a>.
               </p>
               <a href="bms-application.pdf" target="_blank" class="btn">Download the BMS Application</a>
             </aside>
