@@ -85,7 +85,6 @@
                 <h3>Hoagies and Stoagies</h3>
                 <div class="group">
                   <span class="rush-date">October 7, 2013</span>
-                  <span>@</span>
                   <span class="rush-time">7:00 pm</span>
                 </div>
               </article>
@@ -93,7 +92,6 @@
                 <h3>Speedball</h3>
                 <div class="group">
                   <span class="rush-date">October 9, 2013</span>
-                  <span>@</span>
                   <span class="rush-time">9:00 pm</span>
                 </div>
               </article>
@@ -101,7 +99,6 @@
                 <h3>Pig Roast</h3>
                 <div class="group">
                   <span class="rush-date">October 12, 2013</span>
-                  <span>@</span>
                   <span class="rush-time">1:00 pm</span>
                 </div>
               </article>
@@ -114,7 +111,6 @@
                 <h3>Preference</h3>
                 <div class="group">
                   <span class="rush-date">October 15, 2013</span>
-                  <span>@</span>
                   <span class="rush-time">7:00 pm</span>
                 </div>
                 <div class="rush-notes">
@@ -130,7 +126,7 @@
               </p>
               <p>
                 For more information, please contact our
-                <a href="mailto:recruitment@sigep-drexel.org">VP of Recruitment</a>.
+                <a href="mailto:vprecruitment@sigep-drexel.org">VP of Recruitment</a>.
               </p>
             </article>
           </div>

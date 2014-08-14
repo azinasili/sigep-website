@@ -1181,15 +1181,19 @@ input[type='checkbox']:focus {
 .rush-event h3 {
   margin: 0 0 0.1428571429em;
 }
+/* line 12, ../../src/scss/modules/_rush-event.scss */
+.rush-event span {
+  display: block;
+}
 
-/* line 13, ../../src/scss/modules/_rush-event.scss */
+/* line 17, ../../src/scss/modules/_rush-event.scss */
 .rush-notes {
   font-size: 0.9285714286em;
   margin: 1.4285714286em -0.7142857143em -0.7142857143em;
   background: #fafafa;
   border-top: 1px solid lightgray;
 }
-/* line 19, ../../src/scss/modules/_rush-event.scss */
+/* line 23, ../../src/scss/modules/_rush-event.scss */
 .rush-notes p {
   padding: 0.7142857143em;
   margin: 0;

@@ -8,6 +8,10 @@
   h3 {
     @include em(margin, 0 0 2px);
   }
+
+  span {
+    display: block;
+  }
 }
 
 .rush-notes {
