@@ -3,6 +3,11 @@
   @include em(margin-bottom, 75px);
   @include em(padding, 50px 20px);
   background: lighten($color-gray-light, 10%);
+  text-align: center;
+
+  ul {
+    @extend %list-unstyled;
+  }
 }
 
 .social-media--links {
@@ -14,5 +19,12 @@
     > .fa {
       @include em(margin-right, 10px);
     }
+  }
+}
+
+.tweet {
+  @include mq($from: tablet) {
+    margin: 0 auto;
+    width: 80%;
   }
 }

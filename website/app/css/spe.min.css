@@ -474,29 +474,26 @@ sup {
 }
 
 /* line 216, ../../src/scss/base/_typography.scss */
-blockquote {
-  padding-right: 1.25em;
-  padding-left: 1.25em;
-}
-
-/* line 221, ../../src/scss/base/_typography.scss */
 blockquote, q {
   font-size: 1.4285714286em;
   text-align: center;
   quotes: none;
 }
-/* line 226, ../../src/scss/base/_typography.scss */
+/* line 221, ../../src/scss/base/_typography.scss */
 blockquote::before, blockquote::after, q::before, q::after {
   font-size: 1.4285714286em;
-  color: #999999;
+  color: #bfbfbf;
   font-family: 'Bitter', serif;
+  position: relative;
 }
-/* line 233, ../../src/scss/base/_typography.scss */
+/* line 229, ../../src/scss/base/_typography.scss */
 blockquote::before, q::before {
+  left: -0.7142857143em;
   content: '\275D';
 }
-/* line 237, ../../src/scss/base/_typography.scss */
+/* line 234, ../../src/scss/base/_typography.scss */
 blockquote::after, q::after {
+  right: -0.7142857143em;
   content: '\275E';
 }
 
@@ -1062,17 +1059,26 @@ input[type='checkbox']:focus {
   margin-bottom: 5.3571428571em;
   padding: 3.5714285714em 1.4285714286em;
   background: #f4f4f4;
+  text-align: center;
 }
 
-/* line 9, ../../src/scss/modules/_social-media.scss */
+/* line 14, ../../src/scss/modules/_social-media.scss */
 .social-media--links ul > li > a {
   padding: 0.2142857143em 0;
   color: white;
   display: inline-block;
 }
-/* line 14, ../../src/scss/modules/_social-media.scss */
+/* line 19, ../../src/scss/modules/_social-media.scss */
 .social-media--links ul > li > a > .fa {
   margin-right: 0.7142857143em;
+}
+
+@media all and (min-width: 52.8571428571em) {
+  /* line 25, ../../src/scss/modules/_social-media.scss */
+  .tweet {
+    margin: 0 auto;
+    width: 80%;
+  }
 }
 
 /* line 1, ../../src/scss/modules/_blog-post.scss */
@@ -1349,6 +1355,13 @@ input[type='checkbox']:focus {
 /* line 22, ../../src/scss/helpers/_overrides.scss */
 .text-capitalize {
   text-transform: capitalize;
+}
+
+/* line 25, ../../src/scss/helpers/_overrides.scss */
+.social-media ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* line 28, ../../src/scss/helpers/_overrides.scss */

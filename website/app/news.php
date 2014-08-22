@@ -127,12 +127,8 @@
         </div>
       </div>
 
-      <div class="social-media">
-        <div class="container">
-          <blockquote>
-            some social media stuff will be here
-          </blockquote>
-        </div>
+      <div id="social-media" class="social-media">
+        <div class="container"></div>
       </div>
 
     </main>
@@ -166,7 +162,21 @@
 
     <!-- Javascript -->
     <script src="js/vendor/jquery.min.js" type="text/javascript"></script>
+    <script src="js/vendor/tweetie.js" type="text/javascript"></script>
     <script src="js/spe.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+
+        $('#social-media .container').twittie({
+          'username': '@sigep_drexel',
+          'count': 1,
+          'hideReplies': true,
+          'template': '<div class="tweet"><blockquote>{{tweet}}</blockquote><a href="{{url}}"><i class="fa fa-twitter"></i>Follow @sigep_drexel</a></div>',
+          'apiPath': 'api/tweet.php'
+        });
+
+      });
+    </script>
 
     <!-- Google Analytics -->
     <script type="text/javascript">

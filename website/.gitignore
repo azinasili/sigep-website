@@ -78,3 +78,7 @@ node_modules
 #########
 bower_components
 src/lib
+
+# Project Specific #
+#########
+app/api/

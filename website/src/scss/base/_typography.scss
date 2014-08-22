@@ -213,11 +213,6 @@ sup {
 // ----------------------------------------------------------------------------
 // 8. Quotes
 // ----------------------------------------------------------------------------
-blockquote {
-  padding-right: $spacing;
-  padding-left: $spacing;
-}
-
 blockquote, q {
   @include em(font-size, 20px);
   text-align: center;
@@ -226,15 +221,18 @@ blockquote, q {
   &::before,
   &::after {
     @include em(font-size, 20px);
-    color: mix($color-white, $color-gray-dark, 20%);
+    color: mix($color-white, $color-gray-dark, 50%);
     font-family: 'Bitter', serif;
+    position: relative;
   }
 
   &::before {
+    @include em(left, -10px);
     content: '\275D';
   }
 
   &::after {
+    @include em(right, -10px);
     content: '\275E';
   }
 }
