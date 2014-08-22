@@ -1058,23 +1058,22 @@ input[type='checkbox']:focus {
   margin-top: 5.3571428571em;
   margin-bottom: 5.3571428571em;
   padding: 3.5714285714em 1.4285714286em;
-  background: #f4f4f4;
   text-align: center;
 }
 
-/* line 14, ../../src/scss/modules/_social-media.scss */
+/* line 13, ../../src/scss/modules/_social-media.scss */
 .social-media--links ul > li > a {
   padding: 0.2142857143em 0;
   color: white;
   display: inline-block;
 }
-/* line 19, ../../src/scss/modules/_social-media.scss */
+/* line 18, ../../src/scss/modules/_social-media.scss */
 .social-media--links ul > li > a > .fa {
   margin-right: 0.7142857143em;
 }
 
 @media all and (min-width: 52.8571428571em) {
-  /* line 25, ../../src/scss/modules/_social-media.scss */
+  /* line 24, ../../src/scss/modules/_social-media.scss */
   .tweet {
     margin: 0 auto;
     width: 80%;
@@ -1276,37 +1275,53 @@ input[type='checkbox']:focus {
 /* line 21, ../../src/scss/layout/_hero.scss */
 .hero-large > img {
   background-size: cover;
-  -webkit-filter: blur(3px);
-          filter: blur(3px);
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  margin-left: -50%;
+}
+@media all and (min-width: 52.8571428571em) {
+  /* line 21, ../../src/scss/layout/_hero.scss */
+  .hero-large > img {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+/* line 34, ../../src/scss/layout/_hero.scss */
+.hero-large::before {
+  background: rgba(123, 30, 92, 0.85);
+  content: '';
+  height: 100%;
+  left: 0;
   position: absolute;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
 }
 
-/* line 31, ../../src/scss/layout/_hero.scss */
+/* line 46, ../../src/scss/layout/_hero.scss */
 .hero-small {
   height: 14.2857142857em;
   color: #e4d2de;
 }
 
-/* line 37, ../../src/scss/layout/_hero.scss */
+/* line 52, ../../src/scss/layout/_hero.scss */
 .hero-content {
   text-transform: uppercase;
   position: relative;
   z-index: 2;
 }
-/* line 42, ../../src/scss/layout/_hero.scss */
+/* line 57, ../../src/scss/layout/_hero.scss */
 .hero-content h1 {
   text-transform: uppercase;
 }
-/* line 47, ../../src/scss/layout/_hero.scss */
+/* line 62, ../../src/scss/layout/_hero.scss */
 .hero-content span {
   display: block;
   margin-top: 1.25em;
 }
 
-/* line 53, ../../src/scss/layout/_hero.scss */
+/* line 68, ../../src/scss/layout/_hero.scss */
 .hero-content {
   position: absolute;
   -webkit-transform-style: preserve-3d;
@@ -1318,7 +1333,7 @@ input[type='checkbox']:focus {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 58, ../../src/scss/layout/_hero.scss */
+/* line 73, ../../src/scss/layout/_hero.scss */
 .hero-large > .hero-content > h1 {
   margin-bottom: 1.4285714286em;
 }

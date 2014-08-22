@@ -20,11 +20,26 @@
 
   > img {
     background-size: cover;
-    filter: blur(3px);
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    margin-left: -50%;
+
+    @include mq($from: tablet) {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+
+  &::before {
+    background: rgba($color-secondary, .85);
+    content: '';
+    height: 100%;
+    left: 0;
     position: absolute;
     top: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
   }
 }
 

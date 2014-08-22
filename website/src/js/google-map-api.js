@@ -5,7 +5,8 @@ function initialize() {
   var mapOptions = {
     center: new google.maps.LatLng(39.958901, -75.191096),
     zoom: 18,
-    scrollwheel: false
+    scrollwheel: false,
+    draggable: false
   };
 
   var map = new google.maps.Map(document.getElementById('map'), mapOptions);

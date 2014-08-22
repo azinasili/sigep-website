@@ -755,7 +755,6 @@
             </article>
           </div>
         </div>
-        <hr />
       </div>
 
       <div id="social-media" class="social-media">
