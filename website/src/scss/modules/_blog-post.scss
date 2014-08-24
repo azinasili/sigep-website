@@ -58,10 +58,6 @@
   }
 }
 
-.blog-post--footer {
-  background: #333;
-
-  .blog-post {
-    @include em(margin-bottom, 20px);
-  }
+.blog-post--footer .blog-post {
+  @include em(margin-bottom, 20px);
 }

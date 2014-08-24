@@ -208,9 +208,15 @@
       <!-- Copywrite -->
       <div class="copywrite">
         <div class="container">
-          <p>
+          <p class="float-left">
             &copy; 2014 Sigma Phi Epsilon PABB
           </p>
+          <nav class="copywrite-links float-right">
+            <a href="http://www.sigep.com/">SigEp National</a>
+            <a href="http://www.sigepblog.org/">SigEp Official Blog</a>
+            <a href="http://brothers.sigep-drexel.org/">Brothers Login</a>
+            <a href="http://www.sigep-drexel.org/alumni/">Alumni Login</a>
+          </nav>
         </div>
       </div>
     </footer>
@@ -226,7 +232,7 @@
           'username': '@sigep_drexel',
           'count': 1,
           'hideReplies': true,
-          'template': '<div class="tweet"><blockquote>{{tweet}}</blockquote><a href="{{url}}"><i class="fa fa-twitter"></i>Follow @sigep_drexel</a></div>',
+          'template': '<hr /><div class="tweet"><blockquote>{{tweet}}</blockquote><a href="{{url}}"><i class="fa fa-twitter"></i>Follow @sigep_drexel</a></div><hr />',
           'apiPath': 'api/tweet.php'
         });
 

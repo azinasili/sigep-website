@@ -10,12 +10,8 @@
 
 .footer {
   @include em(font-size, ($font-base - 1px));
-  background: $color-black;
-  color: $color-white;
 
   h4 {
-    color: $color-primary;
-    font-weight: 400;
     text-transform: uppercase;
   }
 }
@@ -31,7 +27,7 @@
   @include em(font-size, 13px);
   @include em(margin-top, 20px);
   @include em(padding, 5px 10px);
-  background: mix(#000, $color-black, 40%);
+  background: $color-gray-light;
   text-align: center;
 
   @include mq($from: tablet) {
@@ -40,5 +36,17 @@
 
   p {
     margin: 0;
+  }
+
+  @include mq($from: tablet) {
+    text-align: left;
+  }
+}
+
+.copywrite-links a {
+  @include em(margin-left, 10px);
+
+  &:first-child {
+    margin-left: 0;
   }
 }

@@ -12,7 +12,6 @@
 .social-media--links {
   ul > li > a {
     @include em(padding, 3px 0);
-    color: $color-white;
     display: inline-block;
 
     > .fa {

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*  Syntax Quick Reference
   --------------------------
   column($ratios: 1, $offset: 0, $cycle: 0, $uncycle: 0, $gutter: $jeet-gutter)
@@ -267,7 +268,7 @@ table {
 
 /* line 18, ../../src/scss/base/_typography.scss */
 body {
-  background: white;
+  background: #fff;
   color: #272727;
   font-family: "Raleway", sans-serif;
   font-size: 87.5%;
@@ -304,7 +305,7 @@ p {
 }
 /* line 55, ../../src/scss/base/_typography.scss */
 .text-muted {
-  color: gray;
+  color: #808080;
 }
 
 /* line 65, ../../src/scss/base/_typography.scss */
@@ -460,17 +461,17 @@ sup {
 /* line 202, ../../src/scss/base/_typography.scss */
 ::-moz-selection {
   background: #cd363f;
-  color: white;
+  color: #fff;
 }
 ::selection {
   background: #cd363f;
-  color: white;
+  color: #fff;
 }
 
 /* line 207, ../../src/scss/base/_typography.scss */
 ::-moz-selection {
   background: #cd363f;
-  color: white;
+  color: #fff;
 }
 
 /* line 216, ../../src/scss/base/_typography.scss */
@@ -745,38 +746,38 @@ blockquote::after, q::after {
    readers do not read off random characters that represent icons */
 /* line 8, ../../src/scss/icons/_icons.scss */
 .fa-heart:before {
-  content: "\f004";
+  content: "";
 }
 
 /* line 134, ../../src/scss/icons/_icons.scss */
 .fa-facebook-square:before {
-  content: "\f082";
+  content: "";
 }
 
 /* line 149, ../../src/scss/icons/_icons.scss */
 .fa-trophy:before {
-  content: "\f091";
+  content: "";
 }
 
 /* line 157, ../../src/scss/icons/_icons.scss */
 .fa-twitter:before {
-  content: "\f099";
+  content: "";
 }
 
 /* line 225, ../../src/scss/icons/_icons.scss */
 .fa-legal:before,
 .fa-gavel:before {
-  content: "\f0e3";
+  content: "";
 }
 
 /* line 376, ../../src/scss/icons/_icons.scss */
 .fa-instagram:before {
-  content: "\f16d";
+  content: "";
 }
 
 /* line 386, ../../src/scss/icons/_icons.scss */
 .fa-long-arrow-right:before {
-  content: "\f178";
+  content: "";
 }
 
 /* line 5, ../../src/scss/components/buttons/_button-basic.scss */
@@ -788,7 +789,7 @@ blockquote::after, q::after {
   padding: 0.5714285714em 0.7857142857em;
   background-color: #cd363f;
   border: 1px solid #cd363f;
-  color: white;
+  color: #fff;
   display: inline-block;
   font-weight: normal;
   line-height: 1.2;
@@ -797,7 +798,7 @@ blockquote::after, q::after {
 .btn:hover {
   background-color: #92242b;
   border-color: #92242b;
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
 /* line 25, ../../src/scss/components/buttons/_button-basic.scss */
@@ -814,8 +815,8 @@ input.btn {
 
 /* line 5, ../../src/scss/components/buttons/_button-secondary.scss */
 .btn-secondary {
-  background-color: gray;
-  border-color: gray;
+  background-color: #808080;
+  border-color: #808080;
 }
 /* line 9, ../../src/scss/components/buttons/_button-secondary.scss */
 .btn-secondary:hover, .btn-secondary.active {
@@ -1064,16 +1065,15 @@ input[type='checkbox']:focus {
 /* line 13, ../../src/scss/modules/_social-media.scss */
 .social-media--links ul > li > a {
   padding: 0.2142857143em 0;
-  color: white;
   display: inline-block;
 }
-/* line 18, ../../src/scss/modules/_social-media.scss */
+/* line 17, ../../src/scss/modules/_social-media.scss */
 .social-media--links ul > li > a > .fa {
   margin-right: 0.7142857143em;
 }
 
 @media all and (min-width: 52.8571428571em) {
-  /* line 24, ../../src/scss/modules/_social-media.scss */
+  /* line 23, ../../src/scss/modules/_social-media.scss */
   .tweet {
     margin: 0 auto;
     width: 80%;
@@ -1145,10 +1145,6 @@ input[type='checkbox']:focus {
 }
 
 /* line 61, ../../src/scss/modules/_blog-post.scss */
-.blog-post--footer {
-  background: #333;
-}
-/* line 64, ../../src/scss/modules/_blog-post.scss */
 .blog-post--footer .blog-post {
   margin-bottom: 1.4285714286em;
 }
@@ -1208,28 +1204,24 @@ input[type='checkbox']:focus {
 .header {
   padding-top: 0.3571428571em;
   padding-bottom: 0.3571428571em;
-  background: white;
+  background: #fff;
 }
 
 /* line 7, ../../src/scss/layout/_basic.scss */
 .main {
-  background: white;
+  background: #fff;
 }
 
 /* line 11, ../../src/scss/layout/_basic.scss */
 .footer {
   font-size: 0.9285714286em;
-  background: #272727;
-  color: white;
 }
-/* line 16, ../../src/scss/layout/_basic.scss */
+/* line 14, ../../src/scss/layout/_basic.scss */
 .footer h4 {
-  color: #cd363f;
-  font-weight: 400;
   text-transform: uppercase;
 }
 
-/* line 23, ../../src/scss/layout/_basic.scss */
+/* line 19, ../../src/scss/layout/_basic.scss */
 .sigep-crest {
   margin: 1.4285714286em 0;
   background: url("../img/sigep-crest.png") no-repeat center center;
@@ -1237,23 +1229,38 @@ input[type='checkbox']:focus {
   height: 232px;
 }
 
-/* line 30, ../../src/scss/layout/_basic.scss */
+/* line 26, ../../src/scss/layout/_basic.scss */
 .copywrite {
   font-size: 0.9285714286em;
   margin-top: 1.4285714286em;
   padding: 0.3571428571em 0.7142857143em;
-  background: #171717;
+  background: #dbdbdb;
   text-align: center;
 }
 @media all and (min-width: 52.8571428571em) {
-  /* line 30, ../../src/scss/layout/_basic.scss */
+  /* line 26, ../../src/scss/layout/_basic.scss */
   .copywrite {
     margin-top: 0;
   }
 }
-/* line 41, ../../src/scss/layout/_basic.scss */
+/* line 37, ../../src/scss/layout/_basic.scss */
 .copywrite p {
   margin: 0;
+}
+@media all and (min-width: 52.8571428571em) {
+  /* line 26, ../../src/scss/layout/_basic.scss */
+  .copywrite {
+    text-align: left;
+  }
+}
+
+/* line 46, ../../src/scss/layout/_basic.scss */
+.copywrite-links a {
+  margin-left: 0.7142857143em;
+}
+/* line 49, ../../src/scss/layout/_basic.scss */
+.copywrite-links a:first-child {
+  margin-left: 0;
 }
 
 /* line 1, ../../src/scss/layout/_hero.scss */
@@ -1266,13 +1273,12 @@ input[type='checkbox']:focus {
 /* line 12, ../../src/scss/layout/_hero.scss */
 .hero-large {
   height: 28.5714285714em;
-  color: white;
-  text-shadow: 0 1px 0 #272727;
+  color: #fff;
   overflow: hidden;
   opacity: 1;
   position: relative;
 }
-/* line 21, ../../src/scss/layout/_hero.scss */
+/* line 20, ../../src/scss/layout/_hero.scss */
 .hero-large > img {
   background-size: cover;
   position: absolute;
@@ -1281,13 +1287,13 @@ input[type='checkbox']:focus {
   margin-left: -50%;
 }
 @media all and (min-width: 52.8571428571em) {
-  /* line 21, ../../src/scss/layout/_hero.scss */
+  /* line 20, ../../src/scss/layout/_hero.scss */
   .hero-large > img {
     margin-left: 0;
     width: 100%;
   }
 }
-/* line 34, ../../src/scss/layout/_hero.scss */
+/* line 33, ../../src/scss/layout/_hero.scss */
 .hero-large::before {
   background: rgba(123, 30, 92, 0.85);
   content: '';
@@ -1299,29 +1305,29 @@ input[type='checkbox']:focus {
   z-index: 2;
 }
 
-/* line 46, ../../src/scss/layout/_hero.scss */
+/* line 45, ../../src/scss/layout/_hero.scss */
 .hero-small {
   height: 14.2857142857em;
   color: #e4d2de;
 }
 
-/* line 52, ../../src/scss/layout/_hero.scss */
+/* line 51, ../../src/scss/layout/_hero.scss */
 .hero-content {
   text-transform: uppercase;
   position: relative;
   z-index: 2;
 }
-/* line 57, ../../src/scss/layout/_hero.scss */
+/* line 56, ../../src/scss/layout/_hero.scss */
 .hero-content h1 {
   text-transform: uppercase;
 }
-/* line 62, ../../src/scss/layout/_hero.scss */
+/* line 61, ../../src/scss/layout/_hero.scss */
 .hero-content span {
   display: block;
   margin-top: 1.25em;
 }
 
-/* line 68, ../../src/scss/layout/_hero.scss */
+/* line 67, ../../src/scss/layout/_hero.scss */
 .hero-content {
   position: absolute;
   -webkit-transform-style: preserve-3d;
@@ -1333,7 +1339,7 @@ input[type='checkbox']:focus {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 73, ../../src/scss/layout/_hero.scss */
+/* line 72, ../../src/scss/layout/_hero.scss */
 .hero-large > .hero-content > h1 {
   margin-bottom: 1.4285714286em;
 }
