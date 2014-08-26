@@ -181,9 +181,9 @@
       <!-- Copywrite -->
       <div class="copywrite">
         <div class="container">
-          <p>
-            &copy; 2014 Sigma Phi Epsilon PABB
-          </p>
+          <div class="row">
+            <?php include("incl/copywrite.php"); ?>
+          </div>
         </div>
       </div>
     </footer>
@@ -199,7 +199,7 @@
           'username': '@sigep_drexel',
           'count': 1,
           'hideReplies': true,
-          'template': '<div class="tweet"><blockquote>{{tweet}}</blockquote><a href="{{url}}"><i class="fa fa-twitter"></i>Follow @sigep_drexel</a></div>',
+          'template': '<hr /><div class="tweet"><blockquote>{{tweet}}</blockquote><a href="{{url}}"><i class="fa fa-twitter"></i>Follow @sigep_drexel</a></div><hr />',
           'apiPath': 'api/tweet.php'
         });
 

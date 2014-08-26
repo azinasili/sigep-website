@@ -34,11 +34,6 @@
   height: 100%;
 }
 
-// Reverses displayed html
-.flip {
-  float: right;
-}
-
 // Media object
 .media {
   @include em(margin-bottom, 20px);
@@ -61,6 +56,7 @@
 .whole-xs                        { @include col(1/1); }
 
 @include mq($from: tablet) {
+  .half-md                       { @include col(1/2); }
   .third-md                      { @include col(1/3); }
   .two-third-md                  { @include col(2/3); }
 }

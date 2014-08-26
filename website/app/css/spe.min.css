@@ -559,27 +559,22 @@ blockquote::after, q::after {
 }
 
 /* line 38, ../../src/scss/base/_grid.scss */
-.flip {
-  float: right;
-}
-
-/* line 43, ../../src/scss/base/_grid.scss */
 .media {
   margin-bottom: 1.4285714286em;
 }
-/* line 46, ../../src/scss/base/_grid.scss */
+/* line 41, ../../src/scss/base/_grid.scss */
 .media .img {
   margin-right: 0.7142857143em;
   float: left;
 }
 
-/* line 57, ../../src/scss/base/_grid.scss */
+/* line 52, ../../src/scss/base/_grid.scss */
 .grid {
   -webkit-transition: width .25s ease-in-out;
           transition: width .25s ease-in-out;
 }
 
-/* line 61, ../../src/scss/base/_grid.scss */
+/* line 56, ../../src/scss/base/_grid.scss */
 .whole-xs {
   *zoom: 1;
   float: left;
@@ -607,7 +602,34 @@ blockquote::after, q::after {
 }
 
 @media all and (min-width: 52.8571428571em) {
-  /* line 64, ../../src/scss/base/_grid.scss */
+  /* line 59, ../../src/scss/base/_grid.scss */
+  .half-md {
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 48.5%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 197, ../../src/scss/vendor/jeet/_grid.scss */
+  .half-md:before, .half-md:after {
+    content: '';
+    display: table;
+  }
+  /* line 201, ../../src/scss/vendor/jeet/_grid.scss */
+  .half-md:after {
+    clear: both;
+  }
+  /* line 49, ../../src/scss/vendor/jeet/_grid.scss */
+  .half-md:last-child {
+    margin-right: 0%;
+  }
+
+  /* line 60, ../../src/scss/base/_grid.scss */
   .third-md {
     *zoom: 1;
     float: left;
@@ -634,7 +656,7 @@ blockquote::after, q::after {
     margin-right: 0%;
   }
 
-  /* line 65, ../../src/scss/base/_grid.scss */
+  /* line 61, ../../src/scss/base/_grid.scss */
   .two-third-md {
     *zoom: 1;
     float: left;
@@ -662,7 +684,7 @@ blockquote::after, q::after {
   }
 }
 @media all and (min-width: 70em) {
-  /* line 69, ../../src/scss/base/_grid.scss */
+  /* line 65, ../../src/scss/base/_grid.scss */
   .third-lg {
     *zoom: 1;
     float: left;
@@ -689,7 +711,7 @@ blockquote::after, q::after {
     margin-right: 0%;
   }
 
-  /* line 70, ../../src/scss/base/_grid.scss */
+  /* line 66, ../../src/scss/base/_grid.scss */
   .two-third-lg {
     *zoom: 1;
     float: left;
@@ -1233,7 +1255,7 @@ input[type='checkbox']:focus {
 .copywrite {
   font-size: 0.9285714286em;
   margin-top: 1.4285714286em;
-  padding: 0.3571428571em 0.7142857143em;
+  padding: 0.7142857143em 0.7142857143em;
   background: #dbdbdb;
   text-align: center;
 }
@@ -1246,6 +1268,13 @@ input[type='checkbox']:focus {
 /* line 37, ../../src/scss/layout/_basic.scss */
 .copywrite p {
   margin: 0;
+  text-align: center;
+}
+@media all and (min-width: 52.8571428571em) {
+  /* line 37, ../../src/scss/layout/_basic.scss */
+  .copywrite p {
+    text-align: right;
+  }
 }
 @media all and (min-width: 52.8571428571em) {
   /* line 26, ../../src/scss/layout/_basic.scss */
@@ -1254,11 +1283,67 @@ input[type='checkbox']:focus {
   }
 }
 
-/* line 46, ../../src/scss/layout/_basic.scss */
+/* line 51, ../../src/scss/layout/_basic.scss */
+.copywrite-info {
+  *zoom: 1;
+  float: left;
+  display: inline;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 3%;
+  padding: 0.3571428571em 0;
+}
+/* line 197, ../../src/scss/vendor/jeet/_grid.scss */
+.copywrite-info:before, .copywrite-info:after {
+  content: '';
+  display: table;
+}
+/* line 201, ../../src/scss/vendor/jeet/_grid.scss */
+.copywrite-info:after {
+  clear: both;
+}
+/* line 49, ../../src/scss/vendor/jeet/_grid.scss */
+.copywrite-info:last-child {
+  margin-right: 0%;
+}
+@media all and (min-width: 52.8571428571em) {
+  /* line 51, ../../src/scss/layout/_basic.scss */
+  .copywrite-info {
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 48.5%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 197, ../../src/scss/vendor/jeet/_grid.scss */
+  .copywrite-info:before, .copywrite-info:after {
+    content: '';
+    display: table;
+  }
+  /* line 201, ../../src/scss/vendor/jeet/_grid.scss */
+  .copywrite-info:after {
+    clear: both;
+  }
+  /* line 49, ../../src/scss/vendor/jeet/_grid.scss */
+  .copywrite-info:last-child {
+    margin-right: 0%;
+  }
+}
+
+/* line 60, ../../src/scss/layout/_basic.scss */
 .copywrite-links a {
   margin-left: 0.7142857143em;
 }
-/* line 49, ../../src/scss/layout/_basic.scss */
+/* line 63, ../../src/scss/layout/_basic.scss */
 .copywrite-links a:first-child {
   margin-left: 0;
 }
@@ -1399,55 +1484,60 @@ input[type='checkbox']:focus {
   margin-left: 0;
 }
 
-/* line 44, ../../src/scss/helpers/_overrides.scss */
+/* line 41, ../../src/scss/helpers/_overrides.scss */
+.flip {
+  float: right;
+}
+
+/* line 49, ../../src/scss/helpers/_overrides.scss */
 .float-left {
   float: left;
 }
 
-/* line 45, ../../src/scss/helpers/_overrides.scss */
+/* line 50, ../../src/scss/helpers/_overrides.scss */
 .float-center {
   float: none;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 46, ../../src/scss/helpers/_overrides.scss */
+/* line 51, ../../src/scss/helpers/_overrides.scss */
 .float-right {
   float: right;
 }
 
-/* line 56, ../../src/scss/helpers/_overrides.scss */
+/* line 61, ../../src/scss/helpers/_overrides.scss */
 .values, .hero-large, .hero-small {
   padding: 2.1428571429em 1.4285714286em;
 }
 
-/* line 62, ../../src/scss/helpers/_overrides.scss */
+/* line 67, ../../src/scss/helpers/_overrides.scss */
 .hero-large, .hero-small {
   padding-right: 0;
   padding-left: 0;
 }
 
-/* line 68, ../../src/scss/helpers/_overrides.scss */
+/* line 73, ../../src/scss/helpers/_overrides.scss */
 .blog-post--header span {
   margin: 1.0714285714em 1.4285714286em;
 }
 
-/* line 69, ../../src/scss/helpers/_overrides.scss */
+/* line 74, ../../src/scss/helpers/_overrides.scss */
 .content, .side-bar, .hero-large, .hero-small {
   margin: 2.1428571429em 1.4285714286em;
 }
 
-/* line 70, ../../src/scss/helpers/_overrides.scss */
+/* line 75, ../../src/scss/helpers/_overrides.scss */
 .logo, .hero-content h1 {
   margin: 0;
 }
 
-/* line 71, ../../src/scss/helpers/_overrides.scss */
+/* line 76, ../../src/scss/helpers/_overrides.scss */
 .blog-post--header span, .hero-large, .hero-small {
   margin-top: 0;
 }
 
-/* line 75, ../../src/scss/helpers/_overrides.scss */
+/* line 80, ../../src/scss/helpers/_overrides.scss */
 .content, .side-bar, .blog-post--header span, .hero-large, .hero-small {
   margin-right: 0;
   margin-left: 0;

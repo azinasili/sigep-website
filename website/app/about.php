@@ -208,15 +208,9 @@
       <!-- Copywrite -->
       <div class="copywrite">
         <div class="container">
-          <p class="float-left">
-            &copy; 2014 Sigma Phi Epsilon PABB
-          </p>
-          <nav class="copywrite-links float-right">
-            <a href="http://www.sigep.com/">SigEp National</a>
-            <a href="http://www.sigepblog.org/">SigEp Official Blog</a>
-            <a href="http://brothers.sigep-drexel.org/">Brothers Login</a>
-            <a href="http://www.sigep-drexel.org/alumni/">Alumni Login</a>
-          </nav>
+          <div class="row">
+            <?php include("incl/copywrite.php"); ?>
+          </div>
         </div>
       </div>
     </footer>

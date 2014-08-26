@@ -73,7 +73,6 @@ module.exports = function (grunt) {
           cacheLocation : '_tmp',
           lineNumbers   : 'true',
           precision     : 10,
-          sourcemap     : 'true',
           style         : 'expanded'
         },
         files: {
