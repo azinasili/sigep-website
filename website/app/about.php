@@ -139,43 +139,29 @@
             <aside class="side-bar">
               <h2>SigEp Achievements</h2>
               <ul>
-                <li>Celebrating its 10th year on campus in 2012</li>
-                <li>#1 In Academics at Drexel by both term (3.46) and cumulative
-                (3.33) GPA</li>
-                <li>Recently accredited as a Residential Learning Community by
-                SigEp Headquarters</li>
-                <li>2008, 2010 Drexel Dean’s Cup (Awarded to the best Fraternity
-                on campus by Drexel Student Life)</li>
-                <li>$30,000 raised for St. Baldrick’s Foundation in annual
-                philanthropy event in 2011 (Over $100,000 raised in last 5
-                years)</li>
-                <li>2008, 2009, 2011 Greek Week Runner-Up</li>
-                <li>2008 IFC Softball Champions, 2009 IFC Bowling Champions,
-                2010 IFC Billiards Champions, 2011 IFC Soccer Champions, 2011
-                IFC Flag Football Champions</li>
+                <li>$64,000 raised for St Baldrick's in 2013</li>
+                <li>SigEp has raised over $270,000 in 8 years</li>
+                <li>8 Brothers are USGA members</li>
+                <li>2014 IFC Softball Champs</li>
+                <li>2014 2nd place Greek Week</li>
+                <li>2013 Buc Cup</li>
+                <li>2013 Deans Cup</li>
+                <li>2013 Greek Week</li>
+                <li>2013 IFC basketball and Soccer Champs</li>
               </ul>
               <h2>SigEp National Facts</h2>
               <ul>
-                <li>Founded on November 1, 1901, at Richmond College.</li>
-                <li>Over the past two decades, SigEp has recruited more men than
-                any other collegiate fraternity. Currently, over 14,000
-                undergraduates are members, making SigEp the largest national
-                fraternity.</li>
-                <li>More than 280,000 lifetime members rank SigEp in the top
-                four among national fraternities.</li>
-                <li>Governed by the Grand Chapter, which is composed of
-                undergraduate delegates from each chapter, District Governors,
-                and the National Board of Directors.</li>
-                <li>Maintains a full-time professional staff of over 35 people.
-                </li>
-                <li>Publishes a magazine, The Journal of Sigma Phi Epsilon,
-                which is distributed to all members for life.</li>
-                <li>Maintains the highest first-year member retention rate, over
-                90%, of any national fraternity</li>
-                <li>Only fraternity to offer a full developmental program that
-                spans all years of the undergraduate experience</li>
-                <li>Only fraternity with a national GPA over 3.0, with a 3.01
-                and a goal of 3.15 by the end of 2011.</li>
+                <li>SigEp was founded on November 1, 1901, at Richmond College.</li>
+                <li>Over the past two decades, SigEp has recruited more men than any other collegiate fraternity.</li>
+                <li>Currently, over 15,000 undergraduates are SigEps, more than any other national fraternity.</li>
+                <li>Over 309,000 lifetime members ranks SigEp among the largest national fraternities.</li>
+                <li>SigEp maintains a full-time professional staff of over 50 people.</li>
+                <li>The SigEp Journal has been published continuously since 1904, and is distributed to all members for life.</li>
+                <li>SigEp hosts the largest biennial convention in the fraternity world: the Grand Chapter Conclave.</li>
+                <li>SigEp was the first national fraternity to establish a housing trust for all chapters and create a National Housing Corporation.</li>
+                <li>Sigma Phi Epsilon has the greatest number of fraternity houses, with over 200 chapter homes.  Of those, over 115 are owned by local SigEp Alumni and Volunteer Corporations.</li>
+                <li>The Sigma Phi Epsilon Educational Foundation was the first fraternity foundation to build an endowment greater than $12 million.</li>
+                <li>The Sigma Phi Epsilon Educational Foundation is a 501(c)(3) charitable foundation. Its program funding is planned to develop the scholarship, leadership, citizenship, and personal potential of college undergraduates.</li>
               </ul>
             </aside>
           </div>

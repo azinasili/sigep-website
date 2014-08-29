@@ -135,20 +135,15 @@
             <aside class="side-bar">
               <h2>SigEp Achievements</h2>
               <ul>
-                <li>Celebrating its 10th year on campus in 2012</li>
-                <li>#1 In Academics at Drexel by both term (3.46) and cumulative
-                (3.33) GPA</li>
-                <li>Recently accredited as a Residential Learning Community by
-                SigEp Headquarters</li>
-                <li>2008, 2010 Drexel Dean’s Cup (Awarded to the best Fraternity
-                on campus by Drexel Student Life)</li>
-                <li>$30,000 raised for St. Baldrick’s Foundation in annual
-                philanthropy event in 2011 (Over $100,000 raised in last 5
-                years)</li>
-                <li>2008, 2009, 2011 Greek Week Runner-Up</li>
-                <li>2008 IFC Softball Champions, 2009 IFC Bowling Champions,
-                2010 IFC Billiards Champions, 2011 IFC Soccer Champions, 2011
-                IFC Flag Football Champions</li>
+                <li>$64,000 raised for St Baldrick's in 2013</li>
+                <li>SigEp has raised over $270,000 in 8 years</li>
+                <li>8 Brothers are USGA members</li>
+                <li>2014 IFC Softball Champs</li>
+                <li>2014 2nd place Greek Week</li>
+                <li>2013 Buc Cup</li>
+                <li>2013 Deans Cup</li>
+                <li>2013 Greek Week</li>
+                <li>2013 IFC basketball and Soccer Champs</li>
               </ul>
             </aside>
           </div>
