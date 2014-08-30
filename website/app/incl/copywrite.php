@@ -3,7 +3,7 @@
     <a href="http://www.sigep.com/">SigEp National</a>
     <a href="http://www.sigepblog.org/">SigEp Official Blog</a>
     <a href="http://brothers.sigep-drexel.org/">Brothers Login</a>
-    <a href="http://www.sigep-drexel.org/alumni/">Alumni Login</a>
+    <a href="alumni/">Alumni Login</a>
   </nav>
 </div>
 <div class="copywrite-info">
