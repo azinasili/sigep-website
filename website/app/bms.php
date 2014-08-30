@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
     <!-- Document meta data -->
-    <title>SigEp PABB Drexel University</title>
-    <meta name="description" content="Whatever">
+    <title>SigEp PABB Drexel University | Balanced Man Scholarship</title>
+    <meta name="description" content="Sigma Phi Epsilon Balanced Man Scholarship awards young men who embed the cardinal principles of Virture, Diligence, and Brother Love">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Favicon -->

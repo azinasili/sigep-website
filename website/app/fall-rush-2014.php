@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
     <!-- Document meta data -->
-    <title>SigEp PABB Drexel University</title>
-    <meta name="description" content="Sigma Phi Epsilon Pennsylvania Beta Beta Chapter has been providing leadership and excellence to Drexel University since 1999">
+    <title>SigEp PABB Drexel University | Fall Rush 2014</title>
+    <meta name="description" content="SigEp fall rush 2014">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Favicon -->
@@ -37,7 +37,7 @@
     <![endif]-->
 
     <!-- Head level javascript -->
-    <script src="js/vendor/modernizr.min.js" type="text/javascrip"></script>
+    <script src="js/vendor/modernizr.min.js" type="text/javascript"></script>
 
   </head>
 
@@ -62,90 +62,87 @@
     <!-- Main content -->
     <main class="main" id="main">
 
-      <div id="hero" class="hero-large">
-        <div class="hero-content">
-          <h1>SigEp FalL Rush 2014</h1>
-          <a href="fall-rush-2014.php" class="btn">continue reading</a>
-        </div>
-        <img src="img/fall-rush-2014.png" />
-      </div>
-
-      <div class="container">
-        <div class="row values">
-          <div class="grid third-md whole-xs text-center">
-            <i class="fa fa-legal fw fa-4x"></i>
-            <h2>virtue</h2>
-            <p>
-              Virtue is the moral essence of the Fraternity. Living a virtuous
-              life is making the most of your time and talents with unfailing
-              integrity.
-            </p>
-          </div>
-          <div class="grid third-md whole-xs text-center">
-            <i class="fa fa-trophy fw fa-4x"></i>
-            <h2>diligence</h2>
-            <p>
-              Diligence is the force that drives the fraternity. Living
-              diligently is living your best life with courage and tenacity.
-            </p>
-          </div>
-          <div class="grid third-md whole-xs text-center">
-            <i class="fa fa-heart fw fa-4x"></i>
-            <h2>brotherly love</h2>
-            <p>
-              Brotherly Love is the foundation of the fraternity. Living with
-              Brotherly Love is supporting fellow citizens through true and
-              active friendship.
-            </p>
-          </div>
-        </div>
-      </div>
-
       <div class="container">
         <div class="row">
-          <div class="grid two-third-md whole-xs">
-            <article class="content">
-              <h2>About SigEp PABB</h2>
+          <div class="grid whole-xs">
+            <!-- 1140/300 -->
+            <img src="img/fall-rush-2014.png" class="img" />
+            <article class="blog-post--content">
+              <header class="blog-post--header">
+                <h2>SigEp Fall Rush 2014</h2>
+                <span class="text-small">08/29/2014</span>
+                <span class="text-small">written by:</span>
+                <span class="text-small">Gerardo Faia</span>
+              </header>
               <p>
-                This fraternity is different. Everyday every SigEp works to
-                exude excellence in every sense of the word. Every SigEp is an
-                athlete, a scholar, a leader and a gentleman. This Balanced Man
-                philosophy, which will ask you to be sound in both mind and body,
-                has been the model of our success.
+                Please come out to Sigma Phi Epsilon located at the corner of
+                34th and Race street, first house on Greek Row, and meet the
+                brothers of SigEp. The following Rush dates are open to all
+                members interested in joining Greek Life and taking part in
+                living the Balanced Man lifestyle.
+              </p>
+              <article class="group rush-event">
+                <h3>Hoagies and Stoagies</h3>
+                <div class="group">
+                  <span class="rush-date">Monday September 29th</span>
+                  <span class="rush-time">7:00 pm - 10:00pm</span>
+                </div>
+              </article>
+              <article class="group rush-event">
+                <h3>Speedball</h3>
+                <div class="group">
+                  <span class="rush-date">Wednesday October 1st</span>
+                  <span class="rush-time">8:00 pm - 11:00pm</span>
+                </div>
+              </article>
+              <article class="group rush-event">
+                <h3>Family Feud</h3>
+                <div class="group">
+                  <span class="rush-date">Thursday October 2</span>
+                  <span class="rush-time">6:30 pm - 11:00pm</span>
+                </div>
+              </article>
+              <article class="group rush-event">
+                <h3>Pig Roast</h3>
+                <div class="group">
+                  <span class="rush-date">Saturday October 4th</span>
+                  <span class="rush-time">12:00pm - 6:00pm</span>
+                </div>
+              </article>
+              <article class="group rush-event">
+                <h3>Dodgeball</h3>
+                <div class="group">
+                  <span class="rush-date">Monday October 6th</span>
+                  <span class="rush-time">8:30 pm - 11:00pm</span>
+                </div>
+              </article>
+              <p>
+                After the aforementioned events and the brothers have gotten to
+                know the potential new members better, selected individuals will
+                be invited to the preference event:
+              </p>
+              <article class="group rush-event">
+                <h3>Preference</h3>
+                <div class="group">
+                  <span class="rush-date">Thursday October 9th</span>
+                  <span class="rush-time">6:00 pm - Midnight</span>
+                </div>
+                <div class="rush-notes">
+                  <p>
+                    Invitation only
+                  </p>
+                </div>
+              </article>
+              <p>
+                Please meet at the Sigma Phi Epsilon house so that brothers can
+                escort all groups to specific locations to where the events are
+                held.
               </p>
               <p>
-                SigEp has won four of the last five Dean’s Cups, an award given
-                to the best fraternity on campus. SigEp won Greek Week in 2012
-                and 2013, a week of stiff competition in athletics and
-                creativity between all Drexel fraternities. With a cumulative
-                GPA of 3.33, SigEp boasts a GPA .23 higher than the average
-                fraternity at Drexel. In 2012 SigEp won IFC Flag Football, and
-                appeared in 5 IFC Championships, in basketball, floor hockey,
-                billiards, softball and soccer. SigEp has been in basketball
-                championship finals 3 of the previous 4 seasons.
-              </p>
-              <p>
-                SigEp is composed of campus leaders including this year’s USGA
-                President and the former IFC President. As well as three varsity
-                athletes, 2 NROTC midshipmen, 9 RA’s and 6 STAR Scholars.
+                For more information, please contact our
+                <a href="mailto:vprecruitment@sigep-drexel.org">VP of Recruitment</a>.
               </p>
             </article>
-          </div>
-          <div class="grid third-md whole-xs">
-            <aside class="side-bar">
-              <h2>SigEp Achievements</h2>
-              <ul>
-                <li>$64,000 raised for St Baldrick's in 2013</li>
-                <li>SigEp has raised over $270,000 in 8 years</li>
-                <li>8 Brothers are USGA members</li>
-                <li>2014 IFC Softball Champs</li>
-                <li>2014 2nd place Greek Week</li>
-                <li>2013 Buc Cup</li>
-                <li>2013 Deans Cup</li>
-                <li>2013 Greek Week</li>
-                <li>2013 IFC basketball and Soccer Champs</li>
-              </ul>
-            </aside>
           </div>
         </div>
       </div>
@@ -187,7 +184,7 @@
     <script src="js/vendor/jquery.min.js" type="text/javascript"></script>
     <script src="js/vendor/tweetie.js" type="text/javascript"></script>
     <script src="js/spe.min.js" type="text/javascript"></script>
-    <script>
+    <script type="text/javascript">
       $(document).ready(function() {
 
         $('#social-media .container').twittie({
@@ -198,21 +195,6 @@
           'apiPath': 'api/tweet.php'
         });
 
-        $(window).scroll(function(){
-          $('#hero').each(function(r){
-            var pos = $(this).offset().top;
-            var scrolled = $(window).scrollTop();
-
-            if(pos !== 0) {
-              $('.hero-content').css(
-                {
-                  // 'transform': 'translate(-50%, ' + (scrolled * 0.2) + '%)',
-                  'opacity': (scrolled * -.001) + 1
-                });
-              $('#hero img').css('transform', 'translate(0, ' + -(scrolled * 0.15) + 'px)');
-            }
-          });
-        });
       });
     </script>
 

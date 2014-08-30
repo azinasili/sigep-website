@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
     <!-- Document meta data -->
-    <title>SigEp PABB Drexel University</title>
-    <meta name="description" content="Whatever">
+    <title>SigEp PABB Drexel University | About SigEp PABB</title>
+    <meta name="description" content="Sigma Phi Epsilon Pennsylvania Beta Beta Chapter has been providing leadership and excellence to Drexel University since 1999">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Favicon -->

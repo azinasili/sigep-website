@@ -1238,12 +1238,8 @@ input[type='checkbox']:focus {
 .footer {
   font-size: 0.9285714286em;
 }
-/* line 14, ../../src/scss/layout/_basic.scss */
-.footer h4 {
-  text-transform: uppercase;
-}
 
-/* line 19, ../../src/scss/layout/_basic.scss */
+/* line 15, ../../src/scss/layout/_basic.scss */
 .sigep-crest {
   margin: 1.4285714286em 0;
   background: url("../img/sigep-crest.png") no-repeat center center;
@@ -1251,7 +1247,7 @@ input[type='checkbox']:focus {
   height: 232px;
 }
 
-/* line 26, ../../src/scss/layout/_basic.scss */
+/* line 22, ../../src/scss/layout/_basic.scss */
 .copywrite {
   font-size: 0.9285714286em;
   margin-top: 1.4285714286em;
@@ -1260,30 +1256,30 @@ input[type='checkbox']:focus {
   text-align: center;
 }
 @media all and (min-width: 52.8571428571em) {
-  /* line 26, ../../src/scss/layout/_basic.scss */
+  /* line 22, ../../src/scss/layout/_basic.scss */
   .copywrite {
     margin-top: 0;
   }
 }
-/* line 37, ../../src/scss/layout/_basic.scss */
+/* line 33, ../../src/scss/layout/_basic.scss */
 .copywrite p {
   margin: 0;
   text-align: center;
 }
 @media all and (min-width: 52.8571428571em) {
-  /* line 37, ../../src/scss/layout/_basic.scss */
+  /* line 33, ../../src/scss/layout/_basic.scss */
   .copywrite p {
     text-align: right;
   }
 }
 @media all and (min-width: 52.8571428571em) {
-  /* line 26, ../../src/scss/layout/_basic.scss */
+  /* line 22, ../../src/scss/layout/_basic.scss */
   .copywrite {
     text-align: left;
   }
 }
 
-/* line 51, ../../src/scss/layout/_basic.scss */
+/* line 47, ../../src/scss/layout/_basic.scss */
 .copywrite-info {
   *zoom: 1;
   float: left;
@@ -1311,7 +1307,7 @@ input[type='checkbox']:focus {
   margin-right: 0%;
 }
 @media all and (min-width: 52.8571428571em) {
-  /* line 51, ../../src/scss/layout/_basic.scss */
+  /* line 47, ../../src/scss/layout/_basic.scss */
   .copywrite-info {
     *zoom: 1;
     float: left;
@@ -1339,11 +1335,11 @@ input[type='checkbox']:focus {
   }
 }
 
-/* line 60, ../../src/scss/layout/_basic.scss */
+/* line 56, ../../src/scss/layout/_basic.scss */
 .copywrite-links a {
   margin-left: 0.7142857143em;
 }
-/* line 63, ../../src/scss/layout/_basic.scss */
+/* line 59, ../../src/scss/layout/_basic.scss */
 .copywrite-links a:first-child {
   margin-left: 0;
 }

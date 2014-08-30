@@ -10,10 +10,6 @@
 
 .footer {
   @include em(font-size, ($font-base - 1px));
-
-  h4 {
-    text-transform: uppercase;
-  }
 }
 
 .sigep-crest {

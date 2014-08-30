@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
     <!-- Document meta data -->
-    <title>SigEp PABB Drexel University</title>
-    <meta name="description" content="Whatever">
+    <title>SigEp PABB Drexel University | Contact SigEp</title>
+    <meta name="description" content="Reach out to the brothers of Sigma Phi Epslion about SigEp or greek life in general">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Favicon -->

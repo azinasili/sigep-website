@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
     <!-- Document meta data -->
-    <title>SigEp PABB Drexel University</title>
-    <meta name="description" content="Whatever">
+    <title>SigEp PABB Drexel University | SigEp PABB News</title>
+    <meta name="description" content="Read about the latest in Sigma Phi Epslion PABB">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Favicon -->
@@ -73,6 +73,20 @@
           <div class="grid two-third-md whole-xs">
             <article class="blog-post">
               <header class="blog-post--header">
+                <h2>SigEp Fall Rush 2014</h2>
+                <img src="img/fall-rush-2014.png" class="img" />
+              </header>
+              <p>
+                Please come out to Sigma Phi Epsilon located at the corner of
+                34th and Race street, first house on Greek Row, and meet the
+                brothers of SigEp. The following Rush dates are open to all
+                members interested in joining Greek Life and taking part in
+                living the Balanced Man lifestyle.
+              </p>
+              <a href="fall-rush-2014.php">continue reading</a>
+            </article>
+            <article class="blog-post">
+              <header class="blog-post--header">
                 <h2>St. Bladrick's 2014</h2>
                 <img src="img/st-baldricks-2014.jpg" class="img" />
               </header>
@@ -97,27 +111,12 @@
               </p>
               <a href="fall-rush-2013.php">continue reading</a>
             </article>
-            <article class="blog-post">
-              <header class="blog-post--header">
-                <h2>SigEp Adopts a Street</h2>
-                <img src="img/street-cleaning-photo-2013.jpg" class="img" />
-              </header>
-              <p>
-                Adding to the long list of SigEp’s community service
-                initiatives, our chapter is now pioneering an effort to improve
-                the everyday lives of not only Drexel’s Greek life, but the
-                university’s students as a whole. Partnering with Drexel’s
-                student affairs office and Associate Dean John Cooke, SigEp is
-                establishing a biweekly street cleaning project on Drexel’s 34th
-                street.
-              </p>
-              <a href="sigep-adopts-a-street.php">continue reading</a>
-            </article>
           </div>
           <aside class="grid third-md whole-xs">
             <div class="blog-post--recent">
               <h3>Archive</h3>
               <ul class="list-unstyled">
+                <li><a href="fall-rush-2014.php">Fall Rush 2014</a></li>
                 <li><a href="st-baldricks-2014.php">St. Baldrick's 2014</a></li>
                 <li><a href="fall-rush-2013.php">Fall Rush 2013</a></li>
                 <li><a href="sigep-adopts-a-street.php">SigEp Adopts a Street</a></li>
