@@ -1,8 +1,8 @@
 {
-  "name": "my-project-name",
-  "title": "title of project",
-  "description": "enter description of project",
-  "url": "http://www.adminovate.com/",
+  "name": "sigep-website",
+  "title": "SigEp PABB Website",
+  "description": "New SigEp website for PABB chapter. Replacing old website and CMS",
+  "url": "http://www.sigep-drexel.org/",
   "version": "0.0.0",
   "copyright": "2014",
   "devDependencies": {
@@ -16,6 +16,7 @@
     "grunt-contrib-connect": "latest",
     "grunt-contrib-copy": "latest",
     "grunt-contrib-htmlmin": "latest",
+    "jpegtran-bin": "0.2.0",
     "grunt-contrib-imagemin": "latest",
     "grunt-contrib-jshint": "latest",
     "grunt-contrib-sass": "latest",

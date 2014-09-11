@@ -71,8 +71,8 @@ module.exports = function (grunt) {
       dev: {
         options: {
           cacheLocation : '_tmp',
-          lineNumbers   : 'true',
           precision     : 10,
+          sourcemap     : 'none',
           style         : 'expanded'
         },
         files: {
@@ -84,6 +84,7 @@ module.exports = function (grunt) {
           banner        : '<%= tag.banner %>',
           cacheLocation : '_tmp',
           precision     : 10,
+          sourcemap     : 'none',
           style         : 'compressed'
         },
         files: {
@@ -230,10 +231,6 @@ module.exports = function (grunt) {
       dev: [
         '<%= project.vendor %>/jquery.js',
         '<%= project.vendor %>/modernizr.js'
-      ],
-      dist: [
-        '_tmp',
-        'node_modules'
       ]
     },
 
