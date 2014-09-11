@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="img/favicon/favicon.ico" href="">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon/favicon.ico">
 
     <!-- Apple Touch Icons -->
     <link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon/apple-touch-icon-152.png">
@@ -19,10 +19,6 @@
     <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon/apple-touch-icon-114.png">
     <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon/apple-touch-icon-72.png">
     <link rel="apple-touch-icon" href="img/apple-touch-icon/apple-touch-icon-57.png">
-
-    <!-- MS Homescreen Icons -->
-    <meta name="msapplication-TileColor" content="#0088cc">
-    <meta name="msapplication-TileImage" content="img/window-start-tile/ms-touch-icon.png">
 
     <!-- Stylesheet -->
     <link href="css/spe.min.css" media="screen, projection" rel="stylesheet" type="text/css" />

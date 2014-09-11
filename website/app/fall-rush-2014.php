@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="img/favicon/favicon.ico" href="">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon/favicon.ico">
 
     <!-- Apple Touch Icons -->
     <link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon/apple-touch-icon-152.png">
@@ -19,10 +19,6 @@
     <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon/apple-touch-icon-114.png">
     <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon/apple-touch-icon-72.png">
     <link rel="apple-touch-icon" href="img/apple-touch-icon/apple-touch-icon-57.png">
-
-    <!-- MS Homescreen Icons -->
-    <meta name="msapplication-TileColor" content="#0088cc">
-    <meta name="msapplication-TileImage" content="img/window-start-tile/ms-touch-icon.png">
 
     <!-- Stylesheet -->
     <link href="css/spe.min.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -84,35 +80,35 @@
               <article class="group rush-event">
                 <h3>Hoagies and Stoagies</h3>
                 <div class="group">
-                  <span class="rush-date">Monday September 29th</span>
+                  <span class="rush-date">Monday September 29th, 2014</span>
                   <span class="rush-time">7:00 pm - 10:00pm</span>
                 </div>
               </article>
               <article class="group rush-event">
                 <h3>Speedball</h3>
                 <div class="group">
-                  <span class="rush-date">Wednesday October 1st</span>
+                  <span class="rush-date">Wednesday October 1st, 2014</span>
                   <span class="rush-time">8:00 pm - 11:00pm</span>
                 </div>
               </article>
               <article class="group rush-event">
                 <h3>Family Feud</h3>
                 <div class="group">
-                  <span class="rush-date">Thursday October 2</span>
+                  <span class="rush-date">Thursday October 2, 2014</span>
                   <span class="rush-time">6:30 pm - 11:00pm</span>
                 </div>
               </article>
               <article class="group rush-event">
                 <h3>Pig Roast</h3>
                 <div class="group">
-                  <span class="rush-date">Saturday October 4th</span>
+                  <span class="rush-date">Saturday October 4th, 2014</span>
                   <span class="rush-time">12:00pm - 6:00pm</span>
                 </div>
               </article>
               <article class="group rush-event">
                 <h3>Dodgeball</h3>
                 <div class="group">
-                  <span class="rush-date">Monday October 6th</span>
+                  <span class="rush-date">Monday October 6th, 2014</span>
                   <span class="rush-time">8:30 pm - 11:00pm</span>
                 </div>
               </article>
@@ -124,7 +120,7 @@
               <article class="group rush-event">
                 <h3>Preference</h3>
                 <div class="group">
-                  <span class="rush-date">Thursday October 9th</span>
+                  <span class="rush-date">Thursday October 9th, 2014</span>
                   <span class="rush-time">6:00 pm - Midnight</span>
                 </div>
                 <div class="rush-notes">
