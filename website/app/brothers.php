@@ -106,7 +106,7 @@
               <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Peter Massey</h3>
-                <span>Chaplin</span>
+                <span>Chaplain</span>
                 <a href="mailto:standards@sigep-drexel.org">standards@sigep-drexel.org</a>
               </div>
             </article>
@@ -352,7 +352,6 @@
               <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Daniel Stenger</h3>
-                <span>Alternate Chaplain</span>
               </div>
             </article>
           </div>

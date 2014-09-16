@@ -70,7 +70,7 @@
             <article class="blog-post">
               <header class="blog-post--header">
                 <h2>SigEp Fall Rush 2014</h2>
-                <img src="img/fall-rush-2014.png" class="img" />
+                <img src="img/fall-rush-2014.jpg" class="img" />
               </header>
               <p>
                 Please come out to Sigma Phi Epsilon located at the corner of

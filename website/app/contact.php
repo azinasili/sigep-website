@@ -77,7 +77,7 @@
             <article class="group media">
               <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
-                <h3>John Locco</h3>
+                <h3>Jon Locco</h3>
                 <span>Chapter President</span>
                 <a href="mailto:president@sigep-drexel.org">president@sigep-drexel.org</a>
               </div>
@@ -138,7 +138,7 @@
               <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
               <div class="group">
                 <h3>Peter Massey</h3>
-                <span>Chaplin</span>
+                <span>Chaplain</span>
                 <a href="mailto:standards@sigep-drexel.org">standards@sigep-drexel.org</a>
               </div>
             </article>
@@ -152,6 +152,16 @@
                 <a href="mailto:housemanager@sigep-drexel.org">housemanager@sigep-drexel.org</a>
               </div>
             </article>
+          </div>
+          <!-- <div class="grid brother-profile">
+            <article class="group media">
+              <img src="img/brother-default.png" alt="SigEp brother profile" class="img" />
+              <div class="group">
+                <h3></h3>
+                <span>Vice President of RLC</span>
+                <a href="mailto:drexelbms@gmail.com">drexelbms@gmail.com</a>
+              </div>
+            </article> -->
           </div>
         </div>
       </div>

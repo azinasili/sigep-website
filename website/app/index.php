@@ -63,7 +63,7 @@
           <h1>SigEp FalL Rush 2014</h1>
           <a href="fall-rush-2014.php" class="btn">continue reading</a>
         </div>
-        <img src="img/fall-rush-2014.png" />
+        <img src="img/fall-rush-2014.jpg" />
       </div>
 
       <div class="container">

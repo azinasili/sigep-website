@@ -62,7 +62,7 @@
         <div class="row">
           <div class="grid whole-xs">
             <!-- 1140/300 -->
-            <img src="img/fall-rush-2014.png" class="img" />
+            <img src="img/fall-rush-2014.jpg" class="img" />
             <article class="blog-post--content">
               <header class="blog-post--header">
                 <h2>SigEp Fall Rush 2014</h2>
