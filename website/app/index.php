@@ -106,8 +106,19 @@
                 This fraternity is different. Everyday every SigEp works to
                 exude excellence in every sense of the word. Every SigEp is an
                 athlete, a scholar, a leader and a gentleman. This Balanced Man
-                philosophy, which will ask you to be sound in both mind and body,
-                has been the model of our success.
+                philosophy, which will ask you to be sound in both mind and
+                body, has been the model of our success.
+              </p>
+              <p>
+                With a cumulative GPA of 3.38, SigEp boasts a 0.21 GPA higher
+                than the average fraternity at Drexel and a 0.17 higher GPA
+                than all students at Drexel. In 2014 SigEp won IFC Softball and
+                Dodgeball and appeared in the IFC Championship for tennis.
+              </p>
+              <p>
+                SigEp is composed of campus leaders including this year’s IFC
+                President. As well as 2 varsity athletes, 8 USGA members, 10
+                RA’s  which 3 of them are HRA's, and 3 STAR Scholars.
               </p>
               <p>
                 SigEp has won four of the last five Dean’s Cups, an award given
