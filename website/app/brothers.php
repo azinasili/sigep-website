@@ -107,7 +107,7 @@
               <div class="group">
                 <h3>Peter Massey</h3>
                 <span>Chaplain</span>
-                <a href="mailto:standards@sigep-drexel.org">standards@sigep-drexel.org</a>
+                <a href="mailto:chaplain@sigep-drexel.org">chaplain@sigep-drexel.org</a>
               </div>
             </article>
           </div>
@@ -313,7 +313,7 @@
               <div class="group">
                 <h3>Tyler Pingree</h3>
                 <span>Vice President of RLC</span>
-                <a href="mailto:drexelbms@gmail.com">drexelbms@gmail.com</a>
+                <a href="mailto:vprlc@sigep-drexel.org">vprlc@sigep-drexel.org</a>
               </div>
             </article>
           </div>

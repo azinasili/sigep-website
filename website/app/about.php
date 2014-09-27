@@ -135,7 +135,7 @@
             <aside class="side-bar">
               <h2>SigEp Achievements</h2>
               <ul>
-                <li>$64,000 raised for St Baldrick's in 2013</li>
+                <li>$64,000 raised for Saint Baldrick's in 2013</li>
                 <li>SigEp has raised over $270,000 in 8 years</li>
                 <li>8 Brothers are USGA members</li>
                 <li>2014 IFC Softball Champs</li>
@@ -144,6 +144,7 @@
                 <li>2013 Deans Cup</li>
                 <li>2013 Greek Week</li>
                 <li>2013 IFC basketball and Soccer Champs</li>
+                <li>The current IFC president is a SigEp</li>
               </ul>
               <h2>SigEp National Facts</h2>
               <ul>

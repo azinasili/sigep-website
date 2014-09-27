@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
     <!-- Document meta data -->
-    <title>SigEp PABB Drexel University | SigEp St. Baldrick's</title>
+    <title>SigEp PABB Drexel University | SigEp Saint Baldrick's</title>
     <meta name="description" content="SigEp PABB has rasied over $200,000 in the 8 years we have participated.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -69,7 +69,7 @@
                 <span class="text-small">written by:</span>
                 <span class="text-small">Sean Soboloski</span>
               </header>
-              <h3>What is the St .Baldrick’s Foundation…</h3>
+              <h3>What is the Saint Baldrick’s Foundation…</h3>
               <p>
                 The St. Baldrick’s Foundation is a volunteer-driven charity
                 committed to funding the most promising research to find cures
@@ -77,7 +77,7 @@
               </p>
               <h3>How are we involved…</h3>
               <p>
-                Sigma Phi Epsilon supports the St. Baldrick’s Foundation by
+                Sigma Phi Epsilon supports the Saint Baldrick’s Foundation by
                 fund raising and hosting a head shaving event every year. Last
                 year we raised $51,850 increasing our total to over $212,000!
                 This year we are hosting our 7th annual head shaving event, with
